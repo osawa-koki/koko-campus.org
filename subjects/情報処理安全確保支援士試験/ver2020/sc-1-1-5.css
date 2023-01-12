@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+
+
+.step {
+	border: 1px black solid;
+	background-color: #CCFFCC;
+	padding: 0.2rem;
+}
+.step_text {
+	display: inline-block;
+	padding: 0.1rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF99;
+	margin: 0.5rem 0 0.5rem 1.5rem;
+
+}
+
+
+text {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	font-size: 24px;
+	line-height: 1.25;
+	font-family: 'MS Gothic';
+	font-variant-ligatures: none;
+	white-space: pre;
+	fill-opacity: 1;
+}
+
+ellipse {
+	fill: #000000;
+	fill-opacity: 0.5;
+	stroke: #000000;
+	stroke-width: 0.249767;
+	stroke-opacity: 0.5;
+}
+.eye0 {
+	fill: #000000;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.264583px;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-opacity: 1;
+
+}
+.eye1 {
+	fill: #000000;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.264583px;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-opacity: 1;
+
+}
+rect {
+	fill: #000064;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.249767;
+	stroke-opacity: 0.5;
+
+}
+.window {
+	fill: #ffffff;
+}
+
+
+
+
+
+
+#rainbow_table th, #rainbow_table td {
+	font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

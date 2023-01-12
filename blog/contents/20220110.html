@@ -1,0 +1,7 @@
+<h1>cssでのhover連鎖</h1>
+最初に以下のgif画像をご覧ください。
+<img src="data/20220110.gif" alt="hover連鎖の説明画像" />
+cssのhover疑似クラスでマウスカーソルが画像の上にのっているときに沈ませるように設定しています。<br />問題はhover時に画像の表示位置がその分変化していることです。<br />そのせいでhover中にある一定のピクセルにマウスカーソルを置くと、hoverで画像が下に移動し、それによってhoverから外れて画像位置が元に戻り、それによって再びhoverと認識されて画像が下に移動し、、、<br />無限ループが繰り返されます。
+<h2>解決策</h2>
+cssトランジションを設定してhover時にすぐに移動しないようにします。<br />これは僕が躓いた部分なんですけど、通常時(非hover)時に「position: relative; box-shadow: 2px 2px grey;」を設定して、hover時に「top: 2px; left: 2px; box-shadow: none;」だとダメです。<br /><br />これだと「top」「left」プロパティにcssトランジションが適用されません。<br /><br />通常時(非hover)時「position: relative; box-shadow: 2px 2px grey;」だけでなく、「top: 0; left: 0」も設定する必要があります。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

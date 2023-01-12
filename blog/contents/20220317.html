@@ -1,0 +1,19 @@
+<h1>try ～ catch ～ finally</h1>
+う～～～ん、、、<br />絶妙に誤解していた内容です。<br />以下のコードを実行すると何が出力されると思いますか???<br /><br />「not-exist.txt」ファイルは存在しないため、「file_get_contents」関数はエラーを発生させるとします。
+<code class="php">
+	function fx() {
+		try {
+			$contents = file_get_contents(__DIR__. "not-exist.txt"); // エラー発生!!
+			return "try";
+		} catch (Exception $e) {
+			return "catch";
+		}
+		finally {
+			return "finally";
+		}
+	}
+	
+	echo fx();
+</code>
+答え、「finally」が出力されます。<br />エラーが発生して「catch」へ処理が移ってそこでreturn文に出会って関数から抜け出すと思いますよね、、、<br /><br />例外処理のfinallyがある場合にはは少し特殊で、catch内にreturn文があるとfinallyが先に実行されてから、catchが実行されます。<br /><br />今回はfinally内にreturn文があって関数から抜け出しました。<br /><br />みなさん、知っていましたか???<br /><br />因みに、C#・VB.NETでも同様です。<br />それ以外の言語では未確認です。<br />後ほど確認します。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

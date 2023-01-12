@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+#rlo #path_box {
+fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-opacity:0.5
+}
+#rlo .rlo_select {
+opacity:0.5;fill:#99bbff;
+}
+#rlo #excel_icon0 {
+fill:#00803f;stroke:#004c01;stroke-width:0.3;
+}
+#rlo #e {
+font-size:0.5rem;font-weight:bold;fill:#ffffff;
+}
+#rlo #pdf_icon0 {
+fill:#ff0000;
+}
+#rlo #pdf {
+font-size:0.25rem;fill:#ffffff;
+}
+#rlo #img0 {
+opacity:1;fill:#ffffff;stroke:#000000;stroke-width:0.5;
+}
+#rlo #img1 {
+fill:#80d5ff;fill-opacity:1;stroke-width:0.396875;stroke-opacity:0.539033
+}
+#rlo #img2 {
+fill:#000080;stroke-width:1.5;stroke-opacity:0.5
+}
+#rlo #img3 {
+fill:#ffffff;stroke-width:0.4;stroke-opacity:0.5;
+}
+#rlo #lib {
+fill:#e5e500;stroke-width:0.2;stroke-opacity:0.5;
+}
+#rlo .rlo_name {
+font-size:0.3rem;
+}
+#rlo .rlo_answer {
+font-size:0.2rem;font-weight:lighter;fill:none;
+}
+#rlo polyline {
+fill:#ffffff;stroke:#808080;stroke-width:1;opacity: 0.5;
+}
+
+
+
+
+
+
+.rlo_select {
+	min-width: 100%;
+	min-height: 100%;
+}
+#rlo_table label {
+	display: hidden;
+}
+#rlo_button_div {
+	padding: 0.5rem 0;
+}
+
+
+
+
+

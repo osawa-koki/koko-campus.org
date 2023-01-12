@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+#venn {
+	max-width: 650px;
+	width: 100%;
+}
+#venn_left {
+	opacity: 0.5;
+	fill: #ffff00;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.258214;
+	stroke-opacity: 0.5;
+}
+
+#venn_right {
+	opacity: 0.5;
+	fill: #00ff00;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.258214;
+	stroke-opacity: 0.5;
+}
+#venn_center {
+	opacity: 1;
+	fill: #FF6699;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.258214;
+	stroke-opacity: 0.5
+}
+svg {
+	margin: 0 auto;
+}
+svg text {
+font-size:24px;line-height:1.25;font-family:'Eras Light ITC';font-variant-ligatures:none;white-space:pre;
+}
+
+
+
+
+
+#thread_detail {
+	border: 1px black solid;
+	background-color: #CCFFCC;
+	padding: 0.1rem 0.5rem;
+}
+
+#thread_detail span:nth-child(1) {
+	display: inline-block;
+	font-size: 1.2rem;
+	padding: 0.2rem 1rem;
+	text-decoration: underline;
+}
+
+#thread_detail span:nth-child(2) {
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.2rem 1rem;
+}
+
+
+#malware_table th, #malware_table td {
+	min-width: 0;
+}
+
+
+
+
+#owasp_table tr th:nth-child(1) {
+	padding: 0 0.2rem;
+}
+
+
+
+
+
+

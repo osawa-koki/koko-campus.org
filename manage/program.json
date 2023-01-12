@@ -1,0 +1,34 @@
+{
+	"on-progress": [
+		"10puzzle",
+		"http",
+		"pw-gen",
+		"calc-gpa",
+		"find-you",
+		"mandelbrot",
+		"julia",
+		"buddhabrot",
+		"tree",
+		"pythagoras-tree",
+		"バラ曲線",
+		"シェルピンスキーのカーペット",
+		"シェルピンスキーのギャスケット",
+		"rotate!",
+		"イロイロ",
+		"super-color",
+		"type!",
+		"ベジェベジェ",
+		"正規表現チェッカー",
+		"πカルロ",
+		"ビュフォンの針",
+		"πgon"
+	],
+	"paused": [
+		"ベジェーーー",
+		"ベジェジェ"
+	],
+	"planned": [
+		"dragon-curve",
+		"ボロノイ図"
+	]
+}

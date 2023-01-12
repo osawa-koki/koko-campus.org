@@ -1,0 +1,56 @@
+{
+	"20220501": {
+		"language": "vb.net",
+		"package": "なし",
+		"error-code": "error BC30451: 'Regex'は宣言されていません。保護レベルが原因でアクセスできない可能性もあります。",
+		"explanation": "vb.netで正規表現を使用する際にはRegexモジュールをインポートする必要があります。<br />「Imports System.Text.RegularExpressions」と先頭に書けばok!です。"
+	},
+	"20220423": {
+		"language": "javascript",
+		"package": "なし",
+		"error-code": "Uncaught DOMException: Failed to execute 'insertBefore' on 'Node': The new child element contains the parent.",
+		"explanation": "要素を追加するメソッドを使用した際に、その論理関係(親子関係)がごっちゃになっています。"
+	},
+	"20220422": {
+		"language": "javascript",
+		"package": "なし",
+		"error-code": "Uncaught SyntaxError: rest element may not have a trailing comma",
+		"explanation": "スプレット構文の後ろに「,(カンマ)」を置いてはいけません。<br />そもそも、スプレット構文は配列の余りを取得するものですので、その後に要素が続くことは考えられません。"
+	},
+	"20220418": {
+		"language": "php",
+		"package": "なし",
+		"error-code": "Only variables should be passed by reference in (1)",
+		"explanation": "参照渡しをするべき関数に対して、値渡しをしたことによる警告です。<br />関数を連鎖させずに、ひとつずつ変数に代入していけばok!です。"
+	},
+	"20220415": {
+		"language": "php",
+		"package": "なし",
+		"error-code": "preg_replace(): No ending delimiter '.' found in (1)",
+		"explanation": "phpの正規表現は文字列で表記しますが、正規表現全体をデリミタで囲む必要があります。<br />一般的には「/(スラッシュ)」を使用しますが、正規表現内でスラッシュを使用する際には、これをエスケープ処理する必要があるため、これが面倒くさい場合には他のデリミタを使用します。<br />僕的には、「/(スラッシュ)から変えるべきではないと思いますが、、、」"
+	},
+	"20220330": {
+		"language": "php",
+		"package": "なし",
+		"error-code": "Array to string conversion in (1)",
+		"explanation": "そのまんまです。<br />配列の各要素をループで取り出すか、var_dump関数などの専用の出力関数を用いてデバグします。"
+	},
+	"20220228": {
+		"language": "fortran",
+		"package": "なし",
+		"error-code": "Unexpected data declaration statement at (1)",
+		"explanation": "変数の宣言はプログラムの実行部分よりも前に書く必要があります。<br />fortranプログラムの「implicit none」の直後に必要な変数を全て宣言するようにします。"
+	},
+	"20220226": {
+		"language": "vba",
+		"package": "なし",
+		"error-code": "構文エラー",
+		"explanation": "関数の戻り値はReturn文ではなく、「関数名 = 戻り値」で設定します。<br />強制的に関数の呼び出し元に戻るわけではないことに注意!!"
+	},
+	"20220218": {
+		"language": "php",
+		"package": "なし",
+		"error-code": "Fatal error: Uncaught Error: Cannot use object of type stdClass as array in XXX",
+		"explanation": "json_decode関数で文字列をデコードするとデフォルトではstdクラスに変換されます。<br />これを連想配列型として扱うにはjson_decode関数の第二引数にtrueを指定する必要があります。"
+	}
+}

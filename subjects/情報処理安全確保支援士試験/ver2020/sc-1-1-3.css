@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+
+
+
+#fraud_triangle {
+	position: relative;
+	width: 95%;
+	/* padding-top: 80%; <-これでも良かったんだけど、保守性を考えてjsで幅を取得してそれを参考に高さを決定することにしよう♪ */
+	border: 1px black solid;
+	margin: 0 auto;
+}
+
+#fraud_triangle .circle {
+	position: absolute;
+	width: 20%;
+	height: 23.75%;
+	border-radius: 50%;
+	border: 1px black solid;
+	background-color: white;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#fraud_triangle .inter {
+	position: static;
+}
+
+#fraud_triangle #circle0 {
+	top: 10%;
+	left: 40%;
+}
+
+#fraud_triangle #circle1 {
+	bottom: 10%;
+	left: 10%;
+}
+
+#fraud_triangle #circle2 {
+	bottom: 10%;
+	right: 10%;
+}
+
+
+#fraud_example {
+	margin: 1rem auto 0 auto;
+}
+
+
+
+.arrow {
+	position: absolute;
+	height:10%;
+	width:2%;
+	background-color:#FF6666;
+	z-index: -1;
+}
+#traffic_light {
+	fill: #000000;
+	stroke: #000000;
+	stroke-width: 0.264583px;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-opacity: 1;
+	fill-opacity: 0.5;
+}
+.light {
+	stroke: #000000;
+	stroke-width: 0.249767;
+	stroke-opacity: 0.5;
+	fill-opacity: 1;
+}
+#light0 {
+	fill: #000000;
+}
+#light1 {
+	fill: #000000;
+}
+#light2 {
+	fill: #ff0000;
+}
+
+
+#arrow0 {
+	top: 15%;
+	left: 49%;
+	transform-origin: left top;
+	transform: rotate(0deg);
+}
+#arrow1 {
+	bottom: 20%;
+	left: 17.5%;
+	transform-origin: right bottom;
+	transform: rotate(50deg);
+}
+#arrow2 {
+	bottom: 20%;
+	right: 17.5%;
+	transform-origin: left bottom;
+	transform: rotate(-50deg);
+}
+
+
+#word {
+	position: absolute;
+	width: 50%;
+	left: 24%;
+	top: 45%;
+	font-size: 1rem;
+	text-align: center;
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,324 @@
+* {
+  font-family: "consolas", "Consolas";
+}
+
+#Z {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  padding: 25px;
+}
+
+#Z h1 {
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+#Z #select-box {
+  margin: 25px 0;
+}
+
+#Z #select-box #select {
+  font-size: 18px;
+}
+
+#Z #select-box #B {
+  margin: 0 10px;
+  padding: 1px 10px;
+}
+
+#Z .show {
+  display: block !important;
+}
+
+#Z section {
+  display: none;
+  border: 1px black solid;
+  padding: 25px;
+  overflow-x: auto;
+}
+
+#Z section h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#Z section#update-info select {
+  margin-right: 3px;
+}
+
+#Z section#update-info #update-info_pointing-date {
+  margin: 25px 0;
+}
+
+#Z section#update-info #update-info_containing-box {
+  margin: 25px 0;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem {
+  margin: 25px 0;
+  padding: 25px;
+  border: 1px black solid;
+  background-color: black;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem .deleteButton {
+  width: 100px;
+  text-align: center;
+  background-color: lightgrey;
+  margin: 25px 0;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem .deleteButton:hover {
+  color: white;
+  background-color: grey;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem input[type="text"], #Z section#update-info #update-info_containing-box div.update-info_oneItem textarea {
+  display: block;
+  margin: 25px 0;
+  border: 1px black solid;
+  border-radius: 0;
+  padding: 1rem;
+  font-size: 16px;
+  background-color: white;
+  resize: none;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem input[type="text"]:nth-of-type(1) {
+  width: 100px;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem input[type="text"]:nth-of-type(2) {
+  width: 500px;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem input[type="text"]:nth-of-type(3) {
+  width: 50px;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem input[type="text"]:nth-of-type(4) {
+  width: 500px;
+}
+
+#Z section#update-info #update-info_containing-box div.update-info_oneItem textarea {
+  width: 500px;
+  height: 150px;
+}
+
+#Z section#update-info div.add-button {
+  margin: 25px 0;
+  padding: 5px;
+  width: 250px;
+  text-align: center;
+  border: 1px black solid;
+  color: black;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+#Z section#update-info div.add-button:hover {
+  color: white;
+  background-color: green;
+}
+
+#Z section#update-info div.put-button {
+  margin: 25px 0;
+  padding: 5px;
+  width: 250px;
+  text-align: center;
+  border: 1px black solid;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+}
+
+#Z section#update-info div.put-button:hover {
+  background-color: yellow;
+}
+
+#Z section#password table {
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+#Z section#password table caption {
+  white-space: nowrap;
+}
+
+#Z section#password table input[type="text"] {
+  font-size: 15px;
+  padding: 3px 5px;
+  border: 1px black solid;
+  border-radius: 0;
+}
+
+#Z section#password table input[type="button"] {
+  width: 50px;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 10px;
+  padding: 2px 3px;
+  cursor: pointer;
+}
+
+#Z section#password #pw-button-box div {
+  width: 150px;
+  text-align: center;
+  padding: 5px 15px;
+  border: 1px black solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#Z section#password #pw-button-box div:nth-of-type(1) {
+  background-color: cyan;
+}
+
+#Z section#password #pw-button-box div:nth-of-type(1):hover {
+  background-color: blue;
+}
+
+#Z section#password #pw-button-box div:nth-of-type(2) {
+  background-color: pink;
+}
+
+#Z section#password #pw-button-box div:nth-of-type(2):hover {
+  background-color: red;
+}
+
+#Z section#password #pw-button-box div:nth-of-type(3) {
+  background-color: lightgrey;
+  background-color: grey;
+}
+
+#Z section#password #pw-button-box div:hover {
+  color: white;
+}
+
+#Z section#upload-files .metaFrame {
+  margin: 25px 0;
+}
+
+#Z section#upload-files .metaFrame table {
+  margin: 10px 0;
+  border-bottom: 1px grey solid;
+}
+
+#Z section#upload-files .metaFrame table select {
+  margin: 10px 0;
+  padding: 3px 5px;
+  font-size: 15px;
+}
+
+#Z section#upload-files .contentsFrame {
+  margin: 25px 0;
+  border: 1px black solid;
+  padding: 25px;
+  background-color: lightcyan;
+}
+
+#Z section#upload-files .contentsFrame select, #Z section#upload-files .contentsFrame input {
+  display: block;
+  margin: 10px 0;
+  padding: 3px 5px;
+  font-size: 15px;
+}
+
+#Z section#upload-files .contentsFrame textarea {
+  border: 1px black solid;
+  border-radius: 0;
+  width: calc(100% - 50px);
+  height: 300px;
+  resize: none;
+  padding: 25px;
+  font-size: 15px;
+}
+
+#Z section#manage-subjects table {
+  margin: 25px 0;
+}
+
+#Z section#manage-subjects table input[type="text"], #Z section#manage-subjects table select {
+  font-size: 15px;
+  padding: 3px 5px;
+}
+
+#Z section#manage-subjects table input[type="button"] {
+  padding: 2px 25px;
+  margin: 5px 0;
+}
+
+#Z section#manage-subjects .searchList {
+  height: 300px;
+  border: 1px black solid;
+  margin: 25px 0;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#Z section#manage-subjects .searchList table th, #Z section#manage-subjects .searchList table td {
+  padding: 5px 10px;
+  border-bottom: 1px lightgrey solid;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#Z section#manage-subjects .searchList table th span, #Z section#manage-subjects .searchList table td span {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#Z section#manage-subjects .mainFrame {
+  margin: 25px 0;
+  padding: 10px;
+  background-color: lightcyan;
+  border: 1px black solid;
+  min-height: 100px;
+}
+
+#Z section#manage-subjects .mainFrame input, #Z section#manage-subjects .mainFrame textarea {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+#Z section#manage-subjects .mainFrame .subjectLine {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px grey solid;
+}
+
+#Z section#manage-subjects .mainFrame .subjectLine table {
+  width: 100%;
+}
+
+#Z section#manage-subjects .mainFrame .subjectLine table textarea {
+  width: 80%;
+  min-height: 150px;
+  resize: none;
+}
+
+#Z section#manage-subjects .mainFrame .subjectsTree {
+  padding: 10px;
+  border: 1px black solid;
+}
+
+#Z section#manage-subjects .mainFrame .subjectsTree div {
+  padding: 10px;
+  border: 1px black solid;
+}
+
+#Z section#manage-subjects .mainFrame .subjectsTreeStep {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px grey solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 200px;
+      grid-template-columns: 100px 200px;
+}
+/*# sourceMappingURL=style.css.map */

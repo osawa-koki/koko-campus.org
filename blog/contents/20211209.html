@@ -1,0 +1,109 @@
+<h1>変数の巻き上げ(js)</h1>
+別名、「ホイスティング」です。<br />javascript初心者がつまずく最初のポイントだと思います。<br /><br />簡単に言えば、<span class="underline">関数内で行われる変数の宣言(var)は全て関数の先頭に巻き上げられて行われる</span>ということです。<br /><br />変数の巻き上げの説明に入る前に、以下のコードを見てください。
+<p class="r"><a href="https://code.jquery.com/jquery-3.3.1.js">jQuery v3.3.1</a>のコードの一部です。</p>
+2行目に「var t, n, r, i...」ってたくさん変数が宣言されているのを確認してください。
+<code class="javascript">
+	var E = function(e) {
+		var t, n, r, i, o, a, s, u, l, c, f, p, d, h, g, y, v, m, x, b = "sizzle" + 1 * new Date, w = e.document, T = 0, C = 0, E = ae(), k = ae(), S = ae(), D = function(e, t) {
+			return e === t && (f = !0),
+			0
+		}, N = {}.hasOwnProperty, A = [], j = A.pop, q = A.push, L = A.push, H = A.slice, O = function(e, t) {
+			for (var n = 0, r = e.length; n < r; n++)
+				if (e[n] === t)
+					return n;
+			return -1
+		}, P = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped", M = "[\\x20\\t\\r\\n\\f]", R = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+", I = "\\[" + M + "*(" + R + ")(?:" + M + "*([*^$|!~]?=)" + M + "*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + R + "))|)" + M + "*\\]", W = ":(" + R + ")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|" + I + ")*)|.*)\\)|)", $ = new RegExp(M + "+","g"), B = new RegExp("^" + M + "+|((?:^|[^\\\\])(?:\\\\.)*)" + M + "+$","g"), F = new RegExp("^" + M + "*," + M + "*"), _ = new RegExp("^" + M + "*([>+~]|" + M + ")" + M + "*"), z = new RegExp("=" + M + "*([^\\]'\"]*?)" + M + "*\\]","g"), X = new RegExp(W), U = new RegExp("^" + R + "$"), V = {
+		..........
+</code>
+変数を先頭で一気に宣言しているのは、javascriptでは変数の宣言に際して巻き上げが行われるからです。<br /><br />なんのこっちゃ???<br />って感じですよね、、、<br /><br />はい、、、僕も最初はそうでした。<br /><br />簡単に説明します。<br />以下のコードを実行すると何が出力されるでしょうか?
+<code class="javascript">
+	var x = "merry christmas";
+	function its_halloween() {
+		console.log(x);
+		var x = "happy halloween";
+		console.log(x);
+	}
+	its_halloween();
+</code>
+正解は、「undefined」、「happy halloween」です。<br /><br />???<br /><br />なぜ「merry christmas」、「happy halloween」と出力されないのでしょうか???<br /><br />変数が巻き上げられて、関数内の「var x」の部分が関数の先頭に行くからです。<br /><br />そのため、先ほどのコードは以下のコードと同じになります。
+<code class="javascript">
+	var x = "merry christmas";
+	function its_halloween() {
+		var x; //←ここで宣言される(変数の巻き上げ)
+		console.log(x); //この時点では、xのは宣言されただけで、データは代入されていないため、undefinedとなる
+		x = "happy halloween"; //ここでxに代入される
+		console.log(x); //ここは普通に「happy halloween」となる
+	}
+	its_halloween();
+</code>
+非常に面倒くさいjavascriptの性質ですね、、、<br />まぁ、メリットもあるんですよ、、、<br />例えば以下のコードを見てください。
+<code class="javascript">
+	console.log(add(10, 15)); //addという関数をこの段階では宣言していないにもかかわらず、使用可能!
+	function add(x, y) {
+		return x + y;
+	}
+</code>
+このコードはjavascript以外の言語ではエラーとなります。<br />addという関数を使用する段階でaddという関数が定義されていないためです。<br />この通り、変数の巻き上げには一応メリットもあります。<br /><br />しかしながら、変数の巻き上げには前述の通り、デメリットがあります。<br /><br />僕的にはこの変数の巻き上げはデメリットの方が大きいような気がします。<br /><br />ということで、変数の巻き上げの克服方法を2通り紹介します。
+<ul>
+	<li>変数の宣言を全て先頭に行う</li>
+	<li>単一var連続宣言</li>
+</ul>
+<h2>変数の宣言を全て先頭に行う</h2>
+最初に提示したjqueryのコードがそうでしたね♪<br />もう一度、コードを載せますね。
+<code class="javascript">
+	var E = function(e) {
+		//関数の始まりで変数を全て宣言
+		var t, n, r, i, o, a, s, u, l, c, f, p, d, h, g, y, v, m, x, b = "sizzle" + 1 * new Date, w = e.document, T = 0, C = 0, E = ae(), k = ae(), S = ae(), D = function(e, t) {
+			return e === t && (f = !0),
+			0
+		}, N = {}.hasOwnProperty, A = [], j = A.pop, q = A.push, L = A.push, H = A.slice, O = function(e, t) {
+			for (var n = 0, r = e.length; n < r; n++)
+				if (e[n] === t)
+					return n;
+			return -1
+		}, P = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped", M = "[\\x20\\t\\r\\n\\f]", R = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+", I = "\\[" + M + "*(" + R + ")(?:" + M + "*([*^$|!~]?=)" + M + "*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + R + "))|)" + M + "*\\]", W = ":(" + R + ")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|" + I + ")*)|.*)\\)|)", $ = new RegExp(M + "+","g"), B = new RegExp("^" + M + "+|((?:^|[^\\\\])(?:\\\\.)*)" + M + "+$","g"), F = new RegExp("^" + M + "*," + M + "*"), _ = new RegExp("^" + M + "*([>+~]|" + M + ")" + M + "*"), z = new RegExp("=" + M + "*([^\\]'\"]*?)" + M + "*\\]","g"), X = new RegExp(W), U = new RegExp("^" + R + "$"), V = {
+		..........
+</code>
+変数の宣言が巻き上げられて先頭で行われるならば、最初から変数の宣言を最初に行って変数の巻き上げ問題を克服しようとする方法です。
+<h2>単一var連続宣言</h2>
+少し高度なテクニックです。<br />上の全ての変数を関数の初めに宣言する方法に加えて、初期値の代入も同時に行う方法です。<br /><br />先ほどのコードは変数の宣言と初期値の代入を別々に行わなければならないため、コードが複雑化する危険性があります。<br /><br />これを克服する方法です。
+<code class="javascript">
+	function fx(arg) {
+		var bool = false,
+			ary = [],
+			obj = {},
+			"str" = "",
+			i = 0;
+		//関数の本体...
+	}
+</code>
+こんな感じで、変数の宣言と初期値の代入を「,(カンマ)」で区切って最初に一括して行う方法です。<br />この方法では、変数の宣言を全て先頭に行う方法と異なり、初期値も代入することができるため、可読性に優れています。<br /><br />因みに以下の<a href="https://www.google-analytics.com/">googleアナリティクス</a>のコードも単一var連続宣言を使用しています。
+<code class="javascript">
+	//関数の始まり(少し複雑なのでfunctionの部分は省略)
+	var t = window
+	  , u = window.history
+	  , v = document
+	  , w = navigator
+	  , x = function(a, b) {
+		v.addEventListener ? v.addEventListener(a, b, !1) : v.attachEvent && v.attachEvent("on" + a, b)
+	};
+	var y = {}
+	  , z = function() {
+		y.TAGGING = y.TAGGING || [];
+		y.TAGGING[1] = !0
+	};
+	var A = /:[0-9]+$/
+	  , B = function(a, b, c) {
+		a = a.split("&");
+		for (var d = 0; d < a.length; d++) {
+			var e = a[d].split("=");
+			if (decodeURIComponent(e[0]).replace(/\+/g, " ") === b)
+				return b = e.slice(1).join("="),
+				c ? b : decodeURIComponent(b).replace(/\+/g, " ")
+		}
+	}
+</code>
+実はjqueryのコードもこの方法が少し用いられています。
+<div class="separator"></div>
+なんとなく分かりましたか???<br />最初はそこまで気にする必要はありませんが慣れてきたら変数の巻き上げも意識してコーディングしてみましょう♪
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

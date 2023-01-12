@@ -1,0 +1,40 @@
+#wrapper {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 700px;
+  padding: 25px;
+}
+
+#wrapper h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+#wrapper input[type=submit] {
+  margin-left: 25px;
+}
+
+#wrapper #contents-folder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#wrapper input.designed-button {
+  border: 1px black solid;
+  background-color: lightblue;
+  cursor: pointer;
+  border-radius: 0;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 25px;
+}
+
+#wrapper input.designed-button:hover {
+  color: white;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+#v2 h2 {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+#v2 #v2-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  color: black;
+  background-color: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#v2 #v2-btn:hover {
+  color: white;
+  background-color: blue;
+}
+
+#v2 table {
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+#v2 table th, #v2 table td {
+  padding: 5px 10px;
+}
+
+#v1 h2 {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+#v1 #v1-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  color: black;
+  background-color: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#v1 #v1-btn:hover {
+  color: white;
+  background-color: blue;
+}
+
+#v1 table {
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+#v1 table th, #v1 table td {
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=part.css.map */

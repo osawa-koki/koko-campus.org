@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+h1 {
+	font-family: "consolas", "sublimetext";
+}
+
+/*ver1*/
+#v1-svg_pt polyline {
+	fill: none;
+	stroke: blue;
+	stroke-width: 0.1;
+	stroke-opacity: 0.5;
+}
+#v1-svg_ls polyline {
+	fill: none;
+	stroke: grey;
+	stroke-width: 0.1;
+}
+.v1-bg_out {
+	background-color: rgba(0, 0, 255, 0.3);
+}
+.v1-bg_in {
+	background-color: rgba(255, 0, 0, 0.3);
+}
+#v1-pai {
+	min-width: 200px;
+	max-width: 250px;
+	padding: 10px 25px;
+}
+#pai-container {
+	display: flex;
+	align-items: flex-start;
+	font-family: "consolas", "sublimetext";
+}
+#v1-table {
+	border-collapse: collapse;
+	margin: 30px auto;
+}
+#v1-table td {
+	padding: 3px 10px;
+}
+#v1-button {
+	position: relative;
+	border: 1px solid black;
+	width: 80px;
+	margin: 30px auto;
+	background-color: blue;
+	padding: 5px;
+	text-align: center;
+	transition: all 1s ease 0.3s;
+	cursor: pointer;
+	color: white;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+#v1-button:hover {
+	top: 2px;
+	left: 2px;
+	box-shadow: none;
+}
+#v1-svg {
+	display: block;
+	border: 1px solid black;
+	margin: 30px auto;
+}
+#v1-ttl {
+	text-align: center;
+}

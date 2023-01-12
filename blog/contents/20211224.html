@@ -1,0 +1,15 @@
+<h1>apache vs nginx</h1>
+<a href="https://w3techs.com/">Q-Success</a>の報告によると2021年の5月にwebサーバ用ソフトウェアのシェアでnginxがapacheを上回りました。<br />2006年前後の全盛期には70%ほどのシェアを誇っていたものの、現在は30%程度、、、<br />反対にnginxは2004年にリリースされたのでapache全盛期のシェアは0%に限りなく近い状況でした。<br />そんなnginxは今やapacheを上回る35%程度のシェアを占めています。<br /><br />ではこれからはapacheではなくnginxの時代なのかと言われるとそうでもないんです、、、<br />apacheにはapacheの強みがあって、nginxにはnginxの強みがあるので、両者は完全上位・下位互換という関係ではありません。
+<h2>nginx</h2>
+nginxは<a href="?date=20211129">C10K問題</a>の克服に重点を置いて開発されました。<br /><a href="?date=20211226">シングルスレッドのイベント駆動アーキテクチャ</a>を採用しています。<br />nginxの強みはシングルスレッドのプロセスで、たくさんのリクエストを並列で処理することで高速なレスポンスを実現できることです。<br />しかしながら、シングルスレッド処理という性質上、静的なページの出力は得意としてますが、動的ページ(php・ruby・perlなどのスクリプト言語で書かれたページ)の処理に関してはapacheと比べて劣っています。<br />そのため、特に大規模システムにおいては「リバースプロキシ」「ロードバランサー」として利用されることが多いです。
+<h2>apache</h2>
+従来のwebサーバ用のソフトウェアの代表格です。<br /><a href="?date=20211227">マルチプロセスのプロセス駆動アーキテクチャ</a>を採用しています。<br />約20年間に渡ってOSSとして多くのユーザに使用され、さらに問題があれば改善されてきたため信頼性は抜群です。<br />しかしながら、大量のレスポンスに対して効率的な処理ができないというC10K問題があります。
+<div class="separator"></div>
+「apache vs nginx」、Q-Successによるnginxがapacheを上回ったという記事が一人歩きしているようにも感じます。<br />実際、nginxは大規模なシステムで採用されていることが多く、Q-Successはその大規模システムを主な対象として調査を行っています。<br />さらにはnginxを採用しているシステムでも裏でapacheを使用していることもあります。<br />実際、google trendsで両者の検索回数を調べてみましたが、未だにapacheがnginxを大幅に上回っています。
+<div class="koko-graph">
+	<span class="url">data/20211224.csv</span>
+</div>
+<p class="r"><a href="https://trends.google.com/trends/?geo=JP">google trends</a>より作成。</p>
+<p class="r">2005年から2021年までのデータを表しています。</p>
+apacheとnginxは一長一短です。<br />どちらが優れているかではなく、よりシステムにあった方を採用するべきです。
+<script src="../package/js-modules/koko-graph/ver1.js" charset="utf-8" defer></script>

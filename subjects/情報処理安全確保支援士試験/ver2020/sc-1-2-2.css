@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+
+
+
+.header tr td:first-of-type {
+	min-width: 0;
+	white-space: nowrap;
+	text-align: center;
+}
+
+
+
+
+#protocol_number td {
+	min-width: 0;
+	white-space: nowrap;
+}
+#protocol_number tr td:nth-child(1), #protocol_number tr td:nth-child(2) {
+	text-align: center;
+}
+#protocol_number tr td:nth-child(3) {
+	text-align: left;
+}
+
+
+
+
+.sp_address td {
+	min-width: 0;
+	text-align: left;
+	white-space: nowrap;
+}
+
+
+
+
+#sp_ad {
+	width: 5rem;
+	height: 1.5rem;
+}
+
+
+
+
+
+
+
+.red_font {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+
+
+
+
+#fqdn_show {
+	white-space: nowrap;
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+}
+#ffqqddnn span:nth-child(1) {
+	font-size: 1.2rem;
+	padding: 0.2rem 1rem;
+	margin: 0.3rem;
+	border: 1px black solid;
+	border-radius: 1.5rem;
+}
+
+
+
+
+
+
+#security_protocol tr td:nth-of-type(1) {
+	min-width: 0;
+	text-align: center;
+}
+#security_protocol tr td:nth-of-type(2) {
+	min-width: 25rem;
+}
+
+
+
+
+

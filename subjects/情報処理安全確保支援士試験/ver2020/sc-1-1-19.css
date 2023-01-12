@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+
+
+
+#isms_svg rect {
+fill:#ffffff;
+}
+#isms_svg .b_f {
+fill:#00d4ff;fill-opacity:1;
+}
+#isms_svg .b_s {
+stroke-width:0.398;stroke:#00d4ff;
+}
+
+#isms_svg .g_s {
+stroke-width:0.398;stroke:#2bff00;
+}
+#isms_svg .g_f {
+fill:#2bff00;
+}
+#isms_svg .r_f {
+fill:#ff0000;
+}
+#isms_svg .r_s {
+stroke:#ff0000;stroke-width:0.398;
+}
+#isms_svg .o_f {
+fill:#ff8000;
+}
+#isms_svg .o_s {
+stroke-width:0.398;stroke:#ff8000;
+}
+#isms_svg .p_f {
+fill:#7f0080;
+}
+#isms_svg .bl_f {
+fill:#000000;
+}
+#isms_svg polyline {
+stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-dasharray:3;
+}
+#isms_svg text {
+font-size:5px;
+}
+#isms_svg .small {
+font-size:4px;
+}
+
+
+
+
+
+
+
+
+#incident_container {
+	position: relative;
+	height: 30rem; /* これを削除すると期待する動作をしない */
+}
+#incident_container ol {
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+#incident_container li {
+	border: 1px black solid;
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+#incident_container li+li {
+	margin: 3rem 0;
+}
+#incident_container div {
+	position: absolute;
+	border-width: 1px 0 1px 1px;
+	border-style: solid;
+	border-color: #000000;
+	width: 5%;
+	writing-mode: vertical-lr;
+	outline-width: 50%;
+	text-align: center;
+}
+#incident0 {
+	top: 10%;
+	left: 5%;
+	height: 85%;
+}
+#incident1 {
+	top: 25%;
+	left: 15%;
+	height: 55%;
+
+}
+
+
+
+
+.todokede {
+	border: 2px black solid;
+	padding: 10px;
+	overflow-x: scroll;
+}
+.todokede+.todokede {
+	margin: 1rem 0;
+}
+
+
+
+
+
+

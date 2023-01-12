@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+$breakpoint1: 540px;
+$breakpoint2: 960px;
+
+@mixin mobile() {
+	@media screen and (max-width: $breakpoint1) {
+		@content;
+	}
+}
+@mixin tablet() {
+	@media screen and (min-width: $breakpoint1) and (max-width: $breakpoint2) {
+		@content;
+	}
+}
+@mixin pc() {
+	@media screen and (min-width: $breakpoint2) {
+		@content;
+	}
+}
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	background-image: url(bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: white;
+	z-index: 3;
+	@include mobile() {
+		height: 50px;
+	}
+	@include tablet() {
+		height: 60px;
+	}
+	@include pc() {
+		height: 70px;
+	}
+	#logo {
+		display: block;
+		height: 100%;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	width: 100%;
+	max-width: 1500px;
+	padding-left: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+	font-size: 1.5rem;
+	border-style: solid;
+	border-width: 0 0 0 7px;
+	border-color: transparent transparent transparent red;
+	@include mobile() {
+		margin-top: 70px;
+	}
+	@include tablet() {
+		margin-top: 80px;
+	}
+	@include pc() {
+		margin-top: 90px;
+	}
+}
+
+noscript {
+	display: block;
+	text-align: center;
+	margin-top: 250px;
+	&::before {
+		content: "・";
+	}
+}
+
+.hidden {
+	display: none !important;
+}
+
+main {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: url(main-bg.png);
+	align-items: flex-start;
+	div.box {
+		display: block;
+		width: 300px;
+		overflow: auto;
+		/*min-height: 350px;*/
+		/*max-height: 500px;*/
+		border: 1px solid black;
+		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 25px;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-bottom: 25px;
+		@include mobile() {
+			margin: 10px;
+		}
+		@include tablet() {
+			margin: 25px;
+		}
+		@include pc() {
+			margin: 30px;
+		}
+		h2 {
+			font-size: 1.2rem;
+			font-weight: normal;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 25px;
+		}
+		table {
+			border-color: grey;
+			margin: 25px 0;
+			border-collapse: collapse;
+			width: 100%;
+			th {
+				padding: 2px 5px;
+				width: 100px;
+			}
+			td {
+				padding: 2px 3px;
+			}
+		}
+		ul, ol {
+			margin: 5px 5px 5px 35px;
+		}
+	}
+}
+
+
+
+
+
+

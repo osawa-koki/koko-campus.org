@@ -1,0 +1,66 @@
+<h1>分割代入(js)</h1>
+分割代入とは、配列内の変数に対して、値を代入することを言います。<br />例えば、以下のコードを見てください。
+<code class="javascript">
+	const [x, y] = [10, 25];
+
+	console.log(x); // 10
+	console.log(y); // 25
+</code>
+これは、配列内で宣言された「x」「y」に対して、「[10, 25]」という配列の要素を分割して代入しています。<br />これを用いれば以下のようなことも可能です。
+<code class="javascript">
+	const entire_name = "hoge.txt";
+	const [name, ext] = entire_name.split(".");
+	
+	console.log(name); // 「hoge」
+	console.log(ext); // 「txt」
+</code>
+拡張子を含むファイル名を純粋なファイル名と拡張子に分割して代入しています。
+<div class="separator"></div>
+これは、配列だけでなく、オブジェクトに対しても有効です。
+<code class="javascript">
+	const file = new Object();
+	const entire_name = "hoge.txt";
+	
+	[file.name, file.ext] = entire_name.split(".");
+	
+	console.log(file);
+
+	/* &darr; コンソール &darr;
+	Object { name: 'hoge', ext: 'txt' }
+	*/
+</code>
+<div class="separator"></div>
+スプレット構文については、昨日か一昨日かに説明しましたね♪<br />おそらく、配列を展開する構文って感じで説明しましたが、分割代入の際には余りを取得する際に使用されることが多いです。
+<code class="javascript">
+	const en = "abcde".split("");
+
+	const [a, b, ...rest] = en;
+	
+	console.log(a);
+	console.log(b);
+	console.log(rest);
+
+	/* &darr; コンソール &darr;
+	a
+	b
+	Array(3) [ 'c', 'd', 'e' ]
+	*/
+</code>
+スプレット構文は説明した通り、余りを取得するため、分割代入の最後の変数であるべきです。<br /><br />例えば、以下のコードはエラーとなります。
+<code class="javascript">
+	/* エラー */
+
+	const en = "abcde".split("");
+
+	const [...rest, a, b] = en;
+	
+	console.log(a);
+	console.log(b);
+	console.log(rest);
+
+	/* &darr; コンソール &darr;
+	Uncaught SyntaxError: rest element may not have a trailing comma
+	*/
+</code>
+「...rest」が余りを全部取得しているので、それに続く「a」「b」に割り当てる値はありません。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

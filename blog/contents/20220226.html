@@ -1,0 +1,106 @@
+<h1>forループ禁止(js)</h1>
+昨日の記事ではmap関数を作成して配列の各要素に対して処理を行うことを実現しました。<br />これを使用すれば、forループを使用する必要はなくなります。<br />例えば、プログラミング言語を格納した配列の要素をひとつずつ取り出してコンソール画面に表示するコードを想定して下さい。<br /><br />おそらく、以下のようになると思います。
+<code class="javascript">
+	const lang = [
+		"haskell",
+		"python",
+		"vb.net",
+		"javascript",
+		"f#"
+	];
+	
+	for (let i = 0; i &lt; lang.length; i++) {
+		console.log(lang[i]);
+	}
+
+	/* &darr; コンソール &darr;
+	haskell
+	python
+	vb.net
+	javascript
+	f#
+	*/
+</code>
+あるいは、forEachメソッドを使用する人もいるかもしれません。
+<code class="javascript">
+	const lang = [
+		"haskell",
+		"python",
+		"vb.net",
+		"javascript",
+		"f#"
+	];
+	
+	lang.forEach(e =&gt; {
+		console.log(e);
+	});
+
+	/* &darr; コンソール &darr;
+	haskell
+	python
+	vb.net
+	javascript
+	f#
+	*/
+</code>
+これだと、問題があるんです。<br />例えば、コンソール画面に表示するのではなく、アラートとして出力する際にはもう一度命令文を書き直さないといけません。<br /><br />配列の全ての要素に「f(x)」を適用するって感じに処理で来たら楽ですよね♪<br /><br />これを実現する技術が先ほど作成したmap関数です。
+<code class="javascript">
+	const lang = [
+		"haskell",
+		"python",
+		"vb.net",
+		"javascript",
+		"f#"
+	];
+	
+	const map = (fx, [x, ...rest]) =&gt; x === undefined
+		? [] : [fx(x), ...map(fx, rest)]
+	;
+	
+	map(console.log, lang);
+
+	/* &darr; コンソール &darr;
+	haskell
+	python
+	vb.net
+	javascript
+	f#
+	*/
+</code>
+これだったら、実行する処理を変えるときも簡単です。
+<code class="javascript">
+	const lang = [
+		"haskell",
+		"python",
+		"vb.net",
+		"javascript",
+		"f#"
+	];
+	
+	const map = (fx, [x, ...rest]) =&gt; x === undefined
+		? [] : [fx(x), ...map(fx, rest)]
+	;
+	
+	map(windows.alert, lang); // アラートで表示
+</code>
+<img src="data/20220226.gif" alt="map関数" />
+<div class="separator"></div>
+このmap関数は万能です。<br />以下のような使い方もできます。
+<code class="javascript">
+	const numbers = [1, 2, 3, 4, 5];
+
+	const map = (fx, [x, ...rest]) =&gt; x === undefined
+		? [] : [fx(x), ...map(fx, rest)]
+	;
+	
+	console.log(map(n =&gt; n * 2, numbers)); // 2倍する
+	console.log(map(n =&gt; n ** 2, numbers)); // 2乗する
+	console.log(map(n =&gt; n / 2, numbers)); // 半分にする
+
+	/* &darr; コンソール &darr;
+	Array(5) [ 2, 4, 6, 8, 10 ]
+	Array(5) [ 1, 4, 9, 16, 25 ]
+	Array(5) [ 0.5, 1, 1.5, 2, 2.5 ]
+	*/
+</code>
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

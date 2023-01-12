@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "code";
+	src: url("../font-family/consola.ttf") format("truetype");
+}
+
+@mixin u_1200() {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+@mixin o_1200() {
+	@media screen and (min-width: 1201px) {
+		@content;
+	}
+}
+@mixin small() {
+	@media screen and (max-width: 1000px) {
+		@content;
+	}
+}
+@mixin large() {
+	@media screen and (min-width: 1001px) {
+		@content;
+	}
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font-size: 15px;
+	overflow-x: hidden;
+}
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+header {
+	display: block;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	@include u_1200() {
+		left: 0;
+		right: 0;
+		height: 50px;
+	}
+	@include o_1200() {
+		left: calc((100% - 1200px) / 2);
+		right: calc((100% - 1200px) / 2);
+		height: 75px;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	#logo, #menu-img, h1 {
+		position: absolute;
+	}
+	#logo {
+		height: 100%;
+		left: 0;
+		z-index: 99
+	}
+	#menu-img {
+		height: 100%;
+		right: 0;
+		transition: all 300ms 0ms ease;
+		z-index: 101;
+		@include large() {
+			display: none;
+		}
+	}
+	h1 {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: normal;
+		background-image: url(pics/framework/bg.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-color: white;
+		box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+		z-index: 9;
+	}
+}
+
+
+main {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	@include u_1200() {
+		margin-top: 70px;
+	}
+	@include o_1200() {
+		margin-top: 95px;
+	}
+}
+
+nav {
+	overflow: auto hidden;
+	padding: 5px 0;
+	@include u_1200() {
+		margin-left: 10px;
+	}
+	#breadcrumbs, #datetime {
+		display: flex;
+		flex-wrap: nowrap;
+		list-style-type: decimal;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 0;
+		padding: 0;
+		border: none;
+		white-space: nowrap;
+		li {
+			display: inline-block;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			list-style-type: none;
+			text-decoration: none;
+			color: black;
+		}
+	}
+	#breadcrumbs {
+		li {
+			display: inline-block;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			list-style-type: none;
+			text-decoration: none;
+			color: black;
+			& + li::before {
+				content: ">";
+				color: #777777;
+				font-weight: bold;
+				padding: 0 0.3rem;
+				display: inline-block;
+				width: 0.8rem;
+				height: 0.8rem;
+				line-height: 0.8rem;
+			}
+		}
+	}
+	#datetime {
+		li {
+			&:nth-of-type(n)::before {
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin-right: 0.3rem;
+			}
+			&:nth-of-type(1)::before {
+				content: "";
+				padding: 0.4rem;
+				background-image: url(pics/framework/made.png);
+			}
+			&:nth-of-type(2)::before {
+				content: "";
+				margin-left: 1rem;
+				padding: 0.4rem;
+				background-image: url(pics/framework/updated.png);
+			}
+		}
+	}
+}
+
+
+#wrapper {
+	display: flex;
+	padding: 50px 0;
+	justify-content: center;
+	align-items: flex-start;
+	#main {
+		margin: 0 50px;
+		order: 2;
+		width: 100%;
+		@include small() {
+			width: 95vw;
+		}
+	}
+	#menu {
+		padding: 10px;
+		border: 1px solid black;
+		background-color: rgb(230, 230, 230);
+		order: 1;
+		overflow: hidden auto;
+		@include small() {
+			position: fixed;
+			top: 30px;
+			right: 30px;
+			bottom: 100%;
+			left: 100%;
+			z-index: 150;
+		}
+		@include large() {
+			min-width: 170px;
+			max-width: 200px;
+			margin: 0 25px;
+		}
+		.title {
+			font-size: 1.1rem;
+			font-weight: bold;
+			margin: 10px 0 15px 0;
+			text-align: center;
+		}
+		a {
+			display: block;
+			margin: 10px;
+			&.on {
+				color: red;
+				text-decoration: none;
+			}
+		}
+		div.separator {
+			margin: 20px 0;
+			height: 1px;
+			border-radius: 3px;
+			background-color: rgb(200, 200, 200);
+		}
+	}
+}
+
+footer {
+	background-position: center bottom;
+	background-image: url(../pics/footer2020.png);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 150px;
+}
+

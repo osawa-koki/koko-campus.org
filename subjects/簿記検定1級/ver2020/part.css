@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+
+
+/* 基礎知識(商) */
+#kiso0_table0 {
+	margin: 1rem 0;
+}
+#kiso0_table0 td {
+	text-align: center;
+	padding: 0.2rem 1rem;
+	white-space: nowrap;
+}
+#kiso0_table0 td:not(.n) {
+	border: 1px black solid;
+}
+#kiso0_table0 .c0 {
+	background-color: #FF77FF;
+}
+#kiso0_table0 .c1 {
+	background-color: #FFFF55;
+}
+#kiso0_table0 .c2 {
+	background-color: #55FFFF;
+}
+.kiso0_left-assets {
+	margin: 0 auto;
+}
+.kiso0_left-assets td {
+	text-align: center;
+	padding: 0.3rem 1rem;
+	height: 1.5rem;
+}
+.kiso0_left-assets .td_height2 {
+	height: 4rem;
+}
+.kiso0_left-assets .td_color0 {
+	background-color: #FF99FF;
+}
+.kiso0_left-assets .td_color1 {
+	background-color: #FFCC99;
+}
+.fifo_table td {
+	border: 1px black solid;
+	height: 2rem;
+	text-align: center;
+	padding: 0.3rem 1rem;
+}
+.fifo_table .dashed_bottom {
+	border-bottom: 2px black dashed;
+}
+.fifo_table .dashed_top {
+	border-top: 2px black dashed;
+}
+.fifo_table .color0 {
+	background-color: #33CCFF;
+}
+.fifo_table .color1 {
+	background-color: #FF99FF;
+}
+.fifo_table .color2 {
+	background-color: #FFCCFF;
+}
+.am_table td {
+	border: 1px black solid;
+	height: 2rem;
+	text-align: center;
+	padding: 0.3rem 1rem;
+}
+.am_table .height2 {
+	height: 4rem;
+}
+.am_table {
+	position: relative;
+}
+.am_table::before {
+	position: absolute;
+	content: "";
+	width: 45%;
+	height: 80%;
+	border-radius: 50%;
+	border: 3px black dashed;
+	left: 0;
+}
+.am_table::after {
+	position: absolute;
+	content: "";
+	width: 15%;
+	height: 23%;
+	border-top: 3px black dashed;
+	border-left: 3px black dashed;
+	top: 65%;
+	left: 45%;
+	transform-origin: left top;
+	transform: rotate(-45deg);
+}
+.am_table .color0 {
+	background-color: #33CCFF;
+}
+.am_table .color1 {
+	background-color: #FF99FF;
+}
+.am_table .color2 {
+	background-color: #FFCCFF;
+}
+.am_table .color3 {
+	background-color: #66FFFF;
+}
+.baikakangen {
+	padding-top: 1rem;
+	font-size: 14px;
+}
+.baikakangen li+li {
+	margin: 1rem 0;
+}
+#genmo-hyokazon .body {
+	fill: #ffffff;
+	stroke-width: 5px;
+	stroke: #000000;
+}
+#genmo-hyokazon .l0 {
+	stroke-width: 3px;
+	fill:#00fffa;
+	stroke: #000000;
+}
+#genmo-hyokazon .l1 {
+	stroke-width: 3px;
+	fill:#0aff00;
+	stroke: #000000;
+}
+#genmo-hyokazon .bold {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#genmo-hyokazon th, #genmo-hyokazon td {
+	text-align: center;
+	padding: 0.2rem 1rem;
+}
+#genmo-hyokazon th {
+	background-color: #99FFFF;
+}
+
+
+
+
+
+
+/* 特殊商品売買 */
+#sonotsudo_itaku {
+	position: relative;
+}
+#sonotsudo_itaku::before {
+	position: absolute;
+	content: "";
+	top: 70%;
+	bottom: 5%;
+	left: 53%;
+	right: 3%;
+	border: 2px blue dashed;
+	border-radius: 50%;
+}
+#sonotsudo_itaku::after {
+	position: absolute;
+	content: "T/B「積送品」";
+	top: 80%;
+	left: 20%;
+	color: blue;
+	font-weight: bold;
+}
+#kimatsu1_itaku {
+	position: relative;
+}
+#kimatsu1_itaku::before {
+	position: absolute;
+	content: "";
+	top: 20%;
+	bottom: 5%;
+	left: 3%;
+	right: 53%;
+	border: 2px blue dashed;
+	border-radius: 50%;
+}
+#kimatsu1_itaku::after {
+	position: absolute;
+	content: "T/B「積送品」";
+	top: 45%;
+	left: 5%;
+	color: blue;
+	font-weight: bold;
+}
+#taisho_sisou {
+	position: relative;
+}
+#taisho_sisou::before {
+	position: absolute;
+	content: "";
+	top: 20%;
+	bottom: 60%;
+	left: 3%;
+	right: 53%;
+	border: 2px blue dashed;
+	border-radius: 50%;
+}
+#taisho_sisou::after {
+	position: absolute;
+	content: "T/B「試送品」";
+	top: 40%;
+	left: 10%;
+	color: blue;
+	font-weight: bold;
+}
+#sonotsudo_sisou {
+	position: relative;
+}
+#sonotsudo_sisou::before {
+	position: absolute;
+	content: "";
+	top: 70%;
+	bottom: 5%;
+	left: 53%;
+	right: 3%;
+	border: 2px blue dashed;
+	border-radius: 50%;
+}
+#sonotsudo_sisou::after {
+	position: absolute;
+	content: "T/B「試送品」";
+	top: 80%;
+	left: 20%;
+	color: blue;
+	font-weight: bold;
+}
+#kimatsu1_sisou {
+	position: relative;
+}
+#kimatsu1_sisou::before {
+	position: absolute;
+	content: "";
+	top: 20%;
+	bottom: 5%;
+	left: 3%;
+	right: 53%;
+	border: 2px blue dashed;
+	border-radius: 50%;
+}
+#kimatsu1_sisou::after {
+	position: absolute;
+	content: "T/B「試送品」";
+	top: 45%;
+	left: 5%;
+	color: blue;
+	font-weight: bold;
+}
+
+
+
+/* デリバティブ会計 */
+#hedge_table th {
+	background-color: #99FFFF;
+	padding: 0 0.5rem;
+}
+#hedge_table td {
+	text-align: left;
+}
+
+
+
+/* 外貨換算会計 */
+#jikijiki-jikisaki th {
+	padding: 0 0.3rem;
+	background-color: #AAFFFF;
+}
+#jikijiki-jikisaki td {
+	text-align: left;
+}
+
+
+
+/* 現金預金 */
+#bs-shikumi {
+	display: flex;
+	justify-content: flex-start;
+}
+#bs-shikumi > div {
+	width: 200px;
+	border: 1px black solid;
+	border-collapse: collapse;
+	min-width: 200px;
+}
+#bs-shikumi span {
+	display: block;
+	padding-left: 0.8rem;
+	margin: 0.3rem 0;
+}
+#bs-shikumi > div > span {
+	font-size: 1rem;
+	font-weight: bold;
+}
+#bs-shikumi > div > span > span {
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+#bs-shikumi > div > span > span span {
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+
+
+/* 金銭債権 */
+#kinsensaiken {
+	writing-mode: vertical-lr;
+	white-space: nowrap;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

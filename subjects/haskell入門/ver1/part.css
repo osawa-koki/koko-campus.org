@@ -1,0 +1,30 @@
+.to-ghc {
+  background-image: url(../pics/haskell.png);
+}
+
+.to-vs-code {
+  background-image: url(../pics/vs-code.png);
+}
+
+#operant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px -5px;
+}
+
+#operant > li {
+  display: block;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 1px;
+}
+/*# sourceMappingURL=part.css.map */

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "sublimetext";
+	src: url("../../font-family/consolas.ttf") format("truetype");
+}
+
+/*ver1*/
+#v1-main {
+	width: 95%;
+	max-width: 800px;
+	margin: 30px auto;
+}
+#v1-preg_wrap {
+	display: flex;
+	white-space: nowrap;
+	width: 100%;
+}
+#v1-preg_wrap::before, #v1-preg_wrap::after {
+	content: "/";
+	display: block;
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: calc(100% + 25px);
+}
+
+#v1-preg {
+	display: block;
+	width: calc(100% - 50px);
+	margin: 0 auto;
+	padding: 25px;
+	font-size: 20px;
+	font-family: "consolas", "sublimetext", sans-serif;
+	height: 35px;
+	line-height: 35px;
+	border-top: 1px #333333 solid;
+	border-right: 5px #080080 solid;
+	border-bottom: 1px #333333 solid;
+	border-left: 5px #080080 solid;
+	border-radius: 15px;
+}
+#v1-text_wrap {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 30px 0;
+}
+#v1-text_wrap > div {
+	resize: none;
+	display: block;
+	min-width: 300px;
+	margin-bottom: 25px;
+	width: 48%;
+	border: 1px #000000 solid;
+	height: 200px;
+	overflow: hidden scroll;
+}
+#v1-text, #v1-text_answer {
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+	border: none;
+	font-size: 18px;
+	font-family: "consolas", "sublimetext", sans-serif;
+	padding: 15px;
+}
+.v1-instruction {
+	position: sticky;
+	top: 0;
+	border-bottom: 1px lightgrey solid;
+	text-align: center;
+	background-color: #CCFFFF;
+}
+#v1-result_table {
+	border-spacing: 3px;
+}
+#v1-result_table tr td:nth-of-type(1) {
+	padding: 0 10px;
+	border-right: 1px #000000 solid;
+}
+#v1-result_table tr:nth-of-type(2n) td:nth-of-type(1) {
+	background-color: #EEEEEE;
+}
+#v1-result_table tr:nth-of-type(2n+1) td:nth-of-type(1) {
+	background-color: #CCCCCC;
+}
+#v1-result_table tr td:nth-of-type(2) {
+	padding: 0 10px 0 25px;
+}
+
+
+/*ver2*/
+#v2-main {
+	width: 100%;
+	max-width: 800px;
+	margin: 30px auto;
+}
+#v2-x {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+	#v2-x {
+		font-size: 20px;
+	}
+	#v2-x > span, #v2-a {
+		padding: 3px 5px;
+	}
+}
+@media screen and (min-width: 701px) {
+	#v2-x {
+		font-size: 25px;
+	}
+	#v2-x > span, #v2-a {
+		padding: 10px 5px;
+	}
+}
+#v2-x > span {
+	display: inline-block;
+}
+#v2-a {
+	display: block;
+	width: 100%;
+	margin: 0 20px;
+}
+#v2-mode {
+	width: 70px;
+}
+#v2-ms {
+	text-align: right;
+	margin: 5px 10px;
+}
+#v2-ms > div {
+	font-size: 12px;
+	display: inline-block;
+	margin: 3px;
+}
+#v2-clue {
+	text-align: right;
+	margin: 0 5px;
+	white-space: nowrap;
+}
+#v2-yz {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 25px 0;
+}
+#v2-yz > div {
+	width: 100%;
+	min-width: 200px;
+	min-height: 150px;
+	max-width: 300px;
+	max-height: 150px;
+	margin-bottom: 30px;
+}
+#v2-yz > div > span {
+	display: block;
+	text-align: center;
+}
+#v2-yz > div > textarea, #v2-sc {
+	resize: none;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px #000000 solid;
+}
+#v2-sc {
+	overflow: auto;
+}
+#v2-sc table {
+	border-spacing: 0 10px;
+}
+#v2-tb tr td {
+	padding: 0 10px;
+}
+#v2-tb tr td:nth-of-type(1) {
+	text-align: right;
+	white-space: nowrap;
+}
+#v2-tb tr td:nth-of-type(2) {
+	text-align: right;
+	white-space: nowrap;
+}
+
+
+

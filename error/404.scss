@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+main {
+	position: relative;
+	min-height: 300px;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 30px 0;
+	background-image: url(pics/404.png);
+	h1 {
+		text-align: center;
+	}
+	#love-letter {
+		position: absolute;
+		width: 20%;
+		bottom: 20px;
+		left: 20px;
+	}
+}

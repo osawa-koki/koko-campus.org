@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#v1 {
+	#v1-box {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 30px 0;
+		.ipt-btn_container {
+			display: flex;
+			border: 1px black solid;
+			padding: 10px 25px;
+			margin: 10px;
+			cursor: pointer;
+			input {
+				padding: 5px 10px;
+				font-family: "consolas", "Consolas";
+				border-radius: 0;
+			}
+			.cp-button {
+				margin-left: 10px;
+				padding: 10px;
+				border: 1px black solid;
+				background-color: lightgrey;
+				width: 50px;
+				text-align: center;
+				&:hover {
+					color: white;
+					background-color: black;
+				}
+			}
+		}
+	}
+}

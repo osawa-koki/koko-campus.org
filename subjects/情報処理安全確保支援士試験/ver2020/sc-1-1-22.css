@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+
+
+#ipsec_table th {
+	background-color: #33CCFF;
+}
+
+
+
+#ssltls_protocol {
+	border-collapse: separate;
+	background-color: #000000;
+}
+#ssltls_protocol th {
+	background-color: #ffffff;
+}
+
+
+
+
+
+
+
+#ssl_svg .arw {
+	fill: none;
+	stroke: #000000;
+	stroke-width: 0.2;
+}
+#ssl_svg #ssl_go {
+	fill: #FFFF00;
+}
+#ssl_svg text {
+	font-size: 6px;
+}
+#ssl_svg #ssl_ttl {
+	font-size: 10px;
+}
+
+
+#ssl_comment {
+	padding: 0.5rem 1.5rem;
+	border: 1px black solid;
+}
+
+
+
+#ssh_table th {
+	width: 50%;
+}
+
+
+#lanlan td {
+	min-width: 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

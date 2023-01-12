@@ -1,0 +1,43 @@
+<h1>vue.jsでのバインディングにおけるキャメル・ケバブ変換について</h1>
+vue.jsを用いてsvgのビューボックスをバインディング操作使用とした際にちょっとつまずいたので、、、<br /><br />まず僕が実現したかったことは、svgで座標を表現して実際に使われている座標空間のみを自動でズームして表示する機能です。<br />最初はビューボックスの値を固定して表示するデータの座標系を全てそのビューボックスに合うように変換しようと思ったのですが、ビューボックスを操作した方が簡単に実現できると考えたためビューボックスの値をバインディングしました。<br /><br />最初に失敗したコードを提示します。
+<code class="html">
+	&lt;svg width="300" height="300" version="1.1" v-bind:viewBox="vb" xmlns="http://www.w3.org/2000/svg"&gt;
+		&lt;!--要素--&gt;
+	&lt;/svg&gt;
+</code>
+これはコンパイルされると以下のコードとなります。
+<code class="html">
+	&lt;svg width="300" height="300" version="1.1" viewbox="vb" xmlns="http://www.w3.org/2000/svg"&gt;
+		&lt;!--要素--&gt;
+	&lt;/svg&gt;
+</code>
+「viewBox」と表記すべきところを「viewbox」と小文字に変換されてしまいます。<br />これでは機能しません。<br />当然文字列として扱うことはできませんので以下のコードはコンパイルエラーを吐きます。
+<code class="html">
+	&lt;svg width="300" height="300" version="1.1" v-bind:"viewBox"="vb" xmlns="http://www.w3.org/2000/svg"&gt;
+		&lt;!--要素--&gt;
+	&lt;/svg&gt;
+</code>
+<h2>解決策</h2>
+僕は動的バインディング引数を使用することで解決しました。<br />これは属性を引数で指定してその結果を属性に代入します。<br />この方法では取得する結果を文字列として扱われるため、小文字に変換されることもありません。
+<code class="html">
+	&lt;svg width="300" height="300" version="1.1" v-bind:[viewvox]="vb" xmlns="http://www.w3.org/2000/svg"&gt;
+		&lt;!--要素--&gt;
+	&lt;/svg&gt;
+</code>
+<code class="javascript">
+	let app = new Vue({
+		el: "#app",
+		data: {
+			viewbox: "viewBox" // ← viewboxという変数に「"viewBox"」という文字列型データを格納してこれを属性とバインドさせる
+		}
+	});
+</code>
+<div class="separator"></div>
+この記事を書いている際にもっと簡単な解決策を思い浮かびました!!<br />「.camel」修飾子を使えば済む話ですね、、、
+<code class="html">
+	&lt;svg width="300" height="300" version="1.1" v-bind:view-box.camel="vb" xmlns="http://www.w3.org/2000/svg"&gt;
+		&lt;!--要素--&gt;
+	&lt;/svg&gt;
+</code>
+これを失念していたなんて、、、<br />僕のバカ!!!!!<br /><br />以上。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

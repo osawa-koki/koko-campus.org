@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "sublimetext";
+	src: url("../../../../font-family/consolas.ttf") format("truetype");
+}
+@font-face {
+	font-family: "highway";
+	src: url("../../../../font-family/gd-highway.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+
+
+
+code::-webkit-scrollbar {/*webkit*/
+	height:  10px;
+}
+code::-webkit-scrollbar-track {
+	background: rgba(255, 200, 255, 0.1);
+}
+code::-webkit-scrollbar-thumb {
+	background: rgba(80, 0, 80, 0.3);
+}
+code {/*firefox*/
+	scrollbar-width: 10px;
+}
+
+code {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "consolas", "sublimetext", sans-serif;
+	/*background-color: #FFEEFF;*/
+	/*background-repeat: repeat;*/
+	/*background-image: url(../../../../pics/cherry-bg.png);*/
+	border-top: 1px #AAAAAA solid;
+	border-right: 1px #AAAAAA solid;
+	border-bottom: 1px #AAAAAA solid;
+	border-left: 5px purple solid;
+	margin: 25px 0;
+	padding: 50px 20px 20px 20px;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+code::before {
+	position: absolute;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "consolas", "sublimetext";
+	top: 0;
+	left: 0;
+	padding: 5px 15px;
+	color: white;
+	background-color: black;
+	letter-spacing: 3px;
+	z-index: 1;
+}
+
+.code_table {
+	margin: 25px 0;
+}
+
+code.js::before {
+	content: "javascript";
+}
+code.php::before {
+	content: "php";
+}
+code.py::before {
+	content: "python";
+}
+code.c::before {
+	content: "c言語";
+}
+code.cpp::before {
+	content: "c++言語";
+}
+code.linux::before {
+	content: "linux";
+}
+code.ubuntu::before {
+	content: "ubuntu";
+}
+code.centos::before {
+	content: "CentOS";
+}
+code.html::before {
+	content: "html";
+}
+code.htaccess::before {
+	content: ".htaccess";
+}
+code.css::before {
+	content: "css";
+}
+
+
+
+
+code .keywords {
+	font-style: italic;
+	color: purple;
+}
+code .function {
+	color:  #0000AA;
+}
+code .arg {
+	color: #FF6928;
+}
+code .key {
+	color: #008080;
+}
+code .prefix {
+	color: red;
+}
+code .method {
+	color: #0000AA;
+}
+code .top-obj {
+	color: #00008B;
+}
+code .string {
+	color:  green;
+}
+code .tag {
+	color:  #000080;
+}
+code .tagname {
+	color:  #CC0000;
+}
+code .atr {
+	color:  #8B008B;
+}
+code .equal {
+	color:  #FF8C00;
+}
+code .value {
+	color:  green;
+}
+code .comment-out {
+	color:  grey;
+}
+code .magical {
+	color:  orange;
+}
+code .return {
+	color:  orange;
+}
+code .tag-css {
+	color: red;
+}
+code .id {
+	color: blue;
+}
+code .class {
+	color: orange;
+}
+
+
+
+
+

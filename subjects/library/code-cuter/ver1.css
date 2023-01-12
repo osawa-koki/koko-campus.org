@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: rickty_diminished;
+    src: url("../../../../font-family/RictyDiminished-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: rickty_diminished_bold;
+    src: url("../../../../font-family/RictyDiminished-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: gd_highway;
+    src: url("../../../../font-family/gd_hightway.ttf") format("truetype");
+}
+
+code {
+	font-size: 1rem;
+	font-weight: 1000;
+	tab-size: 4;
+	font-family: rickty_diminished;
+}
+code li {
+	text-align: left;
+	padding: 1px 1px 1px 5px;
+}
+
+
+code ol {
+    background-color: #FF00FF;
+    padding: 0.3rem 0.3rem 0.3rem 2rem;
+    margin: 0 0.5rem;
+    max-width: 800px;
+}
+code li:nth-child(3n) {
+	background-color: #FFEEFF;
+}
+code li:nth-child(3n+1) {
+	background-color: #FFDDFF;
+}
+code li:nth-child(3n+2) {
+	background-color: #FFCCFF;
+}
+
+code li::marker {
+	font-family: serif;
+}
+
+.html:before {
+    content: "html";
+    width: 10rem;
+    background-color: #FFBEDA;
+    margin: 0 0.5rem 0.2rem 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+.jq:before {
+    content: "jquery";
+    width: 10rem;
+    background-color: #FFBEDA;
+    margin: 0 0.5rem 0.2rem 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+.js:before {
+    content: "javascript";
+    width: 10rem;
+    background-color: #FFBEDA;
+    margin: 0 0.5rem 0.2rem 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

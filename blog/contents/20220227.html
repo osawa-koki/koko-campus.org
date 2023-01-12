@@ -1,0 +1,52 @@
+<h1>クイックソート(js)</h1>
+クイックソートとは、整列対象となる配列を分割する処理を再帰的に行い、分割後の要素数が「1」になるまで繰り返す整列アルゴリズムです。<br /><br />これをjavascriptで実装してみましょう♪<br />まずは、完成形から、、、
+<code class="javascript">
+	const filter = (fx, [n, ...rest]) =&gt; n === undefined
+		? [] :
+		fx(n)
+		? (fx, [n, ...filter(fx, rest)])
+		: (fx, filter(fx, rest))
+	;
+
+	const quickSort = ([x, ...rest]) =&gt; x === undefined
+		? []
+		: [
+			...quickSort(filter(n =&gt; n &lt;= x, rest)),
+			x, // 基準
+			...quickSort(filter(n =&gt; x &lt; n, rest))
+		]
+	;
+	
+	console.log(quickSort([5, 8, 2, 7, 10, 0, 15, 7]));
+
+	/* &darr; コンソール &darr;
+	Array(7) [ 0, 2, 5, 7, 7, 8, 10, 15 ]
+	*/
+</code>
+基準(x)より小さいか、大きいか、それとも同じかに分類します。<br />小さい、ないしは、大きければこれを再帰的に処理を行います。<br />これは、小さいグループ、または大きいグループの数がひとつになるまで行います。<br /><br />大きい、小さいの分類はfilter関数を使用しています。
+<div class="separator"></div>
+因みに、filter関数に渡す条件用の関数を「=」を含まないようにすると重複を排除することができます。
+<code class="javascript">
+	const filter = (fx, [n, ...rest]) =&gt; n === undefined
+		? [] :
+		fx(n)
+		? (fx, [n, ...filter(fx, rest)])
+		: (fx, filter(fx, rest))
+	;
+
+	const quickSort = ([x, ...rest]) =&gt; x === undefined
+		? []
+		: [
+			...quickSort(filter(n =&gt; n &lt; x, rest)),
+			x, // 基準
+			...quickSort(filter(n =&gt; x &lt; n, rest))
+		]
+	;
+	
+	console.log(quickSort([5, 8, 2, 7, 10, 0, 15, 7]));
+
+	/* &darr; コンソール &darr;
+	Array(7) [ 0, 2, 5, 7, 8, 10, 15 ]
+	*/
+</code>
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

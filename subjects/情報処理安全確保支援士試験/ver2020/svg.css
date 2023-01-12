@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+svg {
+	background: #ffffff;
+	display: block;
+	margin: 1rem 0;
+}
+
+/* 攻撃関連svg用のcss */
+svg .pc {
+fill:#000000;fill-opacity:1;stroke:none;
+}
+svg .monitor {
+fill:#ffffff;fill-opacity:1;stroke:none;
+}
+svg .server {
+fill:#000064;fill-opacity:1;stroke:#000000;stroke-width:0.1;
+}
+svg .window {
+fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.1;
+}
+svg .bad_face {
+fill:#000000;fill-opacity:0.5;stroke:#000000;stroke-width:0.2;
+}
+svg .bad_eyes {
+fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;
+}
+
+/* 暗号関連svg用のcss */
+svg .e_node_face {
+fill:#80d5ff;
+}
+svg .d_node_face {
+fill:#ff80ff;
+}
+svg .white {
+fill:#ffffff;
+}
+svg .key {
+fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;
+}

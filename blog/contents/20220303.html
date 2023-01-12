@@ -1,0 +1,13 @@
+<h1>php://</h1>
+「$_POST」以外にphpでpostで送信されたデータを取得したい場合に使用します。<br />簡単に説明すると、「php://」では加工されていない生のデータを取得できます。<br /><br />「php://input」をファイルストリームから読み取ることで、postメソッドで送信されたペイロード部分をそのまま取得可能です。<br /><br />一般的には、というか僕は、jsonファイルをそのままやり取りする場合に使用します。
+<code class="php">
+	file_put_contents("php://input");
+</code>
+ついでにjson型(連想配列)に変換しておきます。
+<code class="php">
+	json_encode(file_put_contents("php://input"), true);
+</code>
+json_encode関数の第二引数の「true」はstdClassではなく、連想配列として扱うためのものです。
+<div class="separator"></div>
+因みに、<a href="">公式ドキュメント</a>では、「php://input」について、「読み込み専用のストリームで、リクエストのbody部から生のデータを読み込むことができます。php://inputは、enctype="multipart/form-data"に対しては使用できません。」と説明しています。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

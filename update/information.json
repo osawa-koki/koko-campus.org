@@ -1,0 +1,229 @@
+{
+    "2021": {
+        "10": {
+            "10": [
+                {
+                    "type": "subject",
+                    "contents": "ITパスポート試験のページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/itパスポート試験/ver5/top"
+                }
+            ],
+            "11": [
+                {
+                    "type": "subject",
+                    "contents": "情報処理安全確保支援士試験のページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/情報処理安全確保支援士/ver3/top"
+                }
+            ],
+            "12": [
+                {
+                    "type": "subject",
+                    "contents": "簿記検定１級のページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/簿記検定1級/ver2022/top"
+                }
+            ]
+        },
+        "11": {
+            "11": [
+                {
+                    "type": "system",
+                    "contents": "koko-campus.orgのアップデートカレンダーを作成しました。"
+                }
+            ],
+            "14": [
+                {
+                    "type": "system",
+                    "contents": "koko-campus.orgのトップページを改善しました。"
+                }
+            ],
+            "16": [
+                {
+                    "type": "subject",
+                    "contents": "Linux入門のページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/linux入門/ver1/x-トップ"
+                }
+            ],
+            "17": [
+                {
+                    "type": "subject",
+                    "contents": "PHP入門のページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/php入門/ver1/x-トップ"
+                }
+            ],
+            "20": [
+                {
+                    "type": "subject",
+                    "contents": "ajaxページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/ajax/ver1/x-トップ"
+                }
+            ],
+            "21": [
+                {
+                    "type": "system",
+                    "contents": "koko-campus.orgのサイト全体を改善しました。"
+                }
+            ],
+            "22": [
+                {
+                    "type": "program",
+                    "contents": "10puzzleプログラムを作成しました。",
+                    "url": "https://koko-campus.org/program/10puzzle/ver1"
+                }
+            ],
+            "23": [
+                {
+                    "type": "program",
+                    "contents": "10puzzleプログラムを改善しました。",
+                    "url": "https://koko-campus.org/program/10puzzle/ver2"
+                }
+            ]
+        },
+        "12": {
+            "01": [
+                {
+                    "type": "program",
+                    "contents": "10puzzleプログラムを改善しました。",
+                    "url": "https://koko-campus.org/program/10puzzle/ver3"
+                }
+            ],
+            "07": [
+                {
+                    "type": "program",
+                    "contents": "10puzzleプログラムを改善しました。",
+                    "url": "https://koko-campus.org/program/10puzzle/ver4"
+                }
+            ],
+            "15": [
+                {
+                    "type": "subject",
+                    "contents": "vue.js入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/vue.js入門/ver1/branch"
+                }
+            ],
+            "28": [
+                {
+                    "type": "subject",
+                    "contents": "python-ver1を作成しました。",
+                    "url": "https://koko-campus.org/subjects/python入門/ver1/branch"
+                }
+            ]
+        }
+    },
+    "2022": {
+        "01": {
+            "07": [
+                {
+                    "type": "subject",
+                    "contents": "c入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/c入門/ver2/branch"
+                }
+            ],
+            "15": [
+                {
+                    "type": "subject",
+                    "contents": "javascript入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/javascript入門/ver1/branch"
+                }
+            ],
+            "20": [
+                {
+                    "type": "subject",
+                    "contents": "rust入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/rust入門/ver1/branch"
+                }
+            ]
+        },
+        "02": {
+            "01": [
+                {
+                    "type": "subject",
+                    "contents": "html&css入門-ver2を作成しました。",
+                    "url": "https://koko-campus.org/subjects/html-css入門/ver2/branch"
+                },
+                {
+                    "type": "subject",
+                    "contents": "php入門-ver2を作成しました。",
+                    "url": "https://koko-campus.org/subjects/php入門/ver2/branch"
+                }
+            ],
+            "02": [
+                {
+                    "type": "subject",
+                    "contents": "sql入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/sql入門/ver1/branch"
+                }
+            ],
+            "10": [
+                {
+                    "type": "subject",
+                    "contents": "go入門-ver1を作成しました。",
+                    "url": "https://koko-campus.org/subjects/go入門/ver1/branch"
+                }
+            ],
+            "13": [
+                {
+                    "type": "subject",
+                    "contents": "vb.net入門-ver1を作成しました。",
+                    "url": "https://koko-campus.org/subjects/vb入門/ver1/branch"
+                }
+            ],
+            "14": [
+                {
+                    "type": "subject",
+                    "contents": "haskell入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/haskell入門/ver1/branch"
+                }
+            ],
+            "16": [
+                {
+                    "type": "subject",
+                    "contents": "azure入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/azure入門/ver1/branch"
+                }
+            ],
+            "18": [
+                {
+                    "type": "subject",
+                    "contents": "java入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/java入門/ver1/branch"
+                }
+            ],
+            "28": [
+                {
+                    "type": "subject",
+                    "contents": "fortran入門ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/fortran入門/ver1/branch"
+                }
+            ]
+        },
+        "03": {
+            "01": [
+                {
+                    "type": "subject",
+                    "contents": "tkinterページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/tkinter/ver1/branch"
+                }
+            ],
+            "10": [
+                {
+                    "type": "subject",
+                    "contents": "pandasページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/pandas/ver1/branch"
+                }
+            ]
+        },
+        "04": {
+            "25": [
+                {
+                    "type": "subject",
+                    "contents": "vb.net中級ページを作成しました。",
+                    "url": "https://koko-campus.org/subjects/vb中級/ver1/branch"
+                },
+                {
+                    "type": "system",
+                    "contents": "トップページのカレンダー機能をアップデートしました。"
+                }
+            ]
+        }
+    }
+}

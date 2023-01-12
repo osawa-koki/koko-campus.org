@@ -1,0 +1,77 @@
+@charset "UTF-8";
+main {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  margin: 25px 0;
+  border-left: 5px red solid;
+  padding-left: 5px;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  margin: 25px 5px;
+  border-left: 3px #FF33CC solid;
+  padding-left: 5px;
+}
+
+main h3 {
+  font-size: 1.1rem;
+  margin: 25px 10px;
+  border-left: 1px #FFCCFF solid;
+  padding-left: 5px;
+}
+
+main .announce {
+  color: red;
+  margin: 25px 0;
+}
+
+main table {
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+main table td {
+  padding: 3px 10px;
+}
+
+main p.r {
+  margin: 5px 0 25px 0.95rem;
+  text-indent: -0.95rem;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+main p.r::before {
+  content: "※";
+}
+
+main ul:not(.x), main ol:not(.x) {
+  display: inline-block;
+  padding: 15px 25px 15px 50px;
+  border: 1px #000000 solid;
+}
+
+main #form {
+  margin: 30px 0;
+  padding: 10px;
+  border: 1px black solid;
+}
+
+main #form input {
+  max-width: 90%;
+}
+
+main #form textarea {
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 20px);
+  max-width: 500px;
+  height: 200px;
+}
+/*# sourceMappingURL=index.css.map */

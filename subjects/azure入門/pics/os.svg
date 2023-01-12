@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     width="600"
+     height="400"
+     viewBox="0 0 600 400"
+     version="1.1"
+     id="svg5"
+     sodipodi:docname="os.svg"
+     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+     inkscape:export-filename="C:\Program Files\XAMPP\htdocs\koko-campus.org\subjects\azure入門\pics\os.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         inkscape:pageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:document-units="px"
+         showgrid="false"
+         units="px"
+         width="600px"
+         inkscape:zoom="0.7500982043"
+         inkscape:cx="245.301213821343"
+         inkscape:cy="241.968316894423"
+         inkscape:window-width="1920"
+         inkscape:window-height="1009"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+    <defs
+         id="defs2">
+        <rect
+             x="39.3739776611328"
+             y="98.7013778686523"
+             width="248.904739379883"
+             height="157.217475891113"
+             id="rect10547" />
+        <rect
+             x="39.3739776611328"
+             y="98.7013778686523"
+             width="248.904739379883"
+             height="157.217468261719"
+             id="rect10547-1" />
+    </defs>
+    <g
+         inkscape:label="レイヤー 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <rect
+             style="fill:#ecffdf;fill-opacity:1;stroke:#aca2ff;stroke-width:1.07083;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.499999;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
+             id="rect15075"
+             width="318.552551269531"
+             height="94.5850067138672"
+             x="38.6985855102539"
+             y="281.335601806641" />
+        <g
+             id="g15433"
+             transform="translate(0,14)">
+            <rect
+                 style="fill:#ddddff;fill-opacity:1;stroke:#aca2ff;stroke-width:1.00313;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.499999;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
+                 id="rect847"
+                 width="533.260375976562"
+                 height="226.633865356445"
+                 x="38.6631698608398"
+                 y="14.6663131713867" />
+            <text
+                 xml:space="preserve"
+                 style="font-size:37.2074px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none;stroke-width:0.930184"
+                 x="254.565826416016"
+                 y="53.2476997375488"
+                 id="text2807"
+                 transform="scale(1.01195140795369,0.988189741266477)"><tspan
+                     sodipodi:role="line"
+                     id="tspan2805"
+                     x="254.565826416016"
+                     y="53.2476997375488"
+                     style="stroke-width:0.930184">linux</tspan></text>
+            <g
+                 id="g8338"
+                 transform="matrix(0.941301227695124,0,0,0.919198500381387,6.62448361293736,-8.65304384028592)">
+                <rect
+                     style="fill:#fffff2;fill-opacity:1;stroke:#aca2ff;stroke-width:1.09526;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.499999;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
+                     id="rect1083"
+                     width="248.904739379883"
+                     height="157.217468261719"
+                     x="53.3739776611328"
+                     y="98.7013778686523" />
+                <text
+                     xml:space="preserve"
+                     style="font-size:28px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+                     x="111.797470092773"
+                     y="92.9811782836914"
+                     id="text2807-6"><tspan
+                         sodipodi:role="line"
+                         id="tspan2805-7"
+                         x="111.797470092773"
+                         y="92.9811782836914">Red Hat系</tspan></text>
+            </g>
+            <g
+                 id="g8343"
+                 transform="matrix(0.941301227695124,0,0,0.919198500381387,29.2157130776203,-8.65304384028592)">
+                <rect
+                     style="fill:#fffff2;fill-opacity:1;stroke:#aca2ff;stroke-width:1.09527;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.499999;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
+                     id="rect1083-0"
+                     width="248.904739379883"
+                     height="157.217468261719"
+                     x="316.669189453125"
+                     y="97.3682250976562" />
+                <text
+                     xml:space="preserve"
+                     style="font-size:28px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+                     x="389.160186767578"
+                     y="92.0514984130859"
+                     id="text2807-6-7"><tspan
+                         sodipodi:role="line"
+                         id="tspan2805-7-6"
+                         x="389.160186767578"
+                         y="92.0514984130859">Debian系</tspan></text>
+            </g>
+            <text
+                 xml:space="preserve"
+                 id="text10545"
+                 style="font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none;white-space:pre;shape-inside:url(#rect10547)"
+                 transform="matrix(0.941301227695124,0,0,0.919198500381387,36.1164526399449,9.72851930262006)"><tspan
+                     x="39.373046875"
+                     y="118.388671875"
+                     id="tspan916">・Red Hat Enterprise 
+</tspan><tspan
+                     x="39.373046875"
+                     y="143.388671875"
+                     id="tspan918">  Linux
+</tspan><tspan
+                     x="39.373046875"
+                     y="170.72265625"
+                     id="tspan920">・CentOs
+</tspan><tspan
+                     x="39.373046875"
+                     y="198.056640625"
+                     id="tspan922">・Fedora</tspan></text>
+            <text
+                 xml:space="preserve"
+                 id="text10545-2"
+                 style="font-size:20px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none;white-space:pre;shape-inside:url(#rect10547-1)"
+                 transform="matrix(0.941301227695124,0,0,0.919198500381387,308.094814973604,12.1437692543026)"><tspan
+                     x="39.373046875"
+                     y="118.388671875"
+                     id="tspan924">・Debian GNU/Linux
+</tspan><tspan
+                     x="39.373046875"
+                     y="145.72265625"
+                     id="tspan926">・Ubuntu</tspan></text>
+        </g>
+        <text
+             xml:space="preserve"
+             style="font-size:28px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none;stroke-width:0.930184"
+             x="88.8130111694336"
+             y="341.286651611328"
+             id="text2807-4"
+             transform="scale(1.01195140795369,0.988189741266474)"><tspan
+                 sodipodi:role="line"
+                 id="tspan2805-71"
+                 x="88.8130111694336"
+                 y="341.286651611328"
+                 style="font-size:28px;stroke-width:0.930184">Windows Server</tspan></text>
+    </g>
+</svg>

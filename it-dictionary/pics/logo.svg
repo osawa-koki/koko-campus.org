@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     width="200"
+     height="100"
+     viewBox="0 0 200 100"
+     version="1.1"
+     id="svg5"
+     sodipodi:docname="logo.svg"
+     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+     inkscape:export-filename="C:\Program Files\XAMPP\htdocs\koko-campus.org\it-dictionary\pics\logo.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+         id="namedview7"
+         pagecolor="white"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         inkscape:pageshadow="2"
+         inkscape:pageopacity="0"
+         inkscape:pagecheckerboard="0"
+         inkscape:document-units="px"
+         showgrid="false"
+         units="px"
+         width="600px"
+         inkscape:zoom="1.5002"
+         inkscape:cx="151.31"
+         inkscape:cy="150.98"
+         inkscape:window-width="1920"
+         inkscape:window-height="1009"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+    <defs
+         id="defs2" />
+    <g
+         inkscape:label="レイヤー 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <path
+             style="fill:none;stroke:#ff9696;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m -84.655,99.987 255.295,-150.647 251.3,163.98 -451.269,-68.659 72.657,-65.325 101.322,121.984 -122.653,-2 129.313,-105.9858 85.33,53.9928 -226.6413,49.993 55.3263,-196.64 87.325,261.96 -219.974,-98.649 330.624,-19.33 -34.66,79.989 -229.9732,-183.309 -5.3326,211.309 372.6158,-270.63 -14.66,127.9787 -453.28,61.9913 30.666,-89.988 301.294,107.986 c 0,0 34.66,137.982 30,137.982 -4.67,0 -169.315,-279.963 -169.315,-279.963 l 97.985,250.633 -113.317,30 103.317,-312.629 213.97,143.314 -596.58,-28.662 138.645,-81.989 403.945,176.646 20.67,83.99 -380.62,-301.298 137.31,-12.002 51.33,371.95 -154.645,-9.99 219.975,-355.957"
+             id="path4643" />
+        <path
+             style="fill:none;stroke:#9696ff;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -96.653,99.987 255.293,-150.647 251.3,163.98 -451.267,-68.659 72.657,-65.325 101.32,121.984 -122.6513,-2 129.3113,-105.986 85.33,53.993 -226.6393,49.993 55.3243,-196.64 87.325,261.96 -219.972,-98.649 330.622,-19.33 -34.66,79.989 -229.971,-183.309 -5.333,211.309 372.614,-270.63 -14.66,127.9786 -453.28,61.9914 30.668,-89.988 301.292,107.986 c 0,0 34.66,137.982 30,137.982 -4.67,0 -169.315,-279.963 -169.315,-279.963 l 97.985,250.633 -113.315,30 103.315,-312.629 213.97,143.314 -596.58,-28.662 138.647,-81.989 403.943,176.646 20.67,83.99 -380.618,-301.298 137.308,-12.002 51.33,371.95 -154.6433,-9.99 219.9733,-355.96"
+             id="path4643-7" />
+        <text
+             xml:space="preserve"
+             style="font-size:56px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="26.683"
+             y="49.907"
+             id="text2737"
+             transform="rotate(-3.9584)"><tspan
+                 sodipodi:role="line"
+                 id="tspan2735"
+                 x="26.683"
+                 y="49.907">IT</tspan></text>
+        <text
+             xml:space="preserve"
+             style="font-size:36px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="-10.604"
+             y="91.737"
+             id="text6675"
+             transform="rotate(-11.453)"><tspan
+                 sodipodi:role="line"
+                 id="tspan6673"
+                 x="-10.604"
+                 y="91.737">Dictionary</tspan></text>
+    </g>
+</svg>

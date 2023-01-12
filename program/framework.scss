@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "code";
+	src: url("../font-family/consolas.ttf") format("truetype");
+}
+
+h2 {
+	font-size: 1.3rem;
+	text-align: center;
+}
+h3 {
+	font-size: 1.15rem;
+	text-align: center;
+}
+
+ul, ol {
+	&:not(.x) {
+		display: inline-block;
+		padding: 20px 15px 20px 40px;
+		margin: 25px 0;
+		border: 1px #000000 solid;
+	}
+}
+p {
+	&.r {
+		margin: 5px 0 10px 15px;
+		text-indent: -0.95rem;
+		font-size: 0.95rem;
+		text-align: left;
+	}
+	&::before {
+		content: "※";
+	}
+}
+
+div.separator {
+	width: 100%;
+	height: 3px;
+	border-radius: 1px;
+	background-color: lightgrey;
+	margin: 25px 0;
+}
+
+#main {
+	h1 {
+		font-family: "consolas", "code";
+		text-align: center;
+		margin: 30px 0;
+	}
+	h2 {
+		text-align: left;
+		margin: 25px 0;
+		border-left: 5px blue solid;
+		padding-left: 15px;
+	}
+	h3 {
+		text-align: left;
+		margin: 25px 0;
+		border-left: 4px aqua solid;
+		padding-left: 15px;
+	}
+	svg:not(.x), canvas:not(.x) {
+		display: block;
+		/*width: calc(100% - 2px); */
+		max-width: 500px;
+		border: 1px solid black;
+		margin: 30px auto;
+	}
+	div.scroll {
+		overflow-x: auto;
+	}
+	div.button {
+		width: 100px;
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+		background-color: lightskyblue;
+		border: 1px solid black;
+		margin: 10px auto;
+		cursor: pointer;
+		&:hover {
+			background-color: blue;
+			color: white;
+		}
+		&.off {
+			background-color: grey;
+			color: white;
+			cursor: wait;
+		}
+	}
+	table {
+		border-collapse: collapse;
+		margin: 10px auto;
+		th, td {
+			padding: 3px 10px;
+		}
+	}
+	.center {
+		text-align: center;
+	}
+	.change-log_container {
+		overflow-x: auto;
+		> * {
+			min-width: 500px;
+		}
+	}
+}
+
+
+table.change-log {
+	margin: 30px auto;
+	border-collapse: collapse;
+	td {
+		padding: 5px 10px;
+	}
+	tr td:nth-of-type(1) {
+		white-space: nowrap;
+	}
+	tr td:nth-of-type(1):first-line {
+		font-weight: bold;
+	}
+	tr td:nth-of-type(2) {
+		min-width: 100px;
+	}
+	ul {
+		display: block;
+		padding: 15px 15px 15px 35px;
+		border: none;
+	}
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+h1 {
+	font-family: "consolas", "sublimetext";
+}
+.consolas, div.title {
+	font-family: "consolas", "sublimetext";
+}
+.center {
+	text-align: center;
+}
+
+/*ver1*/
+#v1-on {
+	white-space: nowrap;
+}
+#v1-on .now {
+	color: orange;
+}
+#v1-show {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "consolas", "sublimetext", Consolas;
+	letter-spacing: 1px;
+	text-align: center;
+}
+#v1-show table {
+	margin: 10px;
+}
+#v1-show th, #v1-show td {
+	padding: 2px 10px;
+}
+#v1-button {
+	position: relative;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: yellow;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+#v1-button:hover {
+	top: 2px;
+	left: 2px;
+	box-shadow: none;
+}
+#v1-svg {
+	border-top: 1px solid black;
+}
+#v1-svg text::selection, #v1-svg tspan::selection {
+	background-color: transparent;
+}
+#v1-box {
+	display: block;
+	margin: 50px auto;
+	border: 1px solid black;
+	width: 600px;
+}
+#chars rect {
+	fill: #ffffff;
+	stroke: #8f8e92;
+	stroke-width: 1.2;
+}
+#chars text {
+	font-size: 28px;
+	line-height: 1.25;
+	font-family: "consolas", Consolas;
+}
+#v1-ttl {
+	text-align: center;
+}

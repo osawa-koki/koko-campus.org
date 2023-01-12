@@ -1,0 +1,11 @@
+<h1>php://～～～</h1>
+「php://～～～」は、phpで、postメソッドで送信されたjsonデータを取得する際に使用します。<br /><br />jsonデータに関しては「$_POST」連想配列では取得できないため、こちらを使用する必要があります。<br />以下のように書きます。
+<code class="php">
+	file_get_contents("php://input")
+</code>
+通常は、これを連想配列形式に変換して使用するため、以下のようになります。
+<code class="php">
+	json_decode(file_get_contents("php://input"), true);
+</code>
+これはphpプログラムに対する標準入出力を行うためのもので、標準出力に関しては「echo」文や「print」関数を使用することが大半ですので覚える必要はありませんが、「$_POST」で取得できない標準入力に関しては代わりに「php://input」を使用します。
+<p>参考サイトは<a href="https://www.php.net/manual/ja/wrappers.php.php">こちら</a>。</p>

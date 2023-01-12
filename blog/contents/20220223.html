@@ -1,0 +1,29 @@
+<h1>スプレット構文</h1>
+「...hoge」の「...」をスプレット構文と言います。<br />別に言葉に詰まったときに使用するのではありません。<br /><br />使用目的は、配列の要素を展開します。
+<code class="javascript">
+	const fruits = ["りんご", "ばなな", "さくらんぼ"];
+	const foods = [fruits, "ごはん", "いも", "ピザ"];
+
+	console.log(foods);
+
+	/* &darr; コンソール &darr;
+	0: Array(3) [ 'りんご', 'ばなな', 'さくらんぼ' ]
+	1: 'ごはん'
+	2: 'いも'
+	3: 'ピザ'
+	*/
+</code>
+<img src="data/20220223.gif" alt="スプレット構文" />
+これだと、foods配列の第一要素(インデックス番号は「0」)に配列が含まれてしまします。<br /><br />ということで、スプレット構文を用いてみましょう♪
+<code class="javascript">
+	const fruits = ["りんご", "ばなな", "さくらんぼ"];
+	const foods = [...fruits, "ごはん", "いも", "ピザ"];
+
+	console.log(foods);
+
+	/* &darr; コンソール &darr;
+	Array(6) [ 'りんご', 'ばなな', 'さくらんぼ', 'ごはん', 'いも', 'ピザ' ]
+	*/
+</code>
+しっかりと、要素として展開されました。<br /><br />因みに、スプレットは「展開する」という意味の英語です。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

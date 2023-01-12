@@ -1,0 +1,59 @@
+.firefox {
+  background-image: url(../pics/firefox.png);
+}
+
+#eventlistener-example {
+  margin: 30px 0;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+#eventlistener-example #eventlistener-example_ul {
+  margin: 25px 0;
+}
+
+#parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#parent div {
+  padding: 2px 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#incode-timer_div {
+  margin: 30px 0;
+}
+
+#incode-timer_div #incode-timer_clock_body {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#incode-timer_div #incode-timer_clock_body #incode-timer_clock_line {
+  position: absolute;
+  height: 150px;
+  width: 3px;
+  background-color: black;
+  left: calc(50% - 3px);
+  bottom: 50%;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+#attribute-example_div {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=part.css.map */

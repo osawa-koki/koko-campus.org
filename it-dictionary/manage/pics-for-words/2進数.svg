@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     width="600"
+     height="400"
+     viewBox="0 0 600 400"
+     version="1.1"
+     id="svg5"
+     sodipodi:docname="2進数.svg"
+     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+     inkscape:export-filename="C:\Program Files\XAMPP\htdocs\koko-campus.org\it-dictionary\manage\pics-for-words\2進数.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         inkscape:pageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:document-units="px"
+         showgrid="false"
+         units="px"
+         width="600px"
+         inkscape:zoom="1.5002"
+         inkscape:cx="284.63"
+         inkscape:cy="219.64"
+         inkscape:window-width="1920"
+         inkscape:window-height="1009"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+    <defs
+         id="defs2">
+        <rect
+             x="-0.66658"
+             y="0.66658"
+             width="601.92"
+             height="427.27"
+             id="rect4499" />
+    </defs>
+    <g
+         inkscape:label="レイヤー 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <text
+             xml:space="preserve"
+             id="text4497"
+             style="font-size:28px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none;white-space:pre;shape-inside:url(#rect4499)"><tspan
+                 x="-0.66602"
+                 y="24.961"
+                 id="tspan14182">110101010101110010111001001010100101010</tspan><tspan
+                 x="-0.66602"
+                 y="59.961"
+                 id="tspan14184">100000000010100101101010110110101111010</tspan><tspan
+                 x="-0.66602"
+                 y="94.961"
+                 id="tspan14186">000100101010101010101011111101001011010</tspan><tspan
+                 x="-0.66602"
+                 y="129.96"
+                 id="tspan14188">101101101011100101101010100101101010110</tspan><tspan
+                 x="-0.66602"
+                 y="164.96"
+                 id="tspan14190">110101111010000100101010101010101011111</tspan><tspan
+                 x="-0.66602"
+                 y="199.96"
+                 id="tspan14192">101101011110100001001010101010101010111</tspan><tspan
+                 x="-0.66602"
+                 y="234.96"
+                 id="tspan14194">001011010101101101011110100001001010101</tspan><tspan
+                 x="-0.66602"
+                 y="269.96"
+                 id="tspan14196">010101010111110010110101011011010111101</tspan><tspan
+                 x="-0.66602"
+                 y="304.96"
+                 id="tspan14198">000010010101010101010101111111101000010</tspan><tspan
+                 x="-0.66602"
+                 y="339.96"
+                 id="tspan14200">010101010101010101111101011000101101010</tspan><tspan
+                 x="-0.66602"
+                 y="374.96"
+                 id="tspan14202">110110101111010000100101010101010101011</tspan><tspan
+                 x="-0.66602"
+                 y="409.96"
+                 id="tspan14204">111110101111010000100101010101010101011</tspan><tspan
+                 x="-0.66602"
+                 y="452.23"
+                 id="tspan14208"><tspan
+                     dx="0 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395 15.395"
+                     id="tspan14206">111101101010110110101111010000100101010101010101011111111</tspan></tspan></text>
+        <text
+             xml:space="preserve"
+             style="font-size:28px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="261.3"
+             y="99.987"
+             id="text9277"><tspan
+                 sodipodi:role="line"
+                 id="tspan9275"></tspan></text>
+    </g>
+</svg>

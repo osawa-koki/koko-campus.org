@@ -1,0 +1,64 @@
+<h1>関数式関数(js)</h1>
+関数の定義の方法って知っていますか???<br />おそらく、皆さんが良く用いる(テキスト等に載っている)方法は関数を宣言する方法だと思いますが、javascriptではそれ以外にも関数を定義する方法があります。<br /><br />javascriptで関数を定義する方法は2通りあります。
+<br />
+<ol>
+	<li>関数宣言</li>
+	<li>関数式</li>
+</ol>
+<br />
+おそらく、javascriptで関数を作成するには以下のコードを記述する方法が主流だと思います。
+<code class="javascript">
+	function add(x, y) {
+		return x + y;
+	}
+	console.log(add(10, 15)); //「25」と出力
+</code>
+最も一般的な方法で、<strong>関数を宣言する</strong>方法です。<br />しかしながら、この方法には以下のデメリットがあります。
+<br />
+<ul>
+	<li>変数(関数)の巻き上げが発生</li>
+	<li>関数の上書きが可能</li>
+</ul>
+<br />
+変数(関数)の巻き上げが発生することはデメリットではなく、メリットとして扱うべきかもしれません、、、<br />この方法で関数を宣言した場合、関数を宣言するよりも前に関数を実行してもok!です。<br />したがって、以下のように記述しても動作します。
+<code class="javascript">
+	console.log(add(10, 15)); //「25」と出力
+	function add(x, y) {
+		return x + y;
+	}
+</code>
+問題は関数の上書きが可能なことです。<br />通常のプログラミングでは関数を上書きすることなんてありません。<br />少なくとも僕は10年弱プログラミングしていますが、変数を上書きすることはあっても関数を上書きしたことはありません。<br /><br />コード量が膨大になった際に間違って関数を上書きしてしまわないように関数の上書きが発生した際にエラーとして捉えたいですね♪<br /><br />ということで、先ほどの関数宣言関数を上書き不可なconstを用いた<strong>関数式</strong>で記述してみましょう♪
+<code class="javascript">
+	const add = function(x, y) {
+		return x + y;
+	}
+	console.log(add(10, 15)); //「25」と出力
+</code>
+functionによる関数の宣言やvar関数式による関数の作成と異なり、constでは変数の巻き上げが行われないため以下のコードはエラーとなります。
+<code class="javascript">
+	console.log(add(10, 15)); //エラー(Uncaught ReferenceError: Cannot access 'add' before initialization)
+	const add = function(x, y) {
+		return x + y;
+	}
+</code>
+また、関数を上書きしようとするとエラーとなります。
+<code class="javascript">
+	const add = function(x, y) {
+		return x + y;
+	}
+	const add = function(x, y, z) {
+		return x + y + z;
+	}
+	console.log(add(10, 15));
+</code>
+上のコードを実行すると「Uncaught SyntaxError: Identifier 'add' has already been declared」とエラーとなります。<br /><br />絶対と言っていいほど、関数を上書きする機会はありませんので、関数はconstを用いた関数式で作成する癖を付けましょう♪<br /><br />では、さらに進化バージョンである「const関数式」 + 「アロー関数」で関数を作成しましょう♪<br /><br />アロー関数って何ぞや???って方は<a href="?date=20211215">アロー関数(js)</a>を読んでください。<br />別に読まなくてもok!です。<br />functionの進化バージョンだと思ってください。
+<p class="r">本当はthisの参照先が異なりますが、ここでは無視!</p>
+アロー関数を用いると先ほどのコードは以下のように書けます。
+<code class="javascript">
+	const add = (x, y) => {
+		return x + y;
+	}
+	console.log(add(10, 15)); //「25」と出力
+</code>
+カンペキ、終了。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

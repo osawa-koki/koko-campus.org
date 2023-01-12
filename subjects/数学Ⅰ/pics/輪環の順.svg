@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     width="500"
+     height="500"
+     viewBox="0 0 500 500"
+     version="1.1"
+     id="svg5"
+     sodipodi:docname="輪環の順.svg"
+     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+     inkscape:export-filename="C:\Program Files\XAMPP\htdocs\koko-campus.org\subjects\数学Ⅰ\pics\輪環の順.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         inkscape:pageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:document-units="px"
+         showgrid="false"
+         units="px"
+         width="600px"
+         inkscape:zoom="0.7500982043"
+         inkscape:cx="-211.972244552139"
+         inkscape:cy="428.610544801967"
+         inkscape:window-width="1920"
+         inkscape:window-height="1009"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+    <defs
+         id="defs2">
+        <filter
+             inkscape:collect="always"
+             style="color-interpolation-filters:sRGB"
+             id="filter16533"
+             x="-0.0229025091388922"
+             y="-0.876021022688559"
+             width="1.04580501827778"
+             height="2.75204204537712">
+            <feGaussianBlur
+                 inkscape:collect="always"
+                 stdDeviation="1.94645846326595"
+                 id="feGaussianBlur16535" />
+        </filter>
+    </defs>
+    <g
+         inkscape:label="レイヤー 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <rect
+             style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:6.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stop-color:#000000;filter:url(#filter16533)"
+             id="rect16451"
+             width="203.973297119141"
+             height="5.33263492584229"
+             x="21.3305397033691"
+             y="55.9926681518555" />
+        <path
+             style="fill:none;stroke:#000000;stroke-width:6.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 134.296139937373,408.320947572807 c 77.577043877147,74.760543620354 186.768351120836,57.978377258668 251.846043674626,-2.647176153977"
+             id="path878-8"
+             sodipodi:nodetypes="cc" />
+        <path
+             style="fill:none;stroke:#000000;stroke-width:6.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 438.958410893479,339.197516033032 c 28.588623832701,-103.875055747181 -38.342393485949,-191.76488226918 -122.699552749502,-219.950578565335"
+             id="path878-5"
+             sodipodi:nodetypes="cc" />
+        <path
+             style="fill:none;stroke:#000000;stroke-width:6.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 90.1517866125435,337.781092452199 c -28.5886238327006,-103.875055747181 38.3423934859485,-191.76488226918 122.6995527495015,-219.950578565335"
+             id="path878-5-6"
+             sodipodi:nodetypes="cc" />
+        <path
+             sodipodi:type="star"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stop-color:#000000"
+             id="path2498"
+             inkscape:flatsided="true"
+             sodipodi:sides="3"
+             sodipodi:cx="343.563507080078"
+             sodipodi:cy="380.331115722656"
+             sodipodi:r1="30.6916198730469"
+             sodipodi:r2="15.3458099365234"
+             sodipodi:arg1="0.523598775598299"
+             sodipodi:arg2="1.5707963267949"
+             inkscape:rounded="0"
+             inkscape:randomized="0"
+             d="m 370.143229573432,395.67692565918 h -53.159444986708 l 26.579722493354,-46.037429809571 z"
+             inkscape:transform-center-y="3.7594623479273"
+             transform="rotate(44.1808282035088,321.223906831732,437.221940536232)"
+             inkscape:transform-center-x="4.1833015772969" />
+        <path
+             sodipodi:type="star"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stop-color:#000000"
+             id="path2498-6"
+             inkscape:flatsided="true"
+             sodipodi:sides="3"
+             sodipodi:cx="343.563507080078"
+             sodipodi:cy="380.331115722656"
+             sodipodi:r1="30.6916198730469"
+             sodipodi:r2="15.3458099365234"
+             sodipodi:arg1="0.523598775598299"
+             sodipodi:arg2="1.5707963267949"
+             inkscape:rounded="0"
+             inkscape:randomized="0"
+             inkscape:transform-center-y="5.10003981588574"
+             d="m 370.143229573432,395.67692565918 h -53.159444986708 l 26.579722493354,-46.037429809571 z"
+             transform="matrix(0.982970386026687,-0.183764034007054,-0.183764034007054,-0.982970386026687,-181.309802361126,750.600978656312)"
+             inkscape:transform-center-x="2.8200079443934" />
+        <path
+             sodipodi:type="star"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stop-color:#000000"
+             id="path2498-6-4"
+             inkscape:flatsided="true"
+             sodipodi:sides="3"
+             sodipodi:cx="343.563507080078"
+             sodipodi:cy="380.331115722656"
+             sodipodi:r1="30.6916198730469"
+             sodipodi:r2="15.3458099365234"
+             sodipodi:arg1="0.523598775598299"
+             sodipodi:arg2="1.5707963267949"
+             inkscape:rounded="0"
+             inkscape:randomized="0"
+             inkscape:transform-center-y="6.63683735071078"
+             transform="rotate(-64.3746122582312,134.187621545298,263.634747847949)"
+             d="m 370.143229573432,395.67692565918 h -53.159444986708 l 26.579722493354,-46.037429809571 z"
+             inkscape:transform-center-x="1.17053579947856" />
+        <text
+             xml:space="preserve"
+             style="font-size:48px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="248.634902954102"
+             y="115.316398620605"
+             id="text4958"><tspan
+                 sodipodi:role="line"
+                 id="tspan4956"
+                 x="248.634902954102"
+                 y="115.316398620605">a</tspan></text>
+        <text
+             xml:space="preserve"
+             style="font-size:48px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="91.3237380981445"
+             y="390.613403320312"
+             id="text6590"><tspan
+                 sodipodi:role="line"
+                 id="tspan6588"
+                 x="91.3237380981445"
+                 y="390.613403320312">b</tspan></text>
+        <text
+             xml:space="preserve"
+             style="font-size:48px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="409.946075439453"
+             y="379.281829833984"
+             id="text7210"><tspan
+                 sodipodi:role="line"
+                 id="tspan7208"
+                 x="409.946075439453"
+                 y="379.281829833984">c</tspan></text>
+        <path
+             sodipodi:type="spiral"
+             style="fill:none;fill-rule:evenodd;stroke:#000000"
+             id="path11797"
+             sodipodi:cx="261.301086425781"
+             sodipodi:cy="285.482055664062"
+             sodipodi:expansion="1"
+             sodipodi:revolution="3"
+             sodipodi:radius="110.860496520996"
+             sodipodi:argument="-18.9187316894531"
+             sodipodi:t0="0"
+             d="m 261.301086425781,285.482055664063 c 5.545075031584,-0.384197851358 3.253635450517,7.285100729271 0.63856209658,9.216279386645 -7.08668716797,5.233374807507 -16.303467878275,-0.956079310283 -19.071120869871,-7.939155193485 -4.950681918535,-12.491084545532 4.516572231441,-25.497554964756 16.516872483551,-28.925962353098 17.61092327919,-5.031325734977 34.85172620789,8.084744058153 38.780803836324,25.094589773618 5.236842529138,22.67144909843 -11.650315520479,44.26735930237 -33.672307063684,48.635645319549 -27.712428883733,5.497042143412 -53.713416147535,-15.213349830069 -58.490486802775,-42.25002435375 -5.785672639753,-32.745035472734 18.774694478481,-63.176836151196 50.827741643815,-68.345328286 37.773406942689,-6.09088913391 72.651116712382,22.334942879351 78.200169769227,59.40545893388 6.406601386767,42.799378043464 -25.89446244169,82.132646070968 -67.983176223945,88.055011252453 -47.8238716336,6.729367727223 -91.619255198684,-29.453481283416 -97.90985273568,-76.56089351401 -7.057099745721,-52.847397233572 33.012145031673,-101.109562219065 85.138610804075,-107.764694218906 57.870257021355,-7.388457928904 110.602644861714,36.57054967945 117.619535702133,93.716328094139" />
+        <text
+             xml:space="preserve"
+             style="font-size:32px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:'Consolas, Normal';font-variant-ligatures:none"
+             x="29.3294925689697"
+             y="59.9921455383301"
+             id="text13042"><tspan
+                 sodipodi:role="line"
+                 id="tspan13040"
+                 x="29.3294925689697"
+                 y="59.9921455383301"><tspan
+     style="fill:#0000ff;fill-opacity:1"
+     id="tspan14874">★</tspan>輪環の順<tspan
+     style="fill:#0000ff;fill-opacity:1"
+     id="tspan16206">★</tspan></tspan></text>
+    </g>
+</svg>

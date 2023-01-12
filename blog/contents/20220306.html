@@ -1,0 +1,21 @@
+<h1>window.onloadとdocument.ready</h1>
+研修課題で出題された内容で、分からなかった部分があったので備忘録として、、、<br /><br />「window.onload」と「document.ready」イベント発火タイミングを解説します。
+<table>
+	<thead>
+		<tr>
+			<th width="50%">window.onload</th>
+			<th width="50%">document.ready</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>windowオブジェクトが対象<br />(全体)</td>
+			<td>documentオブジェクトが対象<br />(DOM)</td>
+		</tr>
+		<tr>
+			<td>画像・動画等の全てを含めて読み込まれたら、、、</td>
+			<td>HTMLドキュメントが読み込まれたら、、、</td>
+		</tr>
+	</tbody>
+</table>
+特に理由がなければ、「window.onload」を使用すればok!です。

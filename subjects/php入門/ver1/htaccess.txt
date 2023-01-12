@@ -1,0 +1,30 @@
+# webサーバの文字コード(UTF-8)指定
+php_value output_buffering OFF
+php_value default_charset UTF-8
+php_value mbstraing.detect_order SJIS,EUC-JP,JIS,UTF-8,ASCII
+php_value mbstraing.http_input pass
+php_value mbstraing.http.output pass
+php_value mbstraing.internal_encoding UTF-8
+php_value mbstraing.substitude_character none
+php_value mbstraing.encoding_translation OFF
+
+# php拡張子を削除
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1\.php
+</IfModule>
+
+# phpエラー出力の有無
+php_flag display_errors on
+
+# タイムゾーンの設定
+php_value date.timezone Asia/Tokyo
+
+
+# デフォルトファイルの設定
+DirectoryIndex index.php
+
+# ファイル・ディレクトリ一覧の非表示
+Options -Indexes
+
