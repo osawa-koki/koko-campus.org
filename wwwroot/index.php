@@ -98,7 +98,7 @@ setcookie("questionaire-id", $questionaire_data["id"]);
 						<table border="1" id="new-table" class="x">
 							<tbody>
 								<?php
-								$url = "https://koko-campus.org/update/information";
+								$url = "https://localhost/update/information";
 								$data = array(
 									"get" => "for-toppage"
 								);
