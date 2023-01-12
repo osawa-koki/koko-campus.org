@@ -8,3 +8,9 @@
 
 このころはGitも使っていなかったし、ハードコーディングだし、セキュリティはガバガバで、ユーザビリティを損なうUIデザインだったりと、お楽しみコードがたくさんあります。  
 ってかデータベースも結局値段が高くて諦めたんだった笑  
+
+## 実行方法
+
+```shell
+docker build -t koko-campus-org . && docker run -p 80:80 -it --rm --name my-koko-campus-org koko-campus-org
+```
