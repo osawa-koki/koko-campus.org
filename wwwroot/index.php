@@ -3,7 +3,7 @@
 require(__DIR__. "/sub-svg.php");
 
 //cookieを設定する必要があるため、アンケートデータの取得はここで行う
-$url = "https://koko-campus.org/questionaire/questionaire-api.php";
+$url = "https://localhost/questionaire/questionaire-api.php";
 $data = array(
 	"get-questionaire" => "アンケートを取得する♪"
 );
