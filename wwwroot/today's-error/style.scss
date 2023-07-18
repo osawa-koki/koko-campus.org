@@ -1,0 +1,235 @@
+@charset "UTF-8";
+html {
+	font-size: 14px;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+body {
+	background-image: url(pics/error-bg.png);
+	background-repeat: repeat;
+	background-color: rgba(red, 0.3);
+}
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+
+@media screen and (max-width: 699px) {
+	#header_adjustment {
+		margin: 55px 0;
+	}
+	#main {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+}
+@media screen and (min-width: 700px) {
+	#header_adjustment {
+		margin: 80px 0;
+	}
+	#main {
+		padding: 0 15px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+header {
+	display: block;
+	position: fixed;
+	top: 0;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: normal;
+	font-family: "consolas", "Consolas";
+	margin: 0;
+	padding: 0;
+	background-image: url(pics/bg.png);
+	background-size: cover;
+	background-repeat: repeat;
+	background-color: rgba(red, 0.7);
+	z-index: 9;
+	@media screen and (max-width: 1200px) {
+		left: 0;
+		right: 0;
+	}
+	@media screen and (min-width: 1201px) {
+		left: calc((100% - 1200px) / 2);
+		right: calc((100% - 1200px) / 2);
+	}
+	@media screen and (max-width: 699px) {
+		height: 50px;
+		line-height: 50px;
+	}
+	@media screen and (min-width: 700px) {
+		height: 75px;
+		line-height: 75px;
+	}
+	#logo {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 99;
+		cursor: pointer;
+		@media screen and (max-width: 1200px) {
+			left: 0px;
+		}
+		@media screen and (min-width: 1201px) {
+			left: calc((100% - 1200px) / 2);
+		}
+		@media screen and (max-width: 699px) {
+			width: 100px;
+			height: 50px;
+		}
+		@media screen and (min-width: 700px) {
+			width: 150px;
+			height: 75px;
+		}
+	}
+}
+
+#button-div {
+	display: flex;
+	justify-content: space-between;
+	max-width: 700px;
+	margin: 10px auto;
+	a {
+		color: #000000;
+		text-decoration: none;
+		display: inline-block;
+		width: 70px;
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+		margin: 0 5px;
+		border: 1px #000000 solid;
+		background-color: #00FFFF;
+		&[href="no"] {
+			pointer-events: none;
+			background-color: lightgrey;
+		}
+		&:hover {
+			color: white;
+			background-color: blue;
+		}
+	}
+}
+
+footer {
+	background-position: center bottom;
+	background-image: url(../pics/footer2020.png);
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 150px;
+}
+
+#contents {
+	max-width: 700px;
+	margin: 50px auto;
+	padding: 10px 25px;
+	#error-box {
+		padding: 0;
+		> div {
+			margin: 30px 0;
+			padding: 10px;
+			border: 1px lightgrey solid;
+			background-color: rgba(white, 0.9);
+			> div {
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-bottom: 1px black solid;
+			}
+		}
+		#error-language {
+			font-size: 1.3rem;
+		}
+	}
+	div.error-box_separator {
+		width: 100%;
+		height: 3px;
+		background-color: black;
+		border-radius: 5px;
+		margin: 50px 0;
+	}
+	img:not(.x) {
+		display: block;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	svg, canvas {
+		width: 100%;
+	}
+	table:not(.x) {
+		border-collapse: collapse;
+		margin: 25px;
+		thead td {
+			background-color: lightgrey;
+			text-align: center;
+		}
+		tbody td {
+			padding: 10px 25px;
+		}
+	}
+	h1 {
+		font-size: 1.5rem;
+		margin: 50px 0;
+		padding: 10px;
+		border: 2px red dashed;
+		box-sizing: border-box;
+		background: rgba(red, 0.7);
+	}
+	h2 {
+		font-size: 1.3rem;
+		margin: 25px 0;
+	}
+	h3 {
+		font-size: 1.2rem;
+		margin: 25px 0;
+	}
+	p.r {
+		margin: 5px 25px 25px 1rem;
+		text-indent: -1rem;
+		text-align: left;
+		&::before {
+			content: "※";
+		}
+	}
+	ul:not(.x), ol:not(.x) {
+		display: inline-block;
+		padding: 15px 25px 15px 50px;
+		border: 1px #000000 solid;
+		margin: 25px 0;
+	}
+	span.underline {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(75%, fuchsia), color-stop(82%, transparent));
+		background: linear-gradient(transparent 0 75%, fuchsia 75% 82%, transparent 82% 100%);
+	}
+	div.separator {
+		width: 100%;
+		height: 3px;
+		border-radius: 1px;
+		background-color: lightgrey;
+		margin: 25px 0;
+	}
+	#viewport-svg {
+		display: block;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		border: 1px solid black;
+		background-image: url(../subjects/html&css入門/pics/viewport.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#viewport-img {
+		display: block;
+		max-width: 300px;
+		margin: 50px auto;
+	}
+}
+
+/*# sourceMappingURL=index.css.map */
