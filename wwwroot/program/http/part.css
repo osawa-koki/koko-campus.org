@@ -1,0 +1,87 @@
+#v1 #url-box {
+  font-size: 20px;
+  border-left: 5px red solid;
+  padding-left: 25px;
+  font-family: "consolas", "code";
+  white-space: nowrap;
+}
+
+#v1 #url-box #url {
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  width: calc(100% - 150px);
+}
+
+#v1 div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+}
+
+#v1 div.container div.flex-item {
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0 10px 10px 10px;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+#v1 div.container div.flex-item div.scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#v1 div.container div.flex-item table {
+  margin: 0 0 25px 0;
+}
+
+#v1 div.container div.flex-item table caption {
+  white-space: nowrap;
+}
+
+#v1 div.container div.flex-item table tbody {
+  font-size: 12px;
+}
+
+#v1 div.container div.flex-item table td.delete-button {
+  width: 10px;
+  color: white;
+  background-color: black;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#v1 div.container div.flex-item textarea {
+  display: block;
+  height: 150px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "consolas", "code";
+  border: 1px solid black;
+}
+
+#v1 #send-button {
+  display: block;
+  font-size: 20px;
+  width: 120px;
+  text-align: center;
+  height: 40px;
+  line-height: 30px;
+  background-color: pink;
+  border: 1px solid black;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#v1 #send-button:hover {
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=part.css.map */

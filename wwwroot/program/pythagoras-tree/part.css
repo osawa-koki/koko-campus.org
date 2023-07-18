@@ -1,0 +1,81 @@
+#v2 h2 {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+#v2 .btn_ok {
+  display: inline-block;
+  padding: 5px 10px;
+  color: black;
+  background-color: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#v2 .btn_ok:hover {
+  color: white;
+  background-color: blue;
+}
+
+#v2 .btn_ng {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  background-color: grey;
+  border: 1px solid black;
+  cursor: wait;
+}
+
+#v2 table {
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+#v2 table th, #v2 table td {
+  padding: 5px 10px;
+}
+
+#v2 table th input, #v2 table td input {
+  width: 100%;
+}
+
+#v1 h2 {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+#v1 svg {
+  display: block;
+  border: 1px solid black;
+  margin: 30px auto;
+}
+
+#v1 #v1-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  color: black;
+  background-color: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#v1 #v1-btn:hover {
+  color: white;
+  background-color: blue;
+}
+
+#v1 table {
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+#v1 table th, #v1 table td {
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=part.css.map */

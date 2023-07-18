@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+/*ver1*/
+#v1-ttl {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "consolas", "sublimetext";
+	text-align: center;
+	margin: 25px;
+}
+#v1-main {
+	width: 100%;
+	max-width: 700px;
+	margin: 50px auto;
+}
+#v1-x {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 25px auto;
+	border: 1px #000000 solid;
+}
+#v1-x * {
+	box-sizing: border-box;
+}
+#v1-rainbow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	border-bottom: 1px #000000 solid;
+}
+#v1-pointer {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: calc(50% - 10px);
+	left: 0;
+	border: 1px #000000 solid;
+	border-radius: 50%;
+	background-color: yellow;
+	z-index: 1;
+}
+#v1-svg {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	mix-blend-mode: multiply;
+}
+.v1-tri {
+	mix-blend-mode: screen;
+}
+#v1-flog {
+	mix-blend-mode: normal !important;
+}

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.bd-red {
+	border: 2px red solid;
+}
+.bd-green {
+	border: 2px green solid;
+}
+.bd-blue {
+	border: 2px blue solid;
+}
+.bd-black {
+	border: 2px black solid;
+}
+.hidden {
+	display: none !important;
+}
+
+body *::-webkit-scrollbar {/*webkit*/
+	display: none;
+}
+body * {/*firefox*/
+	scrollbar-width: none;
+}
+
+
+/*ver1*/
+#v1-c {
+	width: 90%;
+	max-width: 600px;
+	margin: 30px auto;
+}
+#v1-c input {
+	width: 100%;
+}
+#v1-c table {
+	width: 100%;
+	border-spacing: 5px;
+}
+#v1-c table tr td {
+	padding: 10px;
+	white-space: nowrap;
+}
+#v1-c table tr td:nth-of-type(1) {
+	text-align: right;
+	max-width: 60px;
+	font-size: 12px;
+	padding: 5px;
+}
+#v1-c table tr td:nth-of-type(2) {
+	width: 100%;
+}
+#v1-c table tr td:nth-of-type(3) {
+	text-align: right;
+	min-width: 30px;
+}
+#v1-s > div {
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border: 1px black solid;
+	border-radius: 50%;
+}
+#v1-c input::-webkit-inner-spin-button,
+#v1-c input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+	-moz-appearance:textfield;
+}
+
+
+
+/*ver2*/
+#v1-c table tr td:nth-of-type(2) {
+	width: 100%;
+}
+#v1-c table tr td:nth-of-type(3) {
+	padding: 5px;
+}
+#v1-c input.v2-value {
+	width: 100%;
+	height: 100%;
+}
+#v2-s > div {
+	position: fixed;
+	inset: 0;
+	margin: auto;
+	border-width: 50px;
+	border-style: solid;
+	border-radius: 50%;
+	max-width: 500px;
+	max-height: 500px;
+	background: transparent;
+}
+#v2-s > div.fadeout {
+	animation: fade 0.5s cubic-bezier(.65,.35,.65,.35) 0s 1 normal none running;
+}
+@keyframes fade {
+	from {
+		width: 0;
+		height: 0;
+	}
+	to {
+		width: 80vw;
+		height: 80vw;
+	}
+}
+#v2-z {
+	overflow: scroll hidden;
+}
+#v2-z table {
+	border-collapse: collapse;
+	margin: 20px auto;
+	text-align: center;
+}
+#v2-z table td {
+	padding: 3px 10px;
+}
+#v2-z input {
+	text-align: center;
+	font-size: 16px;
+	font-family: "consolas", "sublimetext";
+}
+#v2-ttl {
+	font-size: 20px;
+	font-family: "consolas", "sublimetext";
+	text-align: center;
+	margin: 25px;
+}

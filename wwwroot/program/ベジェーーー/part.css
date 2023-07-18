@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+.center {
+	text-align: center;
+}
+
+
+
+/*ver2*/
+#v2-svg-lc polyline {
+	fill: none;
+	stroke: black;
+	stroke-width: 1;
+}
+#v2-svg-cl circle {
+	fill: yellow;
+	stroke: black;
+	stroke-width: 0.3;
+}
+#v2-svg-cl path {
+	fill: none;
+	stroke: red;
+	stroke-width: 0.7;
+}
+#v2-svg-cl {
+	fill: none;
+	stroke: blue;
+	stroke-width: 1;
+}
+#v2-btn {
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+}
+#v2-btn > div {
+	position: relative;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 10px;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	cursor: pointer;
+}
+#v2-btn > div:nth-of-type(1) {
+	background-color: red;
+}
+#v2-btn > div:nth-of-type(2) {
+	background-color: blue;
+}
+#v2-btn > div:hover {
+	top: 2px;
+	left: 2px;
+	box-shadow: none;
+}
+#v2-svg-cs circle {
+	fill: rgba(255, 0, 255, 0.1);
+	stroke: none;
+}
+#v2-svg-dv polyline {
+	fill: none;
+	stroke: rgba(0, 0, 0, 0.1);
+	stroke-width: 0.5;
+}
+#v2-svgx {
+	margin: 50px 0;
+}
+#v2-svgx svg {
+	display: block;
+	border: 1px solid #000000;
+	margin: 0 auto;
+	overflow: visible;
+}
+#v2-main {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#v2-ttl {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #000000;
+	border-radius: 25px;
+	font-size: 20px;
+	font-family: "consolas", "sublimetext";
+}
+#v2-sl-bx {
+	margin: 50px auto;
+	width: 95%;
+	max-width: 500px;
+	text-align: center;
+}
+#v2-sl-bx input {
+	width: 90%;
+	display: inline-block;
+}
+
+
+/*ver1*/
+#v1-svg-lc polyline {
+	fill: none;
+	stroke: black;
+	stroke-width: 1;
+}
+#v1-svg-cl circle {
+	fill: yellow;
+	stroke: black;
+	stroke-width: 0.3;
+}
+#v1-svg-cl path {
+	fill: none;
+	stroke: red;
+	stroke-width: 0.7;
+}
+#v1-svg-cl {
+	fill: none;
+	stroke: blue;
+	stroke-width: 1;
+}
+#v1-btn {
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+}
+#v1-btn > div {
+	position: relative;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 10px;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	color: white;
+	cursor: pointer;
+}
+#v1-btn > div:nth-of-type(1) {
+	background-color: red;
+}
+#v1-btn > div:nth-of-type(2) {
+	background-color: blue;
+}
+#v1-btn > div:hover {
+	top: 2px;
+	left: 2px;
+	box-shadow: none;
+}
+#v1-svg-cs circle {
+	fill: rgba(255, 0, 255, 0.1);
+	stroke: none;
+}
+#v1-svg-dv polyline {
+	fill: none;
+	stroke: rgba(0, 0, 0, 0.1);
+	stroke-width: 0.5;
+}
+#v1-svgx {
+	margin: 50px 0;
+}
+#v1-svgx svg {
+	display: block;
+	border: 1px solid #000000;
+	margin: 0 auto;
+}
+#v1-main {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#v1-ttl {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #000000;
+	border-radius: 25px;
+	font-size: 20px;
+	font-family: "consolas", "sublimetext";
+}
+#v1-sl-bx {
+	margin: 50px auto;
+	width: 95%;
+	max-width: 500px;
+	text-align: center;
+}
+#v1-sl-bx input {
+	width: 90%;
+	display: inline-block;
+}

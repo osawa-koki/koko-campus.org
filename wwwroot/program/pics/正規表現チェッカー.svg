@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+     width="500"
+     height="500"
+     viewBox="0 0 500 500"
+     version="1.1"
+     id="svg5"
+     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+     sodipodi:docname="regexp.svg"
+     inkscape:export-filename="C:\Program Files\XAMPP\htdocs\koko-campus.org\program\pics\正規表現チェッカー.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         inkscape:pageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:document-units="px"
+         showgrid="false"
+         units="px"
+         inkscape:zoom="1.060799053"
+         inkscape:cx="281.8629966"
+         inkscape:cy="241.7988583"
+         inkscape:window-width="1920"
+         inkscape:window-height="1027"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+    <defs
+         id="defs2">
+        <rect
+             x="89.32163765"
+             y="75.99004994"
+             width="114.6516543"
+             height="454.6071408"
+             id="rect36492" />
+        <rect
+             x="206.6396095"
+             y="79.98952625"
+             width="113.3184955"
+             height="341.2886453"
+             id="rect29080" />
+        <rect
+             x="350.6207567"
+             y="55.99266837"
+             width="127.983242"
+             height="293.2949296"
+             id="rect13982" />
+        <rect
+             x="39.99476312"
+             y="31.9958105"
+             width="431.9434417"
+             height="154.6464174"
+             id="rect4016" />
+    </defs>
+    <g
+         inkscape:label="レイヤー 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <rect
+             style="opacity:0.910891;fill:#be0000;fill-opacity:0.8936650157;stroke:none;stroke-width:1.57171;stroke-linecap:round;stroke-linejoin:bevel;paint-order:markers stroke fill"
+             id="rect52924"
+             width="394.0300598"
+             height="479.9371643"
+             x="59.24442291"
+             y="9.998952866" />
+        <text
+             xml:space="preserve"
+             id="text13980"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:'UD Digi Kyokasho N-R';-inkscape-font-specification:'UD Digi Kyokasho N-R, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:tb-rl;white-space:pre;shape-inside:url(#rect13982);fill:#ffffff;fill-opacity:1"
+             transform="translate(-73.32477978,43.06676416)"><tspan
+                 x="438.6035156"
+                 y="55.9921875"
+                 id="tspan61925">そうだ</tspan></text>
+        <text
+             xml:space="preserve"
+             id="text29078"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:'UD Digi Kyokasho N-R';-inkscape-font-specification:'UD Digi Kyokasho N-R, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:tb-rl;white-space:pre;shape-inside:url(#rect29080);fill:#ffffff;fill-opacity:1"
+             transform="translate(-21.80575843,18.16246729)"><tspan
+                 x="279.9589844"
+                 y="79.99023438"
+                 id="tspan61927">正規表現、</tspan></text>
+        <text
+             xml:space="preserve"
+             id="text36490"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.25;font-family:'UD Digi Kyokasho N-R';-inkscape-font-specification:'UD Digi Kyokasho N-R, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:tb-rl;white-space:pre;shape-inside:url(#rect36492);fill:#ffffff;fill-opacity:1"
+             transform="translate(-14.66369911,27.47496729)"><tspan
+                 x="163.9726562"
+                 y="75.99023438"
+                 id="tspan61929">使おう。</tspan></text>
+        <rect
+             style="opacity:0.910891;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:bevel;paint-order:markers stroke fill"
+             id="rect59831"
+             width="5.332634926"
+             height="435.9429321"
+             x="82.65584564"
+             y="34.66212845" />
+        <rect
+             style="opacity:0.910891;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:bevel;paint-order:markers stroke fill"
+             id="rect59831-2"
+             width="5.332634926"
+             height="435.9429321"
+             x="423.944458"
+             y="39.32818222" />
+        <path
+             style="color:#000000;opacity:0.910891;fill:#fff764;fill-opacity:0.893665;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:markers stroke fill"
+             d="m 254.8002387,51.82654973 c -0.6567936,10.04335083 15.3536346,19.4810756 16.1194891,18.76629177 0,0 -8.1369,4.06405128 -12.9532361,4.06405128 -12.5168149,0 -22.6636982,-10.14688331 -22.6636982,-22.6636982 0,-12.51681489 10.1468833,-22.6636982 22.6636982,-22.6636982 5.8253192,0 15.152052,5.80939602 15.152052,5.80939602 -1.963138,-2.88103839 -17.5841568,5.46144037 -18.318305,16.68765733 z"
+             id="path59975"
+             sodipodi:nodetypes="sssssss" />
+        <circle
+             style="opacity:0.910891;fill:#fff7cc;fill-opacity:0.893665;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:bevel;paint-order:markers stroke fill"
+             id="path61711"
+             cx="260.4233093"
+             cy="447.1896973"
+             r="19.32505417" />
+    </g>
+</svg>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+h1 {
+	font-family: "consolas", "sublimetext";
+}
+.hidden {
+	display: none;
+}
+
+/*ver1*/
+#v1-svg_pt polyline {
+	fill: none;
+	stroke: blue;
+	stroke-width: 0.1;
+	stroke-opacity: 0.5;
+}
+#v1-svg_ls polyline {
+	fill: none;
+	stroke: grey;
+	stroke-width: 0.1;
+}
+.v1-bg_out {
+	background-color: rgba(0, 0, 255, 0.3);
+}
+.v1-bg_in {
+	background-color: rgba(255, 0, 0, 0.3);
+}
+#v1-pai {
+	min-width: 200px;
+	max-width: 250px;
+	padding: 10px 25px;
+}
+#pai-container {
+	display: flex;
+	align-items: flex-start;
+	font-family: "consolas", "sublimetext";
+}
+#v1-table {
+	border-collapse: collapse;
+	margin: 30px auto;
+}
+#v1-table td {
+	padding: 3px 10px;
+}
+#v1-table input {
+	width: 70px;
+}
+#v1-table input::-webkit-inner-spin-button,
+#v1-table input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+	-moz-appearance:textfield;
+}
+#v1-svg {
+	display: block;
+	border: 1px solid black;
+	margin: auto;
+	overflow: visible;
+	background-image: url(格子.png);
+	background-size: contain;
+}
+#v1-ttl {
+	text-align: center;
+}
+.v1-bg_green {
+	background-color: rgba(0, 255, 100, 0.2);
+}
+.v1-bg_black {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.v1-bg_red {
+	background-color: rgba(255, 0, 0, 0.2);
+}

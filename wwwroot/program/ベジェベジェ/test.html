@@ -1,0 +1,20 @@
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+<script charset="UTF-8" type="text/javascript" defer>
+
+let eee = 100;
+let intd = setInterval(log, eee);
+function log () {
+	eee = eee + 100;
+	console.log(eee);
+	if (2000 < eee) {
+		clearInterval(intd);
+	}
+}
+
+</script>
+	</body>
+</html>
