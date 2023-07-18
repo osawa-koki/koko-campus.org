@@ -1,0 +1,218 @@
+* {
+  font-family: "consolas", "Consolas";
+}
+
+#login-form_div {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95%;
+  margin: 50px auto;
+}
+
+main section:not(.active) {
+  position: relative;
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+  background-color: lightgrey;
+  border: 1px black solid;
+  -webkit-box-shadow: 1px 1px black;
+          box-shadow: 1px 1px black;
+  cursor: pointer;
+}
+
+main section:not(.active):hover {
+  color: white;
+  background-color: grey;
+  top: 1px;
+  left: 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main section:not(.active) h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  inset: 0;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section:not(.active) > div {
+  display: none;
+}
+
+main section.active {
+  position: fixed;
+  inset: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 3px black solid;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+main section.active h2 {
+  margin: 25px;
+}
+
+section {
+  overflow: auto;
+}
+
+section#update-info #update-info_dt_box {
+  margin: 25px 10px;
+  white-space: nowrap;
+}
+
+section#update-info #update-info_dt_box select {
+  margin-left: 15px;
+  margin-right: 5px;
+  padding: 3px 10px;
+}
+
+section#update-info #update-info_dt_box #update-info_dt-button {
+  padding: 2px 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+section#update-info #update-info_pointing-date {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
+}
+
+section#update-info #update-info_containing-box table {
+  margin: 25px;
+  border-collapse: collapse;
+}
+
+section#update-info #update-info_containing-box table caption input[type=button] {
+  margin: 3px 10px;
+  padding: 2px 10px;
+  width: 150px;
+}
+
+section#update-info #update-info_containing-box table caption input[type=button].add {
+  background-color: pink;
+}
+
+section#update-info #update-info_containing-box table caption input[type=button].add:hover {
+  color: white;
+  background-color: red;
+}
+
+section#update-info #update-info_containing-box table caption input[type=button].del {
+  color: black;
+  background-color: lightcyan;
+}
+
+section#update-info #update-info_containing-box table caption input[type=button].del:hover {
+  color: white;
+  background-color: blue;
+}
+
+section#update-info #update-info_containing-box table th, section#update-info #update-info_containing-box table td {
+  border: 1px black solid;
+}
+
+section#update-info #update-info_containing-box table th {
+  padding: 5px 15px;
+}
+
+section#update-info #update-info_containing-box table td {
+  padding: 0;
+}
+
+section#update-info #update-info_containing-box table td input[type=text] {
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+section#update-info #update-info_containing-box table td input[type=button] {
+  padding: 2px 5px;
+  margin: 3px 5px;
+}
+
+section#update-info #update-info_containing-box div.add-button {
+  margin: 35px 25px;
+  padding: 5px;
+  width: 250px;
+  text-align: center;
+  border: 1px black solid;
+  color: black;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+section#update-info #update-info_containing-box div.add-button:hover {
+  color: white;
+  background-color: green;
+}
+
+section#update-info #update-info_containing-box div.put-button {
+  margin: 35px 25px;
+  padding: 5px;
+  width: 250px;
+  text-align: center;
+  border: 1px black solid;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+}
+
+section#update-info #update-info_containing-box div.put-button:hover {
+  background-color: yellow;
+}
+
+section#link #link-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#link #link-form input[type=submit] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0 5px 25px;
+  width: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  color: black;
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+section#link #link-form input[type=submit]:hover {
+  color: white;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
