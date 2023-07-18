@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+main {
+	font-family: "consolas", "Consolas";
+	max-width: 800px;
+	margin: 50px auto;
+	#show-box {
+		margin: 25px 0 ;
+		overflow-x: auto;
+		table {
+			border-collapse: collapse;
+			th, td {
+				padding: 20px;
+			}
+			tr {
+				.pw-table-k {
+					input[type=text] {
+						letter-spacing: 1px;
+						font-size: 13px;
+						text-align: right;
+						padding: 0 5px;
+					}
+				}
+				.pw-table-v {
+					position: relative;
+					white-space: nowrap;
+					input[type=text] {
+						position: relative;
+						border: 1px black solid;
+						border-radius: 0;
+						letter-spacing: -1px;
+						color: grey;
+						background-color: rgba(gray, 0.5);
+						z-index: 5;
+						&::selection {
+							color: lightgrey;
+							background-color: rgba(grey, 0.5);
+						}
+						&::before {
+							content: "";
+							position: absolute;
+							inset: 0;
+							background: linear-gradient(to bottom, transparent 0% 35%, grey 35% 40%, transparent 40% 60%, grey 60% 65%, transparent 65% 100%);
+						}
+					}
+					input[type=button] {
+						position: relative;
+						width: 50px;
+						margin: 3px;
+						margin-left: 10px;
+						cursor: pointer;
+						z-index: 10;
+						&.copied {
+							color: white;
+							background-color: black;
+						}
+					}
+					&::before {
+						content: "";
+						position: absolute;
+						inset: 0;
+						background: linear-gradient(160deg,	transparent 0% 8.5%, rgb(150, 150, 150) 8.5% 10%, transparent 10% 18.5%, rgb(150, 150, 150) 18.5% 20%, transparent 20% 28.5%, rgb(150, 150, 150) 28.5% 30%, transparent 30% 38.5%, rgb(150, 150, 150) 38.5% 40%, transparent 40% 48.5%, rgb(150, 150, 150) 48.5% 50%, transparent 50% 58.5%, rgb(150, 150, 150) 58.5% 60%, transparent 60% 68.5%, rgb(150, 150, 150) 68.5% 70%, transparent 70% 78.5%, rgb(150, 150, 150) 78.5% 80%, transparent 80% 88.5%, rgb(150, 150, 150) 88.5% 90%, transparent 90% 98.5%, rgb(150, 150, 150) 98.5% 100%);
+						z-index: -1;
+					}
+					&::after {
+						content: "";
+						position: absolute;
+						inset: 0;
+						background: linear-gradient(20deg,	transparent 0% 8.5%, rgb(150, 150, 150) 08.5% 10%, transparent 10% 18.5%, rgb(150, 150, 150) 18.5% 20%, transparent 20% 28.5%, rgb(150, 150, 150) 28.5% 30%, transparent 30% 38.5%, rgb(150, 150, 150) 38.5% 40%, transparent 40% 48.5%, rgb(150, 150, 150) 48.5% 50%, transparent 50% 58.5%, rgb(150, 150, 150) 58.5% 60%, transparent 60% 68.5%, rgb(150, 150, 150) 68.5% 70%, transparent 70% 78.5%, rgb(150, 150, 150) 78.5% 80%, transparent 80% 88.5%, rgb(150, 150, 150) 88.5% 90%, transparent 90% 98.5%, rgb(150, 150, 150) 98.5% 100%);
+						z-index: -1;
+					}
+				}
+				.pw-table-ud {
+					input[type=button] {
+						cursor: pointer;
+					}
+					.up {
+						background-color: pink;
+						&:hover {
+							color: white;
+							background-color: red;
+						}
+					}
+					.down {
+						background-color: lightcyan;
+						&:hover {
+							color: white;
+							background-color: blue;
+						}
+					}
+				}
+			}
+		}
+	}
+	.button-box {
+		display: flex;
+		margin: 30px 0 ;
+		div {
+			text-align: center;
+			padding: 10px 25px;
+			border: 1px black solid;
+			position: relative;
+			color: white;
+			cursor: pointer;
+			&:hover {
+				top: 1px;
+				left: 1px;
+			}
+			&:nth-of-type(1) {
+				background-color: red;
+			}
+			&:nth-of-type(2) {
+				background-color: blue;
+				margin-left: 25px;
+			}
+			&:nth-of-type(3) {
+				background-color: black;
+				margin-left: 25px;
+			}
+		}
+	}
+	#generate-pw {
+		margin: 25px 0;
+		padding: 25px;
+		border: 1px grey dashed;
+		min-height: 250px;
+		background-color: lightgray;
+		overflow-x: auto;
+		table {
+			border-collapse: collapse;
+			background-color: white;
+			th, td {
+				border: 1px black solid;
+				padding: 5px 15px;
+			}
+			ul {
+				list-style: none;
+				margin: 10px;
+				padding: 0;
+				input[type=checkbox] {
+					margin-right: 15px;
+				}
+				input[type=checkbox], label {
+					cursor: pointer;
+				}
+			}
+			#button-to-generate-pw {
+				display: block;
+				font-size: 16px;
+				margin: 0 auto;
+				padding: 3px 10px;
+				cursor: pointer;
+			}
+			#created-pw {
+				font-size: 16px;
+				font-family: "consolas", "Consolas";
+				padding: 5px 15px;
+			}
+			#button-to-copy {
+				width: 50px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 12px;
+				box-sizing: border-box;
+				cursor: pointer;
+				&.copied {
+					color: white;
+					background-color: black;
+					margin: 3px;
+				}
+			}
+		}
+	}
+}
