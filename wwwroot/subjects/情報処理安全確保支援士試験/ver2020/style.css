@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 700px) {
+	html {
+		font-size: 13px;
+	}
+}
+@media screen and (min-width: 701px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+#page_header {
+	display: flex;
+	justify-content: space-between;
+}
+#menu_img:hover {
+	cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+	#logo {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100px;
+		height: 50px;
+		z-index: 999;
+	}
+	#menu_img {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		width: 50px;
+		height: 50px;
+		z-index: 999;
+	}
+}
+@media screen and (min-width: 701px) {
+	#logo {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 200px;
+		height: 100px;
+		z-index: 999;
+	}
+	#menu_img {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		width: 100px;
+		height: 100px;
+		z-index: 999;
+	}	
+}
+#header_adjustment {
+	margin: 100px 0;
+}
+/* ----------ページヘッダーのレイアウトボックス---------- */
+
+
+
+/* ログイン状態ボックス */
+.login_as {
+	border: 1px black solid;
+	max-width: 18rem;
+	font-size: 0.8rem;
+	margin: 5rem 0.5rem;
+	padding: 1rem;
+}
+.get_it_center {
+	text-align: center;
+	margin: 0 auto;
+}
+.hidden {
+	display: none;
+}
+
+
+
+#button_to_test {
+	font-size: 1rem;
+	border: 1px black solid;
+	border-radius: 1rem;
+	padding: 0.2rem 1rem;
+	line-height: 5rem;
+	background-color: #00CCFF;
+	color: black;
+}
+#button_to_test:hover {
+	color: white;
+	background-color: #0066FF;
+}
+#button_to_test:link {
+	text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+	#finish {
+		margin: 0 1rem;
+	}
+}
+@media screen and (min-width: 701px) {
+	#finish {
+		padding: 0 10rem;
+	}	
+}
+#button_container {
+	display: flex;
+	justify-content: space-between;
+	margin: 5rem 0;
+}
+#button_back {
+	padding: 0.5rem 1rem;
+	border: 1px black solid;
+	border-radius: 0 3rem;
+	font-size: 1rem;
+	white-space: nowrap;
+	background: linear-gradient(-30deg, #FFFF66, #99FFFF);
+}
+#button_back:hover {
+	background: linear-gradient(-30deg, #FFFF00, #33FFFF);
+}
+
+#button_to_top {
+	padding: 0.2rem 1rem;
+	border: 1px black solid;
+	background-color: #99FFFF;
+	white-space: nowrap;
+}
+#button_to_top:hover {
+	background-color: #00FFFF;
+}
+#button_to_mypage {
+	padding: 0.2rem 1rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	white-space: nowrap;
+}
+#button_to_mypage:hover {
+	background-color: #FFFF00;
+}
+#button_next {
+	padding: 0.5rem 1rem;
+	border: 1px black solid;
+	border-radius: 3rem 0;
+	font-size: 1rem;
+	white-space: nowrap;
+	background: linear-gradient(30deg, #FFFF66, #99FFFF);
+}
+#button_next:hover {
+	background: linear-gradient(30deg, #FFFF00, #33FFFF);
+}
+
+#button_container a:link {
+	text-decoration: none;
+	color: black;
+}
+#button_container a:visited {
+	text-decoration: none;
+	color: black;
+}
+footer {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.2rem;
+}
+.h1_span {
+	padding: 0 0.5rem;
+	background: linear-gradient(to bottom, transparent 0% 55%, #FF77FF 55% 85%, transparent 85% 100%);
+}
+
+#main {
+	max-width: 700px;
+	margin: 0 auto;
+}
+/*
+@media screen and (max-width: 700px) {
+	#main {
+		max-width: 700px;
+		margin: 0 auto;
+	}	
+}
+@media screen and (min-width: 701px) {
+	#main {
+		max-width: 1000px;
+		margin: 0 auto;
+	}	
+}
+*/
+#my_comment {
+	background-color: #CCFFFF;
+	padding: 1rem;
+	border: 1px black solid;
+	border-radius: 1rem;
+}
+
+
+.section {
+	width: 90%;
+	border: 1px black solid;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+
+.section .h2_span {
+	margin-left: 0.3rem;
+	padding: 0 0.5rem;
+	background: linear-gradient(to bottom, transparent 0% 55%, #00FFFF 55% 80%, transparent 80% 100%);
+}
+
+.section .h3_span {
+	margin-left: 0.2rem;
+	padding: 0 0.5rem;
+	background: linear-gradient(to bottom, transparent 0% 60%, #99FFFF 60% 75%, transparent 75% 100%);
+}
+
+
+
+
+
+table {
+	max-width: 600px;
+	margin: 3rem auto 0 auto;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+
+table caption {
+	font-size: 0.8rem;
+}
+table th {
+	text-align: center;
+	padding: 0.1rem 0.5rem;
+	white-space: nowrap;
+	font-size: 0.95rem;
+}
+table td {
+	text-align: left;
+	padding: 0.1rem 0.5rem;
+	font-size: 0.9rem;
+	min-width: 20rem;
+}
+.norble td {
+	min-width: 0;
+	white-space: nowrap;
+}
+
+
+
+ol {
+	margin: 1rem auto;
+}
+ol li::marker {
+	font-weight: bold;
+}
+ol li {
+	font-size: 0.9rem;
+	padding: 0 1rem;
+}
+.li_caption {
+	font-size: 0.8rem;
+	text-align: center;
+}
+.no_mark {
+	list-style-type: none;
+}
+
+
+
+.underline0 {
+	background: linear-gradient(to bottom, transparent 0% 75%, #FFCC33 75% 90%, transparent 90% 100%);
+}
+.underline1 {
+	background: linear-gradient(to bottom, transparent 0% 75%, #66CCFF 75% 90%, transparent 90% 100%);
+}
+.underline2 {
+	background: linear-gradient(to bottom, transparent 0% 75%, #00FF33 75% 90%, transparent 90% 100%);
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+	.svg_box {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 701px) {
+	.svg_box {
+		
+	}
+}
+
+.margin {
+	margin: 3rem 0;
+}
+
+.scroll_x {
+	overflow-x: scroll;
+}
+.link_cancel:link, .link_cancel:visited {
+	color: black;
+	text-decoration: none;
+}
+.quote {
+	font-size: 0.8rem;
+	position: sticky;
+	left: 0;
+}
+
+
+/* 詳細表示用のcss */
+.sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+.small {
+	font-size: smaller;
+}
+
+
+/* 攻撃に関連するcss */
+.how {
+	border: 1px black solid;
+	background-color: #FFFFCC;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+.how:first-line {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: underline red;
+}
+.step {
+	border: 1px black solid;
+	background-color: #CCFFCC;
+	padding: 0.2rem;
+	margin: 1rem auto 1rem auto;
+}
+.step_text {
+	display: inline-block;
+	padding: 0.1rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF99;
+	margin: 0.5rem 0 0.5rem 1.5rem;
+}
+.explanation {
+	margin: 1rem 0;
+	padding: 1rem;
+	border: 1px black solid;
+	background-color: #CCFFFF;
+}
+.quiz {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+.quiz_div {
+	margin: 2rem 0;
+	padding: 1rem;
+	border: 1px black solid;
+	background-color: #E6FFE9;
+}
+.quiz_answer0 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+.quiz_answer1 {
+	font-size: 0.95rem;
+}
+.svg_button {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+.go_next {
+	padding: 0.2rem 1rem;
+	border: 1px black solid;
+	background-color: #FFFF00;
+}
+.li_container {
+	display: flex;
+	justify-content: center;
+}
+.lili {
+	border: 1px black solid;
+	margin: 0.1rem auto 2rem auto;
+	background-color: #CCFFCC;
+	padding: 1rem 1rem 1rem 3.5rem;
+	font-size: 1rem;
+}
+.cancel {
+	background: linear-gradient(to bottom, transparent 0% 48%, #000000 48% 53%, transparent 53% 100%);
+}
+.separator {
+	height: 1px !important;
+	background-color: #AAAAAA !important;
+	margin: 1rem 0;
+	padding: 0 !important;
+	border: none !important;
+}
+.exam .separator {
+	margin: 0.5rem 0 !important;
+}
+.super_separator {
+	height: 2px !important;
+	background-color: #000000 !important;
+	margin: 1.2rem 0 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+.exam {
+	/* https://gray-code.com/html_css/list-of-symbols-and-special-characters/ */
+	font-size: 0.9rem;
+	margin: 0 auto;
+	padding: 1rem;
+	border: 1px #808080 solid;
+	background-color: #EEEEEE;
+}
+.exam + .exam {
+	margin: 0.3rem 0;
+}
+.bigger {
+	font-size: 1.2rem;
+}
+.bigger_wrapper {
+	margin: 0 0 0 1.5rem;
+	text-indent: -1.5rem;
+}
+.dashed {
+	/* dasehedではない、、、 */
+	text-decoration: underline;
+}
+.nodashed {
+	border-bottom: 1px black solid;
+}
+.real_dashed {
+	border-bottom: 1px black dashed;
+}
+.exam li + li {
+	margin: 0.7rem 0;
+}
+.exam table {
+	margin: 0.5rem auto !important;
+}

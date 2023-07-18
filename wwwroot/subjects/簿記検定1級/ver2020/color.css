@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+
+
+.bg-red {
+	background-color: red;
+}
+.bg-blue {
+	background-color: blue;
+}
+.bg-orange {
+	background-color: orange;
+}
+.bg-green {
+	background-color: green;
+}
+.bg-lightgreen {
+	background-color: lightgreen;
+}
+.bg-grey {
+	background-color: grey;
+}
+.bg-pink {
+	background-color: pink;
+}
+.bg-lightgrey {
+	background-color: lightgrey;
+}
+.bg-skyblue {
+	background-color: skyblue;
+}
+.bg-lightred {
+	background-color: #FF69A3;
+}
+
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+

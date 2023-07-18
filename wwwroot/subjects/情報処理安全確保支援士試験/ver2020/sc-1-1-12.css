@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+
+
+
+
+#crptrec_list_table td {
+	white-space: nowrap;
+	min-width: 0;
+}
+
+
+
+svg #same_obj {
+fill:#00ff0e;
+}
+svg #Nsame_obj {
+fill:#CC66FF;
+}
+svg .large_txt {
+font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+#ecb_gradiation stop:nth-child(1) {
+stop-color:#00ffff;stop-opacity:1
+}
+#ecb_gradiation stop:nth-child(2) {
+stop-color:#00ff0d;stop-opacity:0;
+}
+
+
+
+.cript_mode .arw {
+fill:url(#ecb_gradiation0);
+}
+.cript_mode .arrow {
+fill:#ff0000;
+}
+
+.cript_mode .b {
+fill:#00ffff;
+}
+.cript_mode .a {
+fill:#00ff0d;
+}
+.cript_mode text {
+font-size:0.25rem;
+}
+.cript_mode .xor_txt {
+fill:#ffffff;font-size: 0.35rem;font-weight: bold;
+}
+
+.cript_mode .xor {
+fill:#f64cff;opacity:0.9;filter:url(#xor0);
+}
+
+.cript_mode .iv {
+fill:#ff0000;
+}
+.cript_mode .iv_txt {
+fill:#ffffff;font-size: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+#number_of_key_table td {
+	min-width: 0;
+}
+
+
+
+
+.fraction{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.fraction_n,.fraction_d{
+  display: block;
+}
+.fraction_n{
+  border-bottom: 1px solid #000000;
+}
+
+
+
+
+
+
+
+#number_of_key_svg text {
+font-size: 0.25rem;
+}
+#number_of_key_svg .small {
+font-size: 0.15rem;
+}
+
+
+
+
+
+
+
+
+

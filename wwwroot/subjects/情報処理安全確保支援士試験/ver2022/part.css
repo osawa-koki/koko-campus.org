@@ -1,0 +1,180 @@
+@charset "UTF-8";
+main a.ver1 {
+  background-image: url(../pics/ver1.png);
+}
+
+main .step {
+  position: relative;
+  margin: 25px 0 !important;
+  padding: 60px 25px 25px 25px;
+  background-color: #ffffdc;
+  border: 1px black solid;
+  text-indent: 1rem !important;
+  font-size: 1rem;
+}
+
+main .step:before {
+  content: "対策" !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+main .step ul, main .step ol {
+  margin: 0 25px;
+  border: none;
+  display: block;
+  padding: 0;
+}
+
+main svg .pc {
+  fill: #000000;
+  fill-opacity: 1;
+  stroke: none;
+}
+
+main svg .monitor {
+  fill: #ffffff;
+  fill-opacity: 1;
+  stroke: none;
+}
+
+main svg .server {
+  fill: #000064;
+  fill-opacity: 1;
+  stroke: #000000;
+  stroke-width: 0.1;
+}
+
+main svg .window {
+  fill: #ffffff;
+  fill-opacity: 1;
+  stroke: #000000;
+  stroke-width: 0.1;
+}
+
+main svg .bad_face {
+  fill: #000000;
+  fill-opacity: 0.5;
+  stroke: #000000;
+  stroke-width: 0.2;
+}
+
+main svg .bad_eyes {
+  fill: #000000;
+  fill-opacity: 1;
+  stroke: #000000;
+  stroke-width: 0.1;
+}
+
+main svg .e_node_face {
+  fill: #80d5ff;
+}
+
+main svg .d_node_face {
+  fill: #ff80ff;
+}
+
+main svg .white {
+  fill: white;
+}
+
+main svg .key {
+  fill: #ffffff;
+  fill-opacity: 1;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+main svg polyline {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+main .bg-white {
+  background-color: white;
+}
+
+main .sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+main .margin-left_25 {
+  margin-left: 25px;
+}
+
+main iframe {
+  display: block;
+  margin: 25px 0;
+}
+
+main iframe#iframe1 {
+  opacity: 0.5;
+}
+
+main iframe#iframe2 {
+  opacity: 0.001;
+}
+
+main .fraction {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+main .fraction .fraction_n, main .fraction .fraction_d {
+  display: block;
+}
+
+main .fraction .fraction_n {
+  border-bottom: 1px solid #000000;
+}
+
+main pre.todokede {
+  border: 2px black solid;
+  padding: 10px;
+  margin: 25px 0;
+  overflow-x: auto;
+}
+
+main li.information-security_list {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main li.information-security_list.visited {
+  color: purple;
+}
+
+main #ssltls_protocol {
+  border-collapse: separate;
+  background-color: black;
+}
+
+main .red {
+  color: red;
+}
+
+main #fqdn {
+  padding: 5px 10px;
+  border: 1px black solid;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+main #fqdn span {
+  cursor: pointer;
+}
+/*# sourceMappingURL=part.css.map */

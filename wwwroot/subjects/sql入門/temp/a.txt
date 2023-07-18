@@ -1,0 +1,12 @@
+LOAD DATA LOCAL INFILE "C:/temperature.csv"
+INTO TABLE 越谷の天気
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\r\n'
+SET 平均気温 = nullif(平均気温,""),
+最高気温 = nullif(最高気温,""),
+最低気温 = nullif(最低気温,"");
+
+
+
+
+OPTIONALLY ENCLOSED BY '"';

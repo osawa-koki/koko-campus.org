@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+/* smurf攻撃svg用のcss */
+#smurf .pc {
+fill:#000000;
+}
+#smurf .monitor {
+fill:#ffffff;
+}
+#smurf .server {
+fill:#000064;
+}
+#smurf .window {
+fill:#ffffff;
+}
+#smurf ellipse {
+fill:#000000;fill-opacity:0.5;
+}
+#smurf .bad_face {
+fill:#000000;fill-opacity:0.5;
+}
+#smurf .bad_eyes {
+fill:#000000;
+}
+#smurf .arw_go {
+fill:#800080;
+}
+#smurf .arw_back {
+fill:#ff0000;
+}
+#smurf #poizoned {
+opacity:0.5;fill:#b200b2;fill-opacity:1;filter:url(#filter)
+}
+#smurf #smurf_txt0 {
+font-size: 0.5rem;
+fill:#000077;
+font-weight:bold;
+}
+#smurf #smurf_txt1 {
+font-size: 0.3rem;
+fill:#000000;
+}
+#smurf #tori {
+fill:#000077;
+font-weight:bold;
+}
+#smurf .smurf_return {
+font-size:0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* セッションsvg用のcss */
+#ping_attack .line {
+fill:#4c36b3;
+}
+#ping_attack .pc {
+fill:#000000;
+}
+#ping_attack #session_my_mua2 {
+fill:#ffffff;	
+}
+#ping_attack #session_cache0 {
+fill:#000064;
+}
+#ping_attack .window {
+fill:#ffffff;
+}
+#ping_attack .arw {
+fill:#4c36b3;
+}
+#ping_attack .session_box {
+fill:#ffffff;stroke:#000000;stroke-width:0.2;
+}
+#ping_attack text {
+font-size: 0.2rem;
+}
+#ping_attack .q {
+	font-size: 1rem;
+	fill: none;
+}
+
+
+
+#ping_attack_button {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* reflection-amplifier攻撃svg用のcss */
+#amp .amp_arw {
+fill:#800080;
+}
+#amp #amp_poisoned {
+opacity:0.5;fill:#b200b2;filter:url(#amp_filter);
+}
+
+
+
+#amp_button {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* reflection攻撃svg用のcss */
+#reflection .pc {
+fill:#000000;
+}
+#reflection .monitor {
+fill:#ffffff;
+}
+#reflection .server {
+fill:#000064;
+}
+#reflection .window {
+fill:#ffffff;
+}
+#reflection ellipse {
+fill:#000000;fill-opacity:0.5;
+}
+#reflection .bad_face {
+fill:#000000;fill-opacity:0.5;
+}
+#reflection .bad_eyes {
+fill:#000000;
+}
+#reflection .reflection_arw_go {
+fill:#800080;
+}
+#reflection .reflection_arw_back {
+fill:#ff0000;
+}
+#reflection #reflection_poizoned {
+opacity:0.5;fill:#b200b2;fill-opacity:1;filter:url(#filter)
+}
+#reflection #reflection_txt0 {
+font-size: 0.5rem;
+fill:#000077;
+font-weight:bold;
+}
+#reflection #reflection_txt1 {
+font-size: 0.3rem;
+fill:#000000;
+}
+#reflection #reflection_tori {
+fill:#000077;
+font-weight:bold;
+}
+#reflection .reflection_return {
+font-size:0.2rem;
+}
+
+#reflection_button {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+

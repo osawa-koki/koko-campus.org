@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+#control_svg .line {
+	fill:#a7a7a7;
+}
+#control_svg .control_box {
+	fill:#fefe00;
+}
+#control_svg text {
+	font-size: 5px;
+}
+
+
+

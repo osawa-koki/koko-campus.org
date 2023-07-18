@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+
+
+
+
+.auth_class td {
+	min-width: 0;
+	white-space: nowrap;
+}
+.auth_class ul {
+	padding-left: 1.5rem;
+}
+
+
+
+
+
+#ds_button {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #ffff00;
+}
+
+.h {
+stroke-width:0.5;
+}
+.hash {
+fill:#ff0000;
+}
+.arw {
+fill:#00ff54;
+}
+.doc {
+fill:#ffffff;stroke:#000000;stroke-width:0.5;
+}
+#box2 {
+stroke:#000000;stroke-width: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+

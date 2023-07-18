@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+
+#menu {
+	position: fixed;
+	border: 1px black solid;
+	bottom: 10px;
+	background-color: #000000;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 3rem 0 0 0;
+	overflow-y: scroll;
+	z-index: 99;
+}
+@media screen and (max-width: 700px) {
+	#menu {
+		top: 70px;
+	}
+}
+@media screen and (min-width: 701px) {
+	#menu {
+		top: 120px;
+	}	
+}
+
+
+
+
+#menu div {
+	border: 1px #ffffff solid;
+}
+@media screen and (max-width: 700px) {
+	#menu div {
+		width: 95%;
+		margin: 1rem auto;
+	}
+}
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+	#menu div {
+		width: 90%;
+		margin: 1rem auto;
+	}
+}
+@media screen and (min-width: 1001px) {
+	#menu div {
+		width: 95%;
+		margin: 1rem auto;
+		padding: 0.2rem;
+	}
+}
+#menu .m {
+	margin: 1rem;
+	display: block;
+	color: #ffffff;
+}
+#menu .m:hover {
+	cursor: pointer;
+}
+#menu .m0 {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+#menu .m1 {
+	font-size: 1.15rem;
+	font-weight: normal;
+}
+#menu .m2 {
+	font-size: 1.1rem;
+	font-weight: light;
+}
+
+
+#menu a {
+	display: block;
+	color: #ffffff;
+	font-size: 1rem;
+	margin: 1rem;
+}
+#menu a:link {
+	color: #ffffff;
+	font-size: 0.95rem;
+	text-decoration: none;
+}
+#menu a:visited {
+	color: #ffffff;
+	font-size: 0.95rem;
+	text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	#menu_container {
+		display: block;
+		border: none !important;
+	}
+}
+@media screen and (min-width: 1001px) {
+	#menu_container {
+		display: flex;
+		justify-content: space-between;
+		width: 90% !important;
+		margin: 0 auto;
+		border: none !important;
+	}
+}
+
+
+.dummy {
+	margin: 0.2rem !important;
+}
+
+
+#menu_h {
+	display: block;
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 1000;
+}
+
+
+
+
+

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+main .step {
+  position: relative;
+  margin: 25px 0;
+  padding: 60px 25px 25px 25px;
+  background-color: #ffffdc;
+  border: 1px black solid;
+  text-indent: 0;
+  font-size: 1rem;
+}
+
+main .step:before {
+  content: "対策" !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+main .step ul, main .step ol {
+  margin: 0 25px;
+  border: none;
+  display: block;
+  padding: 0;
+}
+
+main .v-writing {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+/*# sourceMappingURL=part.css.map */

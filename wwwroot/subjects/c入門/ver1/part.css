@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#main img:not(.x) {
+	border: 1px #000000 solid;
+	margin: 25px;
+	border-radius: 25px;
+}
+code {
+	margin: 25px 0;
+}
+
+
+span.en {
+	font-family: "consolas", "sublimetext";
+}
+span.ja {
+	font-family: "游明朝", "yumin";
+}
+
+
+/*トップ*/
+.install {
+	display: block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px #000000 solid;
+	margin: 25px auto;
+	cursor: pointer;
+	background: linear-gradient(140deg, yellow 0 50%, lightyellow 60%, white 65%, lightyellow 70%, yellow 90% 100%);
+}
+.install:hover {
+	background: linear-gradient(160deg, yellow 0 40%, lightyellow 50%, white 65%, lightyellow 80%, yellow 90% 100%);
+}
+
+
+
+
+/*データの型*/
+#shosikimojiretu {
+	border-spacing: 10px 0;
+	margin: 25px 0;
+}
+#shosikimojiretu tr:nth-of-type(1) td {
+	border-bottom: 1px #000000 solid;
+}
+#shosikimojiretu tr td {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

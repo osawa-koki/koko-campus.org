@@ -1,0 +1,19 @@
+{
+	"html-css入門": "HTML&CSS 入門",
+	"html-css中級": "HTML&CSS 中級",
+	"sql入門": "SQL 入門",
+	"sql中級": "SQL 中級",
+	"c入門": "C言語入門",
+	"c中級": "C言語中級",
+	"cpp入門": "C++入門",
+	"cpp中級": "C++中級",
+	"vb入門": "VB.NET入門",
+	"vb中級": "VB.NET中級",
+	"iis": "IIS",
+	"asp-net": "ASP.NET",
+	"sql-server": "SQL Server",
+	"dot-net": ".NET Framework",
+	"opencv_py": "OpenCV(python)",
+	"http": "HTTP",
+	"tcp-ip": "TCP/IP"
+}

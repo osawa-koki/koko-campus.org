@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.height0-5rem {
+	height: 0.5rem;
+}
+.height1rem {
+	height: 1rem;
+}
+.height1-5rem {
+	height: 1.5rem;
+}
+.height2rem {
+	height: 2rem;
+}
+.height2-5rem {
+	height: 2.5rem;
+}
+.height3rem {
+	height: 3rem;
+}
+.height4rem {
+	height: 4rem;
+}
+.height5rem {
+	height: 5rem;
+}
+.height6rem {
+	height: 6rem;
+}
+
+
+.margin1 {
+	margin: 1rem;
+}
+
+
+.nx5rem {
+	width: 5rem
+}

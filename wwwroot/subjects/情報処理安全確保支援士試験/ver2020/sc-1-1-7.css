@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+
+
+
+/* メールの仕組みSVG用のCSS */
+#about_mailing .computer {
+	fill: #ffffff;
+	stroke: #000000;
+	stroke-width: 0.249767;
+	stroke-opacity: 0.5;
+}
+#about_mailing .server {
+	fill: #c8ffff;
+	fill-opacity: 1;
+	stroke: #000000;
+	stroke-width: 0.249767;
+	stroke-opacity: 0.5
+}
+#about_mailing text {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	font-size: 0.3rem;
+	line-height: 0.3rem;
+	font-variant-ligatures: none;
+	white-space: pre;
+	stroke-width: 0.25;
+}
+#about_mailing .server_txt {
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+	font-variant-ligatures: none;
+	white-space: pre;
+}
+#about_mailing ellipse {
+fill:#ffffff;stroke-opacity:0.5;
+}
+#about_mailing .arrow {
+fill:#808080;
+}
+#about_mailing #arrow0 {
+fill:#ff0000;
+}
+#about_mailing #mail_pic0_0 {
+fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25;
+}
+#about_mailing #mail_pic0_1 {
+fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.15;
+}
+
+
+
+
+
+/* メールの操作に関連するCSS */
+#mail_next {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+#mailing_div {
+	display: flex;
+	min-height: 5rem;
+	border: 1px black solid;
+	margin: 1rem auto 0 auto;
+}
+.mailing_rl {
+	width: 50%;
+	min-height: 100%;
+	border: 1px black solid;
+}
+.mailing_rl div {
+	text-align: center;
+}
+.mailing_rl div:first-line {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+#mailing_div .title {
+	display: block;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-align: center;
+	background: linear-gradient(to bottom, transparent 0% 80%, #FF00FF 80% 100%);
+	margin: 0 0 1rem 0;
+}
+#mailing_comment {
+	border: 1px black solid;
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: 0.5rem;
+}
+#mail_next0 {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+
+
+
+
+
+/* DNSキャッシュポイズニング攻撃ボタン */
+#cache_normal {
+	padding: 0.2rem 1.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+#cache_abnormal {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+
+
+
+
+
+/* DNSキャッシュポイズニング攻撃SVG用のCSS */
+#dns_poison ellipse {
+fill:#000000;fill-opacity:0.5;
+}
+#dns_poison .poison_bad {
+fill:#000000;
+}
+#dns_poison rect {
+fill-opacity:1;
+}
+#dns_poison .body {
+fill:#000064
+}
+#dns_poison .window {
+fill:#ffffff	
+}
+#dns_poison #dns_poison_my_mua2 {
+fill:#ffffff	
+}
+#dns_poison .dns_arrow_normal {
+fill:#ff0000;fill-opacity:1;stroke:none;
+}
+#dns_poison #dns_poison_arrow3 {
+fill:#800080;fill-opacity:1;stroke:none;
+}
+#dns_poison text {
+	font-size: 0.3rem;
+	line-height: 0.3rem;
+}
+#dns_poison #comment_box {
+	fill-opacity: 0.7;
+	fill: #FFFF66;
+	stroke: none;
+}
+#dns_poison #moving_comment {
+	fill: #FF33CC;
+	font-size: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* セッションSVG用のCSS */
+#session .line {
+fill:#4c36b3;
+}
+#session .pc {
+fill:#000000;
+}
+#session #session_my_mua2 {
+fill:#ffffff;	
+}
+#session #session_cache0 {
+fill:#000064;
+}
+#session .window {
+fill:#ffffff;
+}
+#session .arw {
+fill:#4c36b3;
+}
+#session .session_box {
+fill:#ffffff;stroke:#000000;stroke-width:0.2;
+}
+#session text {
+font-size: 0.2rem;
+}
+
+
+
+
+
+#session_button {
+	padding: 0.2rem 0.5rem;
+	border: 1px black solid;
+	background-color: #FFFF66;
+	margin: 1rem;
+}
+
+
+
+
+
+
+

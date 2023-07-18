@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+
+
+
+
+.fw_svg .i {
+fill:#00ffff;filter:url(#internet);
+}
+.fw_svg .p {
+fill:#00ff29;
+}
+.fw_svg .m {
+fill:#ffff00;
+}
+.fw_svg .w {
+fill:#343434;
+}
+.fw_svg .f {
+fill:#ff0000;
+}
+.fw_svg .ok {
+fill:#ff00ff;
+}
+.fw_svg .ng {
+fill:#000000;
+}
+.fw_svg filter {
+color-interpolation-filters:sRGB;
+}
+.fw_svg polyline {
+fill:none;stroke:#0000FF;stroke-width:2;
+}
+.fw_svg text {
+font-size: 7px;font-weight:bold;
+}
+
+
+
+
+
+

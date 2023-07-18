@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+span.en {
+	font-family: "consolas", "sublimetext";
+}
+span.ja {
+	font-family: "游明朝", "yumin";
+}
+
+/*環境構築*/
+.vs-icon {
+	background-image: url(../pics/visual-studio-icon.png);
+}
+
+
+/*データの型*/
+.scroll-600 {
+	overflow-x: auto;
+}
+.scroll-600 > table {
+	min-width: 600px;
+}
+#shosikimojiretu {
+	border-spacing: 10px 0;
+	margin: 25px 0;
+}
+#shosikimojiretu tr:nth-of-type(1) td {
+	border-bottom: 1px #000000 solid;
+}
+#shosikimojiretu tr td {
+	text-align: center;
+	padding: 0;
+}
+
+
+/*構造化言語*/
+#kakezan-kuku {
+	max-width: 250px;
+}

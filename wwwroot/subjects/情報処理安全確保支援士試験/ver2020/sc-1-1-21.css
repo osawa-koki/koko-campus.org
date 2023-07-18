@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+
+
+.is_li {
+	color: #0000EE;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.is_li::marker {
+	color: #000000;
+}
+.isli {
+	color: #551A8B;
+}
+
+
+#is_step_show .is_ttl {
+	font-size: 1.2rem;
+	font-weight: bold;
+	border: 1px black solid;
+	padding: 0.1rem 0.3rem;
+}
+
+#is_step_show div {
+	padding: 1rem;
+	border: 1px black solid;
+	margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

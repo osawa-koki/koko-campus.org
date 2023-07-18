@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+$subjects:
+	"html-css入門",
+	"javascript入門",
+	"jquery入門"
+	"vue.js入門",
+	"php入門",
+	"php中級",
+	"python入門",
+	"python中級",
+	"pandas",
+	"matplotlib",
+	"seaborn",
+	"numpy",
+	"scipy",
+	"opencv_py",
+	"java入門",
+	"java中級",
+	"vb入門",
+	"vb中級",
+	"vb上級",
+	"go入門",
+	"go中級",
+	"django入門",
+	"fortran入門",
+	"c入門",
+	"cpp入門",
+	"rust入門",
+	"rust中級",
+	"ruby入門",
+	"haskell入門",
+	"正規表現入門",
+	"sql入門",
+	"sql中級",
+	"excel-vba";
+
+@each $item in $subjects {
+	a.to-#{$item} {
+		background-image: url(../../../pics/subjects/#{$item}.png);
+	}
+}
+@each $item in $subjects {
+	div.bg-logo-#{$item} {
+		background-image: url(../../#{$item}/pics/bg-logo.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}

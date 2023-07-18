@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+
+#main {
+  width: 95vw;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.ribbon {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 3rem;
+  font-size: 1rem;
+}
+.ribbon:before {/*左側のリボン端*/
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  bottom: -0.8rem;
+  left: -1.5rem;
+  z-index: -2;
+  border: 1rem solid #56adf3;
+  border-left-color: transparent;/*山形に切り抜き*/
+}
+.ribbon:after {/*右側のリボン端*/
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  bottom: -0.8rem;
+  right: -1.5rem;
+  z-index: -2;
+  border: 1rem solid #56adf3;
+  border-right-color: transparent;/*山形に切り抜き*/
+}
+.ribbon h1 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 3rem;
+  height: 3rem;
+  width: 15rem;
+  font-size: 2rem;
+  color: #FFF;
+  background: #2196F3;/*真ん中の背景色*/
+}
+.ribbon h1:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 0.8rem transparent;
+  border-right: solid 1rem #397eb5;/*左の折り返し部分*/
+}
+.ribbon h1:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  border: none;
+  border-bottom: solid 0.8rem transparent;
+  border-left: solid 1rem #397eb5;/*右の折り返し部分*/
+}
+
+
+table th, table td {
+    min-width: 0;
+}
+
+
+
+
+.add_margin {
+  margin: 5rem 0;
+}
+
+
+
+
+#comment {
+  text-align: left;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px black solid;
+  background-color: skyblue;
+  max-width: 700px;
+}
+
+#comment:hover {
+  background-color: #66CCFF;
+}
+
+
+
+#subjects {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2, h4, h6 {
+    text-align: left;
+  }
+
+  h2 {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    width: 70vw;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    width: 60vw;
+    margin-left: 3rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 701px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2, h4, h6 {
+    text-align: left;
+  }
+
+  h2 {
+    margin-left: 3rem;
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    width: 70vw;
+    margin-left: 6rem;
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    width: 60vw;
+    margin-left: 9rem;
+    font-size: 1rem;
+  }
+}
+
+#tec_sub1 {
+  border: 1px black solid;
+  width: 80vw;
+  max-width: 700px;
+  margin: 1rem;
+  background-color: #FF9999;
+}
+#tec_sub1:hover {
+  background-color: #FF6699;
+}
+
+#man_sub1 {
+  border: 1px black solid;
+  width: 80vw;
+  max-width: 700px;
+  margin: 1rem;
+  background-color: #6699FF;
+}
+#man_sub1:hover {
+  background-color: #3333FF;
+}
+
+.tec_sub2 {
+  border: 1px black solid;
+  width: 70vw;
+  max-width: 600px;
+  margin-left: 5vw;
+  background-color: #FFCC99;
+  margin: 1rem;
+}
+.tec_sub2:hover {
+  background-color: #FFCC00;
+}
+
+.man_sub2 {
+  border: 1px black solid;
+  width: 70vw;
+  max-width: 500px;
+  margin-left: 5vw;
+  background-color: #99CCFF;
+  margin: 1rem;
+}
+.man_sub2:hover {
+  background-color: #3399FF ;
+}
+
+
+
+ol {
+  border: 1px  black solid;
+  background-color: yellow;
+}
+
+ol li {
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+
+
+#am {
+  background: linear-gradient(to bottom, transparent 0% 70%, #FF6666 70% 90%, transparent 90% 100%);
+  padding: 0 0.5rem;
+}
+
+
+#pm {
+  background: linear-gradient(to bottom, transparent 0% 70%, #FF99FF 70% 90%, transparent 90% 100%);
+  padding: 0 0.5rem;
+}
+
+
+
+
+
+#button {
+  border-radius: 50px 0;
+  display: block;
+  width: 15rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px black solid;
+  background: linear-gradient(70deg, yellow, pink);
+}
+
+#button:link {
+  color: black;
+}
+
+#button:hover {
+  background: linear-gradient(70deg, pink, yellow);  
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .highlight  {
+    background-color: #00FFFF;
+    width: 20rem;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+  }
+  .get_it_left {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 701px) {
+  .highlight  {
+    background-color: #00FFFF;
+    width: 25rem;
+    margin: 2rem auto;
+  }
+}
+
+
+.go_mypage {
+  text-align: center;
+}

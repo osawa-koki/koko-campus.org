@@ -1,0 +1,478 @@
+@charset "UTF-8";
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+
+
+h2:not(.x), h3:not(.x), h4:not(.x), h5:not(.x) {
+	white-space: nowrap;
+}
+
+
+h2:not(.x) {
+	margin-left: 1.4rem;
+	text-indent: -1.4rem;
+}
+h2:not(.x) span {
+	font-size: 1.4rem;
+	font-weight: 1000;
+	white-space: normal;
+	background: linear-gradient(to bottom, transparent 0 60%, #00FFFF 60% 80%, transparent 80% 100%);
+}
+.h2_rect {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin: 0 0.5rem;
+	animation: h2_turning 10s ease 0s infinite normal none running;
+}
+@keyframes h2_turning {
+	from {
+		transform: rotate(0deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 1;
+	}
+	20% {
+		transform: rotate(720deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 1;
+	}
+	60% {
+		transform: rotate(3600deg);
+		border-radius: 50%;
+		background-color: red;
+		opacity: 1;
+	}
+	80%, 85% {
+		transform: rotate(3600deg);
+		border-radius: 50%;
+		background-color: red;
+		opacity: 0;
+	}
+	85% {
+		transform: rotate(0deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 0;
+	}
+	to {
+		transform: rotate(0deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 1;
+	}
+
+}
+
+h3:not(.x) {
+	margin-left: 1.6rem;
+	text-indent: -1.2rem;
+}
+h3:not(.x) span {
+	font-size: 1.2rem;
+	font-weight: 800;
+	white-space: normal;
+	background: linear-gradient(to bottom, transparent 0 70%, #33FFFF 70% 80%, transparent 80% 100%);
+}
+.h3_rect {
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	margin: 0 0.5rem;
+	background-color: #FF33FF;
+}
+h4:not(.x) {
+	margin-left: 1.8rem;
+	text-indent: -1.1rem;
+}
+h4:not(.x) span {
+	font-size: 1.1rem;
+	font-weight: 600;
+	white-space: normal;
+	background: linear-gradient(to bottom, transparent 0 75%, #55FFFF 75% 80%, transparent 80% 100%);
+}
+.h4_rect {
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	margin: 0 0.4rem;
+	background-color: #FF66FF;
+}
+h5:not(.x) {
+	margin-left: 2rem;
+	text-indent: -1.05rem;
+}
+h5:not(.x) span {
+	font-size: 1.05rem;
+	font-weight: 600;
+	white-space: normal;
+	background: linear-gradient(to bottom, transparent 0 78%, #77FFFF 78% 80%, transparent 80% 100%);
+}
+.h5_rect {
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	margin: 0 0.3rem;
+	background-color: #FF99FF;
+}
+
+table:not(.x) {
+	border-collapse: collapse;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+table:not(.x) th, table:not(.x) td {
+	padding: 10px;
+}
+table.exp thead td {
+	text-align: center;
+	font-weight: normal;
+	background-color: lightgrey;
+}
+table.exp tbody th {
+	text-align: center;
+	font-weight: normal;
+	background-color: #66FFFF;
+}
+.scroll_x {
+	overflow-x: scroll;
+}
+@media screen and (min-width: 700px) {
+	.scrollx {
+		overflow-x: ;
+	}
+}
+
+
+.transaction_content {
+	text-indent: -1rem;
+	margin-left: 1.5rem;
+}
+.nowrap_table td, .nowrap_table td {
+	white-space: nowrap;
+}
+.transaction_table {
+	width: 90%;
+	max-width: 30rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1rem;
+	background-color: #ffffff;
+}
+.transaction_table th, .transaction_table td {
+	text-align: center;
+	padding: 0 1rem;
+	border: none;
+}
+.transaction_table caption {
+	font-size: 1rem;
+	text-align: center;
+}
+.transaction_container {
+	width: 100%;
+	background-color: #EEEEEE;
+	padding: 1rem 0.2rem;
+	margin: 1rem 0;
+	border: 1px black solid;
+	border-radius: 1rem;
+}
+
+.tb {
+	width: 100%;
+	margin: 0 auto;
+}
+.hidden {
+	display: none;
+}
+
+.separator {
+	width: 100%;
+	height: 3px;
+	background-color: #555555;
+	margin: 0.5rem 0;
+}
+.pointing {
+	animation: lighting 1500ms ease 0s infinite normal none running;
+}
+@media screen and (max-width: 699px) {
+	@keyframes lighting {
+		0%, 50% {
+			color: red;
+		}
+		60%, 100% {
+			color: white;
+		}
+	}
+}
+@media screen and (min-width: 700px) {
+	@keyframes lighting {
+		0%, 40% {
+			color: black;
+		}
+		50%, 100% {
+			color: red;
+		}
+	}
+}
+.bb {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.u1 {
+	border-bottom: 1px black solid;
+}
+.u2 {
+	border-bottom-style: double;
+}
+.font_red {
+	color: red;
+	font-weight: bold;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.f {
+	border: 3px red solid;
+	padding: 0.5rem 1rem;
+	margin: 1rem 0;
+}
+.important {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0.3rem 0 1rem 0;
+}
+.important_content {
+	font-size: 1.1rem;
+}
+.important_slide {
+	position: relative;
+}
+.important_slide::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 2px;
+	top: 85%;
+	left: 0;
+	animation: sliding 3s ease 0s infinite normal none running;
+}
+@keyframes sliding {
+	from {
+		left: 0;
+		width: 0;
+		background-color: yellow;
+	}
+	50%, 50.1% {
+		left: 0;
+		width: 100%;
+		background-color: red;
+	}
+	to {
+		left: 100%;
+		width: 0;
+		background-color: yellow;
+	}
+}
+.super_separator {
+	width: 100%;
+	height: 3px;
+	border-radius: 1rem;
+	background-color: #777777;
+	margin: 2rem 0;
+}
+.separator {
+	width: 100%;
+	height: 1px;
+	background-color: #AAAAAA;
+	margin: 1.5rem 0 1rem 0;
+}
+p:not(.x) {
+	text-indent: -1.5rem;
+	margin: 10px 1.5rem;
+}
+p:not(.x)::before {
+	content: "v ";
+	font-family: "wingdings", "font-mark";
+}
+p.r {
+	text-indent: -1.5rem;
+	margin: 10px 1.5rem;
+	font-size: 0.95rem;
+}
+p.r + p.r {
+	margin-top: 0 !important;
+}
+p.r::before {
+	content: "※ ";
+	font-family: "kyokasho", sans-serif;
+}
+.center_padding {
+	text-align: center;
+	padding: 0 0.5rem;
+}
+.center {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.get_it_center {
+	text-align: center;
+}
+
+
+/* thankyou ---https://mo2nabe.com/css-write-fraction/--- */
+.fraction{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.fraction_n,.fraction_d{
+	display: block;
+	font-size: 0.7rem;
+}
+.fraction_n{
+	border-bottom: 1px solid #333;
+}
+
+
+
+
+.nowrap {
+	white-space: nowrap;
+}
+.cancel {
+	background: linear-gradient(to bottom, transparent 0 40%, black 40% 45%, transparent 45% 55%, black 55% 60%, transparent 60% 100%);
+}
+
+
+.ref_button {
+	display: inline-block;
+	border: 1px black solid;
+	border-radius: 1rem;
+	padding: 0.2rem 0.5rem;
+	background-color: #93FFAB;
+	margin: 0.5rem 0.3rem;
+}
+
+ol:not(.normal, .x), ul:not(.normal, .x) {
+	border: 1px black solid;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+.border {
+	border: 1px black solid;
+}
+.border-bottom {
+	border-bottom: 1px black solid;
+}
+
+
+
+.circle-purple {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: purple;
+	margin-right: 0.5rem;
+}
+
+.we_circle {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: lime;
+}
+.we_table td {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+
+.ib {
+	display: inline-block;
+}
+
+.indent {
+	text-indent: -1rem;
+	margin-left: 1rem;
+}
+
+svg {
+	display: block;
+	margin: 1rem auto;
+}
+.norsvg {
+	width: 90%;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.no-padding {
+	padding: 0;
+}
+
+td.t {
+	border-top: 1px black solid;
+}
+td.r {
+	border-right: 1px black solid;
+}
+td.b {
+	border-bottom: 1px black solid;
+}
+td.l {
+	border-left: 1px black solid;
+}
+.we_top-grey {
+	border-top: 1px #777777 dashed;
+}
+
+.column {
+	margin: 30px 10px;
+	padding: 0.5rem 1rem;
+	border: 1px black dashed;
+	background-color: #EEEEEE;
+}
+
+
+img:not(.x) {
+	display: block;
+	width: 90%;
+	max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

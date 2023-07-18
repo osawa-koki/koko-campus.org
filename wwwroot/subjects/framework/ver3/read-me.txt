@@ -1,0 +1,113 @@
+koko-campus.org framework-ver3
+
+開発開始日=>2021/11/25
+開発完了日=>
+更新日=>
+移行日=>
+
+主な変更点 {
+	絶対パス指定の採用(ディレクトリ管理を詳細に行っている点を鑑みて)
+	innerHTML・outerHTMLの使用を避けてcreateElementを代替として使用
+	board関数とhtml構造を簡素化
+	overflowを判定してscrollの有無を決定
+	ファイルの細分化(次回以降の修正を鑑みて)
+	通常ファイル用の関数とtop用の関数の作成とhtml構造の調整
+	js関数やhtmlクラスの最適化
+	jsやcssでセレクタを指定する際により詳細に(不要な副作用を避ける)
+}
+次回の修正案 {
+
+}
+
+当frameworkを構成する全てのプログラム・ファイルのパスは「http(s)://koko-campus.org/s/framework/ver1/」に設置されることを想定する。
+koko-campus.orgのルートディレクトリは「3階層(../../../)」上位に位置する。
+構成するプログラム・ファイルは以下の通りである。
+	「common.php」
+	「entire.js」
+	「style.css」
+	「frame.css」
+
+1.phpプログラムの基本機能(common.php)
+	a)---head関数---
+		・frameworkとして以下の機能を持つ。
+			「htmlの開始」
+			「headタグ内の要素(charset,viewport,format-detection,keywords,author,title(引数により設定),stylesheet(後述)」
+			「bodyタグの開始」
+			「[ヘッダーメニュー[id="page_header"](koko-campus projectの画像,menuの画像)」
+			「noscript処理(noscriptタグ,js-off時のdisplay:hidden用のタグ[id="js"])」
+			「超包括的要素[id="super_main"]=>"#main","#board","menu"を含む」
+			「h1の開始(h1のcontentは当該関数の引数にて指定)」
+			「h1を含む包括的なタグ[id="main"]の開始」
+			「実際の中身を含むタグ[id="main_div"]の開始」
+	b)---footer関数---
+		・frameworkとして以下の機能を持つ。
+			「main_divタグの終端」
+			「mainタグの終端」
+			「boardタグの開始・終端」
+			「menuタグの開始・終端」
+			「entire.js(jsのframework)の読み込み」
+			「bodyタグの終端」
+			「htmlタグの終端」
+	c)---各ファイルにて構成する内容---
+		各内容を記述するファイル
+		メニューファイル(menu.html)
+	d)---留意点---
+		ファイルのパス指定は原則として「相対パス指定方式」を採用(ディレクトリの細分化により管理可能性を高めるため)
+		当phpプログラムの呼び出しは「http(s)://koko-campus.org/s/科目名/バージョン/***.php」から行うことを想定
+
+2.javascriptプログラムの基本機能(entire.js)
+	a)---関数---
+		responsive
+			ブレークポイントを700pxに設定して、menu表示の有無・h1(ttl)の表示場所を変更
+			「w<700」=>menu:img(click)でメニューを表示させる
+			「w>=700」=>menu:img(click)は無効化
+		menu();
+			menu.htmlファイルからタイトル・ファイル名一覧を取得して自身のaタグを点滅・pointer-eventの無効化を実行して、それ以外は「module」クラス内のファイル名には「x-」、「supplement」クラス内のファイル名には「y-」、「mylog」クラス内のファイル名には「z-」を付したhregを設定(x-,y-,z-を付すのはディレクトリ内の整理のため)
+		table();
+			「norble」クラスが付されていないtableタグに対して「border="1",style="margin:0 auto"」を設定
+		a_tag();
+			「id="main"」タグ内のaタグに対して「target="_blank"」を設定
+		h2();
+			「h2」タグに対して印(css animation)の設定とh2の直前にセパレータ(大)を設定
+		h3();
+			「h3」タグの直前にセパレータ(小)を設定
+		underline();
+			「id="main"」タグ内の「u」クラスを持つ「span」タグに対してunderline(計5色)を順に設定
+		quote();
+			「id="main"」タグ内の「q」クラスを持つ「span」タグに対して「※参考(引用)元サイトは<a href="*****">こちら</a>。」を設定
+		explanation();
+			「id="main"」タグ内の「e」クラスを持つ「div」タグに対して「*****とは???」要素を作成(非推奨=>「span.r(後述)」の利用)
+		focused();
+			「id="main"」タグ内の「f」クラスを持つ「div」タグに対して「important」要素を作成
+		board();
+			「id="main"」タグ内の「r」クラスを持つ「span」タグに対して「board」要素を作成
+			clickによって黒板が現れてチョークで黒板に説明を書く。
+
+3.スタイルシートの基本機能(style.css)
+	a)---概要(メディアクエリ)---
+		font-size
+		#mainの表示場所
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

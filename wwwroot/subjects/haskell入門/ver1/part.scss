@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.to-ghc {
+	background-image: url(../pics/haskell.png);
+}
+.to-vs-code {
+	background-image: url(../pics/vs-code.png);
+}
+
+#operant {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px -5px;
+	> li {
+		display: block;
+		border: 1px solid black;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin: 5px;
+		border-radius: 1px;
+	}
+}

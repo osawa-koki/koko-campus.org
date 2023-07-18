@@ -1,0 +1,661 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 560px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 561px) and (max-width: 959px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 960px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+#page_header {
+	display: flex;
+	justify-content: space-between;
+}
+#menu_img:hover {
+	cursor: pointer;
+}
+#logo {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+#menu_img {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	transition: all 500ms 0ms ease;
+	z-index: 999;
+}
+@media screen and (max-width: 560px) {
+	#logo {
+		width: 100px;
+		height: 50px;
+	}
+	#ttl {
+		height: 50px;
+	}
+	#menu_img {
+		width: 50px;
+		height: 50px;
+	}
+	#main, #menu {
+		top: 55px;
+	}
+}
+@media screen and (min-width: 561px) and (max-width: 959px) {
+	#logo {
+		width: 150px;
+		height: 75px;
+	}
+	#ttl {
+		height: 75px;
+		line-height: 75px;
+	}
+	#menu_img {
+		width: 75px;
+		height: 75px;
+	}
+	#menu, #main {
+		top: 80px;
+	}
+}
+@media screen and (min-width: 960px) {
+	#logo {
+		width: 200px;
+		height: 100px;
+	}
+	#ttl {
+		height: 100px;
+		line-height: 100px;
+	}
+	#menu, #main {
+		top: 105px;
+	}
+}
+#ttl {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	z-index: 99;
+}
+#ttl_span {
+	background: linear-gradient(to bottom, transparent 0 60%, #00FF00 60% 80%, transparent 80% 100%);
+}
+#header_adjustment {
+	margin: 100px 0;
+}
+/* ----------ページヘッダーのレイアウトボックス---------- */
+#main {
+	bottom: 0;
+	overflow-x: hidden;
+}
+@media screen and (max-width: 699px) {
+	#main {
+		left: 0;
+		right: 0;
+	}
+	#menu {
+		top: 0;
+		right: 0;
+		width: 0;
+		height: 0;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 1499px) {
+	#main {
+		left: 250px;
+	}
+	#menu {
+		width: 250px;
+		bottom: 0;
+		left: 0;
+	}
+	#menu_img {
+		display: none;
+	}
+}
+@media screen and (min-width: 1500px) {
+	#main {
+		left: calc((100vw - 1000px) / 2);
+	}
+}
+#header_adjustment {
+	margin: 100px 0;
+}
+
+#super_main {
+	display: flex;
+	justify-content: space-between;
+}
+#main {
+	max-width: 1000px;
+	position: fixed;
+	overflow-y: scroll;
+}
+#main_div {
+	margin: 1rem;
+	border: 1px black solid;
+	padding: 1rem;
+}
+
+/* menu用のcss */
+#menu {
+	position: fixed;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	z-index: 1;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transition: all 500ms 0ms ease;
+}
+#menu_div {
+	margin: 1rem;
+	border: 1px black solid;
+	padding-bottom: 1rem;
+}
+@media screen and (max-width: 699px) {
+	#menu_div {
+		background-color: #000000;
+	}
+}
+@media screen and (min-width: 700px) {
+	#menu_div {
+		background-color: #DDDDDD;
+	}
+}
+.menu_move {
+	top: 80px !important;
+	right: 5% !important;
+	bottom: 10px !important;
+	left: 5% !important;
+	width: 90% !important;
+	background-color: #000000 !important;
+	opacity: 0.9 !important;
+}
+.t0 {
+	white-space: nowrap;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 1rem 0 0.5rem 1rem;
+}
+@media screen and (max-width: 699px) {
+	.t0 {
+		color: #ffffff;
+	}
+	.s0 a {
+		color: #99FFFF;
+	}
+	.s1 a {
+		color: #FFCC66;
+	}
+	.line {
+		color: #999999;
+	}
+}
+@media screen and (min-width: 700px) {
+	.s0 a {
+		color: #0000FF;
+	}
+	.s1 a {
+		color: #FF5F17;
+	}
+	.line {
+		color: #000000;
+	}
+}
+#menu a {
+	text-decoration: none;
+	white-space: nowrap;
+	margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 699px) {
+	#board {
+		height: 0;
+		left: 5%;
+		right: 5%;
+	}
+}
+@media screen and (min-width: 700px) {
+	#board {
+		width: 650px;
+		height: 0;
+		left: calc((100vw - 650px) / 2);
+	}
+}
+#board {
+	top: 100px;
+	position: fixed;
+	background-color: #006400;
+	border-style: solid;
+	border-color: black;
+	border-width: 0;
+	transition: height 500ms 0ms ease;
+	z-index: 9;
+}
+#board_sub {
+	position: relative;
+	color: whitesmoke;
+	width: calc(100% - 6rem);
+	height: calc(100% - 6rem);
+	letter-spacing: 3px;
+	padding: 3rem;
+}
+
+#board_content:first-line {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+#eraser {
+	position: absolute;
+	background-color: transparent;
+	width: 60px;
+	height: 30px;
+	left: 10px;
+	bottom: 0;
+}
+.eraser_b4::before {
+	position: absolute;
+	content: "";
+	top: -20%;
+	left: 40%;
+	width: 20%;
+	height: 140%;
+	background-color: black;
+}
+#chalk {
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: transparent;
+	transform-origin: left top;
+	transform: rotate(45deg);
+}
+.chalking {
+	animation: chalking 1.5s linear; 0s 1 normal none running;
+}
+@keyframes chalking {
+	from {
+		top: 10%;
+		left: 10%;
+	}
+	10% {
+		top: 5%;
+		left: 30%;
+	}
+	20% {
+		top: 40%;
+		left: 10%;
+	}
+	35% {
+		top: 10%;
+		left: 70%;
+	}
+	50% {
+		top: 70%;
+		left: 20%;
+	}
+	65% {
+		top: 30%;
+		left: 80%;
+	}
+	80% {
+		top: 75%;
+		left: 40%;
+	}
+	90% {
+		top: 70%;
+		left: 90%;
+	}
+	to {
+		top: 90%;
+		left: 70%;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+h1 span {
+	background: linear-gradient(to bottom, transparent 0 60%, #00FF00 60% 80%, transparent 80% 100%);
+}
+h2, h3 {
+	overflow-x: hidden;
+	margin: 0.3rem 0;
+}
+h2 span {
+	font-size: 1.4rem;
+	font-weight: 1000;
+	white-space: nowrap;
+	background: linear-gradient(to bottom, transparent 0 60%, #00FFFF 60% 80%, transparent 80% 100%);
+}
+.h2_rect {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin: 0 0.5rem;
+	animation: h2_turning 10s ease 0s infinite normal none running;
+}
+@keyframes h2_turning {
+	from {
+		transform: rotate(0deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 1;
+	}
+	20% {
+		transform: rotate(720deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 1;
+	}
+	60% {
+		transform: rotate(3600deg);
+		border-radius: 50%;
+		background-color: red;
+		opacity: 1;
+	}
+	80%, 85% {
+		transform: rotate(3600deg);
+		border-radius: 50%;
+		background-color: red;
+		opacity: 0;
+	}
+	85% {
+		transform: rotate(0deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 0;
+	}
+	to {
+		transform: rotate(0deg);
+		border-radius: 0;
+		background-color: #0000FF;
+		opacity: 1;
+	}
+
+}
+
+h3 span {
+	font-size: 1.2rem;
+	font-weight: 800;
+	white-space: nowrap;
+	background: linear-gradient(to bottom, transparent 0 70%, #33FFFF 70% 80%, transparent 80% 100%);
+}
+
+
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+.scroll_x {
+	overflow-x: scroll;
+}
+
+
+.transaction_content {
+	text-indent: -1rem;
+	margin-left: 1.5rem;
+}
+.nowrap_table td, .nowrap_table td {
+	white-space: nowrap;
+}
+.transaction_table {
+	width: 90%;
+	max-width: 30rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1rem;
+	background-color: #ffffff;
+}
+.transaction_table th, .transaction_table td {
+	text-align: center;
+	padding: 0 1rem;
+	border: none;
+}
+.transaction_table caption {
+	font-size: 1rem;
+	text-align: center;
+}
+.transaction_container {
+	width: 100%;
+	background-color: #EEEEEE;
+	padding: 1rem 0.2rem;
+	margin: 1rem 0;
+	border: 1px black solid;
+	border-radius: 1rem;
+}
+
+.tb {
+	width: 100%;
+	margin: 0 auto;
+}
+.hidden {
+	display: none;
+}
+.scroll_x {
+	overflow-x: scroll;
+}
+.separator {
+	width: 100%;
+	height: 3px;
+	background-color: #555555;
+	margin: 0.5rem 0;
+}
+.pointing {
+	animation: lighting 1500ms ease 0s infinite normal none running;
+}
+@media screen and (max-width: 699px) {
+	@keyframes lighting {
+		0%, 50% {
+			color: red;
+		}
+		60%, 100% {
+			color: white;
+		}
+	}
+}
+@media screen and (min-width: 700px) {
+	@keyframes lighting {
+		0%, 40% {
+			color: black;
+		}
+		50%, 100% {
+			color: red;
+		}
+	}
+}
+.bb {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.u1 {
+	border-bottom: 1px black solid;
+}
+.u2 {
+	border-bottom-style: double;
+}
+.font_red {
+	color: red;
+	font-weight: bold;
+}
+.r {
+	text-align: right;
+}
+
+.f {
+	border: 3px red solid;
+	padding: 0.5rem 1rem;
+	margin: 1rem 0;
+}
+.important {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0.3rem 0 1rem 0;
+}
+.important_content {
+	font-size: 1.1rem;
+}
+.important_slide {
+	position: relative;
+}
+.important_slide::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 2px;
+	top: 85%;
+	left: 0;
+	animation: sliding 3s ease 0s infinite normal none running;
+}
+@keyframes sliding {
+	from {
+		left: 0;
+		width: 0;
+		background-color: yellow;
+	}
+	50%, 50.1% {
+		left: 0;
+		width: 100%;
+		background-color: red;
+	}
+	to {
+		left: 100%;
+		width: 0;
+		background-color: yellow;
+	}
+}
+.super_separator {
+	width: 100%;
+	height: 3px;
+	border-radius: 1rem;
+	background-color: #777777;
+	margin: 2rem 0;
+}
+.separator {
+	width: 100%;
+	height: 1px;
+	background-color: #AAAAAA;
+	margin: 1.5rem 0 1rem 0;
+}
+p {
+	text-indent: -1rem;
+	margin-left: 1rem;
+}
+p::before {
+	content: "・";
+	font-weight: bold;
+}
+.center_padding {
+	text-align: center;
+	padding: 0 0.5rem;
+}
+.center {
+	margin: 0 auto;
+}
+.get_it_center {
+	text-align: center;
+}
+
+
+/* thankyou for ---https://mo2nabe.com/css-write-fraction/--- */
+.fraction{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px;
+}
+.fraction_n,.fraction_d{
+	display: block;
+}
+.fraction_n{
+	border-bottom: 1px solid #333;
+}
+
+
+
+
+.nowrap {
+	white-space: nowrap;
+}
+.cancel {
+	background: linear-gradient(to bottom, transparent 0 40%, black 40% 45%, transparent 45% 55%, black 55% 60%, transparent 60% 100%);
+}
+
+
+.ref_button {
+	display: inline-block;
+	border: 1px black solid;
+	border-radius: 1rem;
+	padding: 0.2rem 0.5rem;
+	background-color: #93FFAB;
+}
+
+ol, ul {
+	border: 1px black solid;
+}
+.border {
+	border: 1px black solid;
+}
+
+
+.circle-purple {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: purple;
+	margin-right: 0.5rem;
+}
+
+.height1rem {
+	height: 1rem;
+}
+
+.indent {
+	text-indent: -1rem;
+	margin-left: 1.5rem;
+}
+
+svg {
+	display: block;
+	margin: 1rem auto;
+}
+.norsvg {
+	width: 90%;
+}
+
+
+

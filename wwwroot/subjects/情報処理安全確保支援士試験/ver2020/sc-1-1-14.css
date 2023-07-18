@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+
+
+
+
+#radius_svg filter {
+color-interpolation-filters:sRGB;
+}
+#radius_svg #radius_connect0 {
+fill:#8080ff;filter:url(#radius_filter)
+}
+#radius_svg #radius_connect1 {
+fill:#ff80ff;filter:url(#radius_filter)
+}
+#radius_svg .user_data {
+fill:#ffffff;stroke:#000000;stroke-width:0.2;
+}
+#radius_svg text {
+font-size:3.5px;
+}
+#radius_svg .pink_word {
+fill:#FF00FF;
+}
+#radius_svg .blue_word {
+fill:#0000FF;
+}
+#radius_svg .blue_big {
+fill:#0000FF;font-size:5px;font-weight: bold;
+}
+
+
+
+
+
+#saml_svg #circle_of_trust {
+fill:#00ffff;filter:url(#smal0);opacity:0.5;
+}
+#saml_svg #sp {
+fill:#ff4d4d;filter:url(#smal1);
+}
+#saml_svg #saml_arw {
+fill:#ffff00;
+}
+#saml_svg text {
+font-size: 5px;
+}
+#saml_svg #saml_word {
+	font-size: 7px;
+	font-weight: bold;
+	fill: #0000FF;
+}
+
+
+
+
+
+
+
+
+
+#saml_comment {
+	padding: 1rem;
+	border: 1px black solid;
+	margin: 1rem 0;
+	background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
