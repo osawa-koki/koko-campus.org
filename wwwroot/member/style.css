@@ -1,0 +1,112 @@
+@charset "UTF-8";
+html {
+  font-size: 15px;
+}
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  background-image: url(pics/bg.png);
+  background-repeat: repeat no-repeat;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-size: cover, 50px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  header {
+    left: calc((100% - 1200px) / 2);
+    right: calc((100% - 1200px) / 2);
+    height: 70px;
+    background-size: contain;
+  }
+}
+
+header #logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+}
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  main {
+    padding-top: 90px;
+  }
+}
+
+main h1 {
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 1px;
+  border-left: 7px red solid;
+  padding-left: 10px;
+}
+
+main p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 2rem;
+  text-indent: -2rem;
+}
+
+main p::before {
+  content: "";
+  padding: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../font-family/img/star.png);
+  margin-right: 1rem;
+}
+
+main table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+main .hidden {
+  display: none;
+}
+
+main .center {
+  text-align: center;
+}
+
+main .left {
+  text-align: left;
+}
+
+main .right {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
