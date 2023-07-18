@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+* {
+	font-family: "consolas", "Consolas";
+}
+
+#Z {
+	max-width: 1000px;
+	margin: 0 auto 50px auto;
+	padding: 25px;
+	h1 {
+		font-size: 20px;
+		margin: 25px 0;
+	}
+	#select-box {
+		margin: 25px 0;
+		#select {
+			font-size: 18px;
+		}
+		#B {
+			margin: 0 10px;
+			padding: 1px 10px;
+		}
+	}
+	.show {
+		display: block !important;
+	}
+	section {
+		display: none;
+		border: 1px black solid;
+		padding: 25px;
+		overflow-x: auto;
+		h2 {
+			font-size: 18px;
+			margin: 10px 0;
+		}
+		&#update-info {
+			select {
+				margin-right: 3px;
+			}
+			#update-info_pointing-date {
+				margin: 25px 0;
+			}
+			#update-info_containing-box {
+				margin: 25px 0;
+				div.update-info_oneItem {
+					margin: 25px 0;
+					padding: 25px;
+					border: 1px black solid;
+					background-color: black;
+					.deleteButton {
+						width: 100px;
+						text-align: center;
+						background-color: lightgrey;
+						margin: 25px 0;
+						padding: 3px 5px;
+						cursor: pointer;
+						&:hover {
+							color: white;
+							background-color: grey;
+						}
+					}
+					input[type="text"], textarea {
+						display: block;
+						margin: 25px 0;
+						border: 1px black solid;
+						border-radius: 0;
+						padding: 1rem;
+						font-size: 16px;
+						background-color: white;
+						resize: none;
+					}
+					input[type="text"] {
+						&:nth-of-type(1) {
+							width: 100px;
+						}
+						&:nth-of-type(2) {
+							width: 500px;
+						}
+						&:nth-of-type(3) {
+							width: 50px;
+						}
+						&:nth-of-type(4) {
+							width: 500px;
+						}
+					}
+					textarea {
+						width: 500px;
+						height: 150px;
+					}
+				}
+			}
+			div.add-button {
+				margin: 25px 0;
+				padding: 5px;
+				width: 250px;
+				text-align: center;
+				border: 1px black solid;
+				color: black;
+				background-color: lightgreen;
+				cursor: pointer;
+				&:hover {
+					color: white;
+					background-color: green;
+				}
+			}
+			div.put-button {
+				margin: 25px 0;
+				padding: 5px;
+				width: 250px;
+				text-align: center;
+				border: 1px black solid;
+				color: black;
+				background-color: lightgoldenrodyellow;
+				cursor: pointer;
+				&:hover {
+					background-color: yellow;
+				}
+			}
+		}
+		&#password {
+			table {
+				border-collapse: collapse;
+				margin: 25px 0;
+				caption {
+					white-space: nowrap;
+				}
+				input[type="text"] {
+					font-size: 15px;
+					padding: 3px 5px;
+					border: 1px black solid;
+					border-radius: 0;
+				}
+				input[type="button"] {
+					width: 50px;
+					text-align: center;
+					margin-left: 10px;
+					font-size: 10px;
+					padding: 2px 3px;
+					cursor: pointer;
+				}
+			}
+			#pw-button-box {
+				div {
+					width: 150px;
+					text-align: center;
+					padding: 5px 15px;
+					border: 1px black solid;
+					box-sizing: border-box;
+					margin: 10px 0;
+					cursor: pointer;
+					&:nth-of-type(1) {
+						background-color: cyan;
+						&:hover {
+							background-color: blue;
+						}
+					}
+					&:nth-of-type(2) {
+						background-color: pink;
+						&:hover {
+							background-color: red;
+						}
+					}
+					&:nth-of-type(3) {
+						background-color: lightgrey;
+						background-color: grey;
+					}
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+		&#upload-files {
+			.metaFrame {
+				margin: 25px 0;
+				table {
+					margin: 10px 0;
+					border-bottom: 1px grey solid;
+					select {
+						margin: 10px 0;
+						padding: 3px 5px;
+						font-size: 15px;
+					}
+				}
+			}
+			.contentsFrame {
+				margin: 25px 0;
+				border: 1px black solid;
+				padding: 25px;
+				background-color: lightcyan;
+				select, input {
+					display: block;
+					margin: 10px 0;
+					padding: 3px 5px;
+					font-size: 15px;
+				}
+				textarea {
+					border: 1px black solid;
+					border-radius: 0;
+					width: calc(100% - 50px);
+					height: 300px;
+					resize: none;
+					padding: 25px;
+					font-size: 15px;
+				}
+			}
+		}
+		&#manage-subjects {
+			table {
+				margin: 25px 0;
+				input[type="text"], select {
+					font-size: 15px;
+					padding: 3px 5px;
+				}
+				input[type="button"] {
+					padding: 2px 25px;
+					margin: 5px 0;
+				}
+			}
+			.searchList {
+				height: 300px;
+				border: 1px black solid;
+				margin: 25px 0;
+				padding: 10px;
+				overflow-y: auto;
+				table {
+					th, td {
+						padding: 5px 10px;
+						border-bottom: 1px lightgrey solid;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						span {
+							color: blue;
+							text-decoration: underline;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			.mainFrame {
+				margin: 25px 0;
+				padding: 10px;
+				background-color: lightcyan;
+				border: 1px black solid;
+				min-height: 100px;
+				input, textarea {
+					font-size: 15px;
+					padding: 5px 15px;
+				}
+				.subjectLine {
+					table {
+						width: 100%;
+						textarea {
+							width: 80%;
+							min-height: 150px;
+							resize: none;
+						}
+					}
+					margin: 10px 0;
+					padding: 10px 0;
+					border-bottom: 1px grey solid;
+				}
+				.subjectsTree {
+					padding: 10px;
+					border: 1px black solid;
+					div {
+						padding: 10px;
+						border: 1px black solid;
+					}
+				}
+				.subjectsTreeStep {
+					margin: 10px 0;
+					padding: 10px 0;
+					border-bottom: 1px grey solid;
+					display: grid;
+					grid-template-columns: 100px 200px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
