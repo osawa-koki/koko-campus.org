@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ナンプレ解読</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="entire-wrapper">
+		<div id="outline-box">
+			<script type="text/javascript" charset="utf-8">
+				"use strict";
+				(() => {
+					const input_justOne_digit = function() { // 入力できるのは一文字だけ
+						this.value = this.value.slice(-1);
+					}
+					const input_switchAvailability = function() {
+						this.readOnly = !this.readOnly;
+					}
+					const
+						container_object = document.getElementById("outline-box"),
+						oneLine_count = 9,
+						count_upto = oneLine_count ** 2
+					;
+					for (let i = 0; i < count_upto; i++) {
+						const inputElement = document.createElement("input");
+						inputElement.type = "number";
+						inputElement.addEventListener("input", input_justOne_digit);
+						inputElement.addEventListener("dblclick", input_switchAvailability);
+						container_object.appendChild(inputElement);
+					}
+				})();
+			</script>
+		</div>
+		<div id="button_toSolve">開始♪</div>
+		<script charset="utf-8" type="text/javascript" src="script.js" defer></script>
+	</div>
+</body>
+</html>

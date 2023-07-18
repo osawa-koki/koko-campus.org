@@ -1,0 +1,71 @@
+#entire-wrapper {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+#entire-wrapper #outline-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (35px)[9];
+      grid-template-rows: repeat(9, 35px);
+  -ms-grid-columns: (35px)[9];
+      grid-template-columns: repeat(9, 35px);
+  grid-gap: 0;
+  width: calc(315px);
+  margin: 0 auto;
+}
+
+#entire-wrapper #outline-box input[type="number"] {
+  display: block;
+  border: 1px lightgrey solid;
+  text-align: center;
+  font-size: 20px;
+  font-family: "consolas", "Consolas";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-appearance: textfield;
+  cursor: default;
+}
+
+#entire-wrapper #outline-box input[type="number"]::-webkit-outer-spin-button, #entire-wrapper #outline-box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#entire-wrapper #outline-box input[type="number"]:nth-of-type(3n) {
+  border-right: 1px black solid;
+}
+
+#entire-wrapper #outline-box input[type="number"]:nth-of-type(n+28):nth-of-type(-n+36), #entire-wrapper #outline-box input[type="number"]:nth-of-type(n+55):nth-of-type(-n+63) {
+  border-top: 1px black solid;
+}
+
+#entire-wrapper #outline-box input[type="number"]:-moz-read-only {
+  background-color: lightgrey;
+}
+
+#entire-wrapper #outline-box input[type="number"]:read-only {
+  background-color: lightgrey;
+}
+
+#entire-wrapper #outline-box input[type="number"].filled {
+  background-color: pink;
+}
+
+#entire-wrapper #button_toSolve {
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  margin: 50px auto;
+  color: black;
+  background-color: lightblue;
+  border: 1px black solid;
+  cursor: pointer;
+}
+
+#entire-wrapper #button_toSolve:hover {
+  color: white;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
