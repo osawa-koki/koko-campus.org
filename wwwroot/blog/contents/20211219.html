@@ -1,0 +1,38 @@
+<h1>viewport</h1>
+レスポンシブページを作成するにあたって乱用される魔法の言葉、「&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;」。<br />一体何を指示しているのでしょうか???<br /><br />これは、実際の画面にどのように表示するかを指定しています。<br />スマホが主流になる前までは、PCだけを意識すればよかったんですけどね、、、<br /><br />問題なのはPCとスマホで画面サイズが異なる点。<br />PC用のページをそのままスマホに表示したらかなり縮小されて表示されるため、サイズが小さくなって見にくくなってしまいます。<br />ということで、viewportによってページをどのように表示するかを設定します。
+<p class="r">下のサンプルは「<a href="../subjects/html&css入門/ver1/x-レスポンシブページ">html&amp;css入門ページ</a>」で僕が簡単に説明用に作成したものです。</p>
+<svg id="viewport-svg" width="90%" version="1.1" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+	<g id="device" transform="translate(100 100)" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+		<path d="m-24.724-69.856c-17.356 0-31.328 13.974-31.328 31.33v97.32c0 17.356 13.972 31.328 31.328 31.328h46.572c17.356 0 31.328-13.972 31.328-31.328v-97.32c0-17.356-13.972-31.33-31.328-31.33zm-23.092 18.268h92.787v112.55h-92.787z" fill="#000006" stroke-width="1.8429" style="paint-order:markers stroke fill"/>
+		<circle cx="-1.6739" cy="75.886" r="8.8071" fill="#fff" stroke-width="2.7682" style="paint-order:markers stroke fill"/>
+	</g>
+</svg>
+<script charset = "UTF-8" type="text/javascript">
+	"use strict";
+	window.addEventListener("load", () => {
+		const s = document.getElementById("viewport-svg"),
+			d = document.getElementById("device"),
+			w = s.clientWidth,
+			h = s.clientHeight;
+		s.addEventListener("click", e => {
+			let x = e.offsetX,
+				y = e.offsetY,
+				xr = x * 600 / w,
+				yr = y * 400 / h;
+			d.setAttribute("transform", `translate(${xr} ${yr})`);
+		});
+	});
+</script>
+htmlをスクリーン上に表示する際には大きく以下の2つの工程を経ます。
+<ol>
+	<li>viewportへのレンダリング</li>
+	<li>実際のモニタへのレンダリング</li>
+</ol>
+<p class="r">レンダリングとはhtmlのデータを加工・調整して画面に表示することです。</p>
+<h2>viewportへのレンダリング</h2>
+ブラウザはhtmlを直接、実際のモニタにレンダリングしません。<br />まずは、viewportと呼ばれる仮想的なモニタにレンダリングします。<br />このモニタのサイズをメタviewportタグ内の「width=device-width」で指定しています。<br />「device-width」とはその端末の画面表示幅という意味で、スマホであればおそらく360px前後、タブレット端末であれば700px前後、PCであれば1200px以上となります。<br /><br />これを指定しないと、デフォルトのPC用に限りなく近い「960px」が採用されます。
+<p class="r">正確には縦と横の両方を指定する必要があるのですが、縦横比さえ決まっていれば横が決まれば縦も決定されるので、ここでは横に関してのみviewportを指定します。</p>
+<h2>実際のモニタへのレンダリング</h2>
+レンダリングされたviewportを拡大または縮小して実際の画面に表示します。<br />例えば、viewportを指定せずにviewport幅が「960px」とされており、実際に表示するスマホ端末の画面幅が「360px」である場合は「360 &divide; 960 = 0.375」よりPCで表示するはずだった画面を0.375倍に縮小して表示されます。<br />これはダメです。<br />とっても見ずらいです。<br />正しいviewport幅を指定しましょう♪
+<div class="separator"></div>
+「initial-scale=1」は書いても書かなくてもok!です。<br />「width=device-width」を指定すれば自動で「initial-scale=1」となります。

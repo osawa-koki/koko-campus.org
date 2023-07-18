@@ -1,0 +1,39 @@
+<h1>関数を値として扱う講座第二弾</h1>
+機能は関数の戻り値として関数を返すところまで説明しました。<br /><br />コードをもう一度提示します。
+<code class="javascript">
+	function add(x, y) {
+		return x + y;
+	}
+	function times(x, y) {
+		return x * y;
+	}
+	function add_times(fx1, fx2) {
+		return function (a, b, c) {
+			return fx2(fx1(a, b), c)
+		}
+	}
+		
+	console.log(add_times(add, times)(2, 3, 4));
+	console.log(add_times(times, add)(2, 3, 4));
+</code>
+このうちの、「add_times(..., ...)」の部分は引数として受け取った関数2つを合成して返しています。<br />これが関数の合成です。<br /><br />しかしながら、毎回これを書くのは大変です。<br />ということで、これを別の変数に代入しましょう♪
+<code class="javascript">
+	function add(x, y) {
+		return x + y;
+	}
+	function times(x, y) {
+		return x * y;
+	}
+	function add_times(fx1, fx2) {
+		return function (a, b, c) {
+			return fx2(fx1(a, b), c)
+		}
+	}
+	const add_times1 = add_times(add, times); // 関数の合成
+	const add_times2 = add_times(times, add); // 関数の合成
+
+	console.log(add_times1(2, 3, 4)); // 20
+	console.log(add_times2(2, 3, 4)); // 10
+</code>
+合成した関数を別の関数として扱うことも出来るようになりました。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

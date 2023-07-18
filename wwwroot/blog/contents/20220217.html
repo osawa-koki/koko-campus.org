@@ -1,0 +1,7 @@
+<h1>JSON_UNESCAPED_UNICODE</h1>
+JavaScriptのXMLHttpRequestでphpとjson形式のデータの通信を行う際に文字化けが生じたため、備忘録として、、、<br /><br />まず、プログラムの内容を簡単に説明します。<br />phpでjsonをエンコードしてecho文で出力、XHRではこれを取得して「json_decode」でオブジェクト化しようとしたところ、日本語文字に関して文字化けが発生。<br /><br />原因は、phpがjsonをエンコードする際にデフォルトでユニコード文字をエスケープしますが、これでは不便な場合もあります。<br />そのような場合にはphpでjsonをエンコードする際に以下のように書きます。
+<code class="php">
+	json_encode(jsonデータ, JSON_UNESCAPED_UNICODE);
+</code>
+因みにphpのバージョン7.1以前ではデフォルトではエスケープされないため、不要です。
+<p>参考サイトは<a href="https://www.php.net/manual/ja/json.constants.php">こちら</a>。</p>

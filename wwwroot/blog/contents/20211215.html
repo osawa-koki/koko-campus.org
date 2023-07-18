@@ -1,0 +1,28 @@
+<h1>アロー関数(js)</h1>
+皆さん、javascriptで関数ってどう定義していますか???<br />おそらく以下のどちらかだと思います。
+<ul>
+	<li>function</li>
+	<li>=&gt;</li>
+</ul>
+それぞれ、「通常関数」「アロー関数」と呼びますが、この違いって知っていますか???<br />アロー関数の方が新しくて簡単に書けるからアロー関数を使えばok!ってわけにはいきません。<br />両者を適切に使い分ける必要があります。<br />理解するべき大きな違いは「this」が何を指すかです。<br />例えば以下のコードを見てください。
+<code class="html">
+	&lt;input id="name" type="text" /&gt;
+</code>
+<code class="javascript">
+	 "use strict";
+	document.getElementById("name").addEventListener("change", function() {
+		console.log(this);
+	});
+</code>
+id属性に「name」が設定されたテキストボックスに変更時に実行されるイベントリスナーを設定しています。<br />イベントリスナーで発火される関数内でthisを使用していますが、この「this」はid属性に「name」が設定されたテキストボックス(ドキュメントオブジェクト)を指します。<br /><br />通常関数内での「this」はそのオブジェクトメソッドが含まれる直近のオブジェクトを指します。<br />上の例では、addEventListenerメソッドが含まれる直近のオブジェクトであるid属性に「name」が設定されたテキストボックス(ドキュメントオブジェクト)を指します。<br /><br />これをアロー関数を用いて関数を定義した以下のコードに変更してみましょう♪
+<code class="html">
+	&lt;input id="name" type="text" /&gt;
+</code>
+<code class="javascript">
+	 "use strict";
+	document.getElementById("name").addEventListener("change", () => {
+		console.log(this);
+	});
+</code>
+アロー関数において、「this」は関数が定義されているスコープを指します。<br />そのため、上のコードでの「this」はwindowオブジェクトを指します。<br /><br />何だか難しいですね、、、
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

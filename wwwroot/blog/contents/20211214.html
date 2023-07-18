@@ -1,0 +1,52 @@
+<h1>レキシカルスコープ・ダイナミックスコープ</h1>
+今まで意識したことはありませんでしたが、とあるプログラムを作成している際に必要になったので、、、<br /><br />簡単に言えば、スコープがいつ形成されるかについてです。
+<table border="1">
+	<thead>
+		<tr>
+			<td>レキシカルスコープ</td>
+			<td>ダイナミックスコープ</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>ローカル変数のスコープが<strong>関数の定義時に決定</strong>される。</td>
+			<td>ローカル変数のスコープが<strong>関数の実行(呼び出し)時に決定</strong>される。</td>
+		</tr>
+		<tr>
+			<td>ほとんどの言語</td>
+			<td>perl</td>
+		</tr>
+	</tbody>
+</table>
+<p class="r">perlはレキシカルスコープとダイナミックスコープの両方をサポートしています。</p>
+<h2>レキシカルスコープ</h2>
+普通のスコープ形成方法です。<br />では問題です。<br />以下のコードを実行すると何が出力されるでしょうか???
+<code class="javascript">
+	let x = 1;
+	function fx1() {
+		console.log(x); //「1」or「2」???
+	}
+	function fx2() {
+		let x = 2;
+		fx1();
+	}
+	fx2();
+</code>
+正解は「1」と出力されます。<br />fx1が定義された時点での変数xの値は「1」であるためです。
+<h2>ダイナミックスコープ</h2>
+perlでサポートされているスコープ形成方法です。<br />先ほどと異なり、「2」が出力されます。
+<p class="r">javascriptはレキシカルスコープを形成するため、以下のコードを実行すると「1」と出力されますが、ここではダイナミックスコープ型javascript(僕が勝手に命名)を採用しているとします。<br />perlで書いても良いんですけど、複雑になるので、、、</p>
+<code class="javascript">
+	let x = 1;
+	function fx1() {
+		console.log(x); //「2」(変数xに「2」が代入されている時に関数fx1が実行され、この状態で変数xのスコープが決定される)
+	}
+	function fx2() {
+		let x = 2;
+		fx1();
+	}
+	fx2();
+</code>
+<div class="separator"></div>
+難しいですね、、、これに関してより深く理解するためにはクロージャに関する知識が必要です。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

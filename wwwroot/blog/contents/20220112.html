@@ -1,0 +1,13 @@
+<h2>ユーザの追加(windows11)</h2>
+windows11にアップデートしてから設定の画面でなぜだか家族とその他のユーザメニューが表示されなくなりました。
+<img src="data/20220112.png" alt="設定の画面" />
+う～～～ん、、、<br />なぜだろうか、、、<br /><br />windows ProかEnterpriseやhomeかで少し変わるらしいんですけど、、、<br />僕はhomeを使用しているので???表示されませんでした。<br />windows10では表示されていた記憶がありますが、、、<br /><br />ということでコマンドを打ってユーザを追加しましょう♪
+<code class="cmd">
+	net user ユーザ名 パスワード /add
+</code>
+でユーザを追加できます。<br />簡単ですね♪<br /><br />因みにユーザ一覧を表示するには以下のコマンドを実行します。
+<code class="cmd">
+	net user
+</code>
+これで現在登録されているユーザ一覧が表示されます。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

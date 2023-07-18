@@ -1,0 +1,19 @@
+<h1>配列の深いコピー(js)</h1>
+JavaScriptでは配列の代入では参照渡しとなることは有名ですね♪<br />JSに限らず、配列のような比較的大きなデータは参照渡しとするプログラミング言語が大半です。<br /><br />しかしながら、どうしても配列を値渡ししたい場合がありますよね、、、<br />このような場合には配列のコピーを行う必要がありますが、JSでは以下のメソッドで実現可能です。
+<code class="javascript">
+	ary.slice()
+	// or
+	ary.concat()
+	// or
+	Array.from(ary)
+</code>
+<img src="data/20220312(1).gif" alt="配列のコピー" />
+しかしながら、この方法では深い配列のコピーができません。<br />深い配列とは、二次元配列以上の配列を言います。
+<img src="data/20220312(2).gif" alt="配列のコピー" />
+ということで、別の方法を考えましょう♪<br /><br />最も一般的な方法は一度json文字列に変換してそれを再びパースして深い配列に変換するという方法です。<br />以下のように書きます。
+<code class="javascript">
+	JSON.parse(JSON.stringify(ary))
+</code>
+<img src="data/20220312(3).gif" alt="配列のコピー" />
+これでok!です♪<br /><br />ですが、、、<br />なんだかダサいですよね、、、<br />実行効率も悪いでしょうし、、、<br /><br />ということで、なんとかして深い配列のコピーを実現する方法を考えてみましょう♪<br /><br />詳細は明日の記事で♪
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

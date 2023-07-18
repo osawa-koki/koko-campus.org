@@ -1,0 +1,2 @@
+<h1>nextSiblingとnextElementSibling</h1>
+「nextSibling」ってなんや???<br />「nextElementSibling」と違うんか???<br /><br />って思ったので、一応メモしておきます。<br /><br />結論、違います。<br />また、よっぽどのことがない限りは、「nextElementSibling」を使用するべきです。<br /><br />両者の違いは、「テキストノード、コメントノード」を含みか否かです。<br />「nextElementSibling」は含みません。<br /><br />次の要素を指定する時にテキストノード、ないしはコメントノードを指定することはほとんどありませんので、「nextSibling」ではなく、「nextElementSibling」を使用すると覚えてok!です。

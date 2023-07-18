@@ -1,0 +1,36 @@
+<h1>短絡評価</h1>
+そういえば、、、って感じですが、、、<br />短絡評価について説明します。<br /><br />GETメソッドでパラメタを受け取って、その名前のファイルを取得するプログラムを想定してください。<br /><br />別にGETメソッドだろうがなんだろうがok!ですが、、、<br /><br />このケースでは以下の2つの実行時エラーが想定されます。
+<ul>
+	<li>GETメソッドのデータがない</li>
+	<li>ファイルがない</li>
+</ul>
+したがって、これらのケースを適切に処理する必要があります。
+<code class="php">
+	if (isset($_GET["param"])) {
+		if (file_exist(__DIR__. "/{$_GET["param"]}")) {
+			// 正常
+		} else {
+			// 異常
+		}
+	} else {
+		// 異常
+	}
+</code>
+これをまとめて以下のように書きました。
+<code class="php">
+	if (file_exist(__DIR__. "/{$_GET["param"]}") &amp;&amp; isset($_GET["param"])) {
+		// 正常
+	} else {
+		// 異常
+	}
+</code>
+これでは、エラーになる危険性があります。<br /><br />理由は、ファイルがあるかどうか確かめるためにparamパラメタを使用しますが、これの値があるかどうか分からないからです。<br /><br />では、これを反対にするとどうでしょうか???
+<code class="php">
+	if (isset($_GET["param"]) &amp;&amp; file_exist(__DIR__. "/{$_GET["param"]}")) {
+		// 正常
+	} else {
+		// 異常
+	}	
+</code>
+これで、ok!です。<br /><br />順番を入れ替えるだけです。<br /><br />なぜだと思いますか???<br /><br />理由は、左側のisset関数でパラメタがなかった場合は、これ以降は評価されないからです。<br /><br />「&amp;」の左側が「false」であるならば、右の真偽値が「true」であっても「false」であっても答えは「false」になりますので、、、<br /><br />これが短絡評価です。<br /><br />条件分岐を複数組み合わせてもok!ですが、綺麗ではないですよね、、、<br /><br />ということで、是非、短絡評価をマスターしましょう♪
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

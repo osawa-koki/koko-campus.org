@@ -1,0 +1,2 @@
+<h1>$_POST(php)</h1>
+json形式のデータをphpで取得する際に躓いたのでちょっとメモ。<br />結論から言うと、取得できるデータのタイプに制約があります。<br /><br /><a href="https://www.php.net/manual/ja/reserved.variables.post.php">公式ドキュメント</a>では「Content-Typeに「application/x-www-form-urlencoded」あるいは「multipart/form-data」を用いたHTTPリクエストで、POSTメソッドから現在のスクリプトに渡された変数の連想配列です。」と説明されています。<br /><br />Content-Typeが「application/json」ではngです。<br /><br />僕はここを勘違いしていました。<br /><br />また、名前にもあるようにurlエンコードする必要があります。<br />urlエンコードとは「キー=バリュー&amp;キー=バリュー&amp;...」の形に変換することです。<br />因みに、urlエンコードのことを「パーセントエンコード」とも呼ぶらしいです。

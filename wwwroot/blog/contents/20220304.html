@@ -1,0 +1,58 @@
+<h1>深い配列操作(php)</h1>
+深い配列(二次元配列以上)で、下位の要素を追加する際にその上位の要素が存在しない場合には自動で追加してくれます。<br />便利♪
+<code class="php">
+	$jp = array(
+		"kanto" => array(
+			"saitama" => [
+				"soka",
+				"koshigaya",
+				"kawaguchi"
+			],
+			"tokyo" => [
+				"adachi",
+				"chiyoda",
+				"shibuya"
+			]
+		)
+	);
+	$jp["kansai"]["kyoto"] = ["uji", "???"];
+	var_dump($jp);
+	
+	/* &darr; コンソール &darr;
+	array(2) {
+		['kanto']=>
+		array(2) {
+			['saitama']=>
+			array(3) {
+				[0]=>
+				string(4) 'soka'
+				[1]=>
+				string(9) 'koshigaya'
+				[2]=>
+				string(9) 'kawaguchi'
+			}
+			['tokyo']=>
+			array(3) {
+				[0]=>
+				string(6) 'adachi'
+				[1]=>
+				string(7) 'chiyoda'
+				[2]=>
+				string(7) 'shibuya'
+			}
+		}
+		['kansai']=>
+		array(1) {
+			['kyoto']=>
+			array(2) {
+				[0]=>
+				string(3) 'uji'
+				[1]=>
+				string(3) '???'
+			}
+		}
+	}
+	*/
+</code>
+これだけですが、上から順に確認しなくてok!なのは本当に助かります。
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

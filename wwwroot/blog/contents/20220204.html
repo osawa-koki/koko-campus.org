@@ -1,0 +1,15 @@
+<h1>vb.netコンパイラ</h1>
+通常はvb.netプログラミングではvsなどのIDEを使用すると思うのですが、何らかの理由があってコマンドラインでコンパイルをしたいと言う人向けに、、、<br /><br />vb.netのコンパイラはwindowsであれば、デフォルトでインストールされています。<br />「<span class="en">C:\Windows\Microsoft.NET\Framework64\v4.0.30319</span>」フォルダ内にある「vbc.exe」がvb.netのコンパイラです。<br /><br />これを環境変数に登録すればok!です。<br /><br />以下のコマンドでファイルをコンパイル可能です。
+<code class="shell">
+	vbs ファイルのパス
+</code>
+「ファイル名.exe」という名前のファイルが生成されます。<br />試しに、以下のコードをコンパイルして実行してみましょう♪
+<code class="vb-dot-net">
+	Module Module1
+		Sub Main()
+			Console.WriteLine("do you like an apple?")
+		End Sub
+	End Module
+</code>
+<img src="data/20220204.gif" alt="vbコンパイル" />
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

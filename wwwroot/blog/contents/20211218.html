@@ -1,0 +1,45 @@
+<h1>htmlcollectionとnodelist(js)</h1>
+javascriptで複数のhtmlドキュメントオブジェクト(要素)を取得するメソッドとして主に以下の2つがあげられます。
+<ul>
+	<li>getElementsByTagName<br />(getElementsByClassName)</li>
+	<li>querySelectorAll</li>
+</ul>
+どちらもひとつ、ないしは複数のhtmlドキュメントオブジェクトを戻り値として返しますが、その型は「htmlcollection」と「nodelist」と異なります。<br />両者の違いは使用できるメソッドです。
+<h2>htmlcollection</h2>
+ドキュメントオブジェクトのgetElementsByTagName(getElementsByClassName)メソッドによる戻り値として取得できます。
+<code class="html">
+	&lt;div class="me"&gt;&lt;/div&gt;
+</code>
+<code class="javascript">
+	 "use strict";
+	let me = document.getElementsByClassName("me");
+	console.log(me)
+</code>
+コンソール画面には以下のように出力されます。
+<img src="data/20211218(1).png" alt="htmlcollectionの画像" />
+使用可能なメソッドは以下の2つです。
+<ul>
+	<li>item</li>
+	<li>namedItem</li>
+</ul>
+<h2>nodelist</h2>
+ドキュメントオブジェクトのquerySelectorAllメソッドによる戻り値として取得できます。
+<code class="html">
+	&lt;div class="me"&gt;&lt;/div&gt;
+</code>
+<code class="javascript">
+	 "use strict";
+	let me = document.querySelectorAll(".me");
+	console.log(me)
+</code>
+コンソール画面には以下のように出力されます。
+<img src="data/20211218(2).png" alt="htmlcollectionの画像" />
+使用可能なメソッドは以下の5つです。
+<ul>
+	<li>item</li>
+	<li>entries</li>
+	<li>forEach</li>
+	<li>keys</li>
+	<li>values</li>
+</ul>
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

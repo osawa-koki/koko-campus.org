@@ -1,0 +1,29 @@
+<h1>defer/async(js)</h1>
+htmlでjvascriptを読み込む際には以下のコードを書きますよね♪
+<code class="html">
+	&lt;script charset="utf-8" type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+</code>
+この「script」タグに「defer」ないしは「async」属性を付ける場合があります。<br />以下のような感じです。
+<code class="html">
+	&lt;script charset="utf-8" type="text/javascript" src="script.js" defer&gt;&lt;/script&gt;
+	&lt;script charset="utf-8" type="text/javascript" src="script.js" async&gt;&lt;/script&gt;
+</code>
+これは「htmlの読み込み」「jsファイルの読み込み」「jsの実行」の実行順序を指定します。
+<h2>デフォルト(何もつけない)</h2>
+「script」タグに出会ったらhtmlの読み込みを一度ストップして、jsファイルの読み込みとjsの実行をして、それが終了したらhtmlの読み込みを再開します。
+<img src="data/20220104-default.png" alt="js読み込み" />
+<h2>defer</h2>
+「script」タグに出会ったらjsファイルの読み込みとhtmlの読み込み(htmlパース)を並行して実行します。<br />htmlパースが完了したらjsファイルを実行します。
+<img src="data/20220104-defer.png" alt="js読み込み" />
+<h2>async</h2>
+「script」タグに出会ったらjsファイルの読み込みとhtmlの読み込み(htmlパース)を並行して実行します。<br />jsファイルの読み込みが完了したらhtmlパースを中断して、jsを実行します。<br />jsの実行が完了したらhtmlパースを再開します。
+<img src="data/20220104-async.png" alt="js読み込み" />
+<div class="separator"></div>
+この記事はwhatwgのサイトを参考にして作成しました。
+<p class="r">whatwgのサイトは<a href="https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async">こちら</a>。</p>
+whatwgでは以下の画像の通り説明されています。
+<img src="data/20220104.svg" alt="js読み込み" />
+<div class="separator"></div>
+特に理由がない限りは、実行順序を上からに指定する「defer」を使用することをオススメします。<br />例えば、vue.jsやjqueryなどのライブラリを読み込んで、それを使用するjsファイルを読み込む際には、vue.jsやjqueryを読み込む「script」タグに「defer」属性を付ける必要があります。
+<p class="r">「defer」属性ではなく他の技法で解決することもできますが、それを使用する積極的な理由もないので、ここでは説明しません。</p>
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>

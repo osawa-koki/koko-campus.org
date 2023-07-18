@@ -1,0 +1,33 @@
+<h1>深い配列の存在確認(php)</h1>
+昨日の記事への補足、、、<br /><br />isset関数では深い配列に対しても有効です。
+<code class="php">
+	$jp = array(
+		"kanto" => array(
+			"saitama" => [
+				"soka",
+				"koshigaya",
+				"kawaguchi"
+			],
+			"tokyo" => [
+				"adachi",
+				"chiyoda",
+				"shibuya"
+			]
+		)
+	);
+	
+	var_dump(isset($jp));
+	var_dump(isset($jp["kanto"]));
+	var_dump(isset($jp["kanto"]["saitama"]));
+	var_dump(isset($jp["kanto"]["saitama"]["soka"]));
+	var_dump(isset($jp["kanto"]["saitama"]["soka"]["teshiro"]));
+	
+	/* &darr; コンソール &darr;
+	bool(true)
+	bool(true)
+	bool(true)
+	bool(false)
+	bool(false)
+	*/
+</code>
+<script src="../package/js-modules/koko-code/ver1.js" charset="utf-8" defer></script>
