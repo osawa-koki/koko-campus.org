@@ -1,0 +1,391 @@
+@charset "UTF-8";
+html {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "code";
+  src: url("../font-family/consolas.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mark";
+  src: url("../font-family/wingdings.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* ----------ページヘッダーのレイアウトボックス---------- */
+#logo {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  #logo {
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  #logo {
+    left: calc((100% - 1200px) / 2);
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #logo {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #logo {
+    width: 150px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #header_adjustment {
+    margin: 55px 0;
+  }
+  #main {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #header_adjustment {
+    margin: 80px 0;
+  }
+  #main {
+    padding: 0 15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "consolas", "code";
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat;
+  background-color: rgba(170, 255, 170, 0.8);
+  border-bottom: 2px lime solid;
+  z-index: 9;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  header {
+    left: calc((100% - 1200px) / 2);
+    right: calc((100% - 1200px) / 2);
+  }
+}
+
+@media screen and (max-width: 699px) {
+  header {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 75px;
+    line-height: 75px;
+  }
+}
+
+footer {
+  background-position: center bottom;
+  background-image: url(../pics/footer2020.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 150px;
+}
+
+main {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 25px;
+}
+
+main #contents {
+  margin: 50px 0;
+  border-bottom: 10px black solid;
+  padding-bottom: 50px;
+}
+
+main img:not(.x) {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main div.quote {
+  margin: 30px 0;
+  padding: 25px;
+  border: 1px solid black;
+  background-color: rgba(255, 200, 200, 0.1);
+}
+
+main div.quote div:nth-of-type(1) {
+  border-bottom: 1px dotted black;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+main table:not(.x) {
+  border-collapse: collapse;
+  margin: 25px;
+}
+
+main table:not(.x) thead td {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+main table:not(.x) tbody th, main table:not(.x) tbody td {
+  padding: 10px 25px;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+
+main h2 {
+  font-size: 1.3rem;
+  margin: 25px 0;
+}
+
+main h3 {
+  font-size: 1.2rem;
+  margin: 25px 0;
+}
+
+main ul:not(.x), main ol:not(.x) {
+  border-left: 3px black solid;
+  margin: 30px 0;
+}
+
+main span.underline {
+  text-decoration: underline;
+}
+
+main div.separator {
+  width: 100%;
+  height: 3px;
+  border-radius: 1px;
+  background-color: lightgrey;
+  margin: 25px 0;
+}
+
+main div.separator2 {
+  width: 100%;
+  height: 5px;
+  border-radius: 1px;
+  background-color: grey;
+  margin: 25px 0;
+}
+
+main span.separator:before {
+  display: block;
+  content: "**************************************************";
+  white-space: nowrap;
+  color: grey;
+  margin: 10px 0 5px 0;
+}
+
+main #select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  overflow-x: auto;
+}
+
+main #select-box > * {
+  cursor: pointer;
+}
+
+main #select-box #kw-select {
+  display: block;
+}
+
+main #select-box #kw-button {
+  display: block;
+  width: 70px;
+  min-width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  background-color: lightblue;
+  margin-left: 10px;
+  border: 1px black solid;
+}
+
+main #select-box #kw-button:hover {
+  color: white;
+  background-color: blue;
+}
+
+main #a-container .title {
+  margin: 30px 0;
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  border-left: 5px green solid;
+  padding-left: 10px;
+}
+
+main #a-container .title::before {
+  content: "#";
+}
+
+main #a-container a {
+  position: relative;
+  border: 1px black solid;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 699px) {
+  main #a-container a {
+    width: 250px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main #a-container a {
+    width: 500px;
+    height: 100px;
+  }
+}
+
+main #a-container a span {
+  position: absolute;
+}
+
+main #a-container a span:nth-of-type(1) {
+  font-size: 13px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #a-container a span:nth-of-type(2) {
+  font-size: 10px;
+  top: 3px;
+  left: 3px;
+  color: grey;
+}
+
+main #hash-tag_container {
+  margin: 20px 0 30px 0;
+}
+
+main #hash-tag_container a {
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  margin: 5px 5px 5px 0;
+}
+
+main p {
+  font-size: 0.95rem;
+  text-indent: 1rem;
+  margin-left: -1rem;
+  white-space: nowrap;
+}
+
+main p:before {
+  content: "※";
+}
+
+main #page-button_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 699px) {
+  main #page-button_div {
+    width: 250px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main #page-button_div {
+    width: 500px;
+    height: 100px;
+  }
+}
+
+main #page-button_div a {
+  margin: 0 25px;
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px black solid;
+  background-color: lightcyan;
+}
+
+main #page-button_div a:hover {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+
+main #page-button_div a[href=cancel] {
+  pointer-events: none;
+  color: white;
+  background-color: grey;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+/*# sourceMappingURL=index.css.map */
